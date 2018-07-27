@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import Leaderboard from './Leaderboard';
 import registerServiceWorker from './registerServiceWorker';
+import App from './App';
 
-ReactDOM.render(<Leaderboard />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'))
+
 registerServiceWorker();

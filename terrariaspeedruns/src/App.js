@@ -1,21 +1,26 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Leaderboard from './leaderboard/Leaderboard';
+import About from './about/About';
+import ErrorBoundary from './helper/ErrorHandler'
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
-  }
-}
+const App = () => (
+	<ErrorBoundary>
+		<Router>
+			<div>	
+				{/* TODO:make more than one route. Probably require assistance as project grows */}
+		    	<Route exact path="/" component={Leaderboard} />
+		        <Route path="/leaderboard" component={Leaderboard} />
+		        <Route path="/discord" component={Leaderboard} />
+		        <Route path="/races" component={Leaderboard} />
+		        <Route path="/resources" component={Leaderboard} />
+		        <Route path="/about" component={About} />
+		    </div>
+		</Router> 
+
+		{/* Don't forget your error handling! */}
+	</ErrorBoundary> 
+)
+
 
 export default App;
