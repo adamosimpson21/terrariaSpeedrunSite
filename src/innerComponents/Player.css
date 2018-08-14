@@ -1,0 +1,9 @@
+.playerLink:link, .playerLink:visited{
+	text-decoration:none;
+	color:inherit;
+}
+
+.playerLink:hover{
+	text-decoration: underline;
+	color:blue;
+}

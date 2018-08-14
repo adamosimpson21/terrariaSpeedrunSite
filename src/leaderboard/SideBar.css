@@ -1,0 +1,11 @@
+.variableButton{
+	width:45%;
+	background-color:lightblue;
+	/*height:30px;*/
+	font-size:20px;
+	margin:3px;
+}
+
+.variableButton.active{
+	color:red;
+}

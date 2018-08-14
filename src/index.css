@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+#root{
+  background-image: url("img/sky.jpg"), url("img/grassground.jpg");
+  background-size:100vw 80.5vh, 20vw 20vh;
+  background-position: top left, bottom left;
+  background-repeat: no-repeat, repeat-x;
+  height:100vh;	
+}
