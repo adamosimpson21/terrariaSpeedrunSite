@@ -4,7 +4,6 @@ import './LeaderboardTitle.css';
 class LeaderboardTitle extends Component{
 
 	categoryToImage(categoryName){
-		console.log("categoryName is " + categoryName)
 		if(categoryName==="Moon Lord"){
 			return "../img/moonlord.png"
 		} else {
@@ -16,7 +15,7 @@ class LeaderboardTitle extends Component{
 	render(){
 		const {category, diff, seed} = this.props;
 		const imageString = this.categoryToImage(category);
-		console.log("imageString is " + imageString)
+		// TODO add variable images for different categories
 		return(
 			<div>
 				<h3 className="App-header">

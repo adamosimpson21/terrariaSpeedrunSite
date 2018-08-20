@@ -1,26 +1,28 @@
 import React, {Component} from 'react';
-import './SideBar.css'
+import './SideBar.css';
+import Button from '../innerComponents/Button';
+import BackFrame from '../innerComponents/BackFrame';
 
 class SideBar extends Component{
 	render(){
 		return(
 			<div className="sideBar">
 				<br />
-				<button className="variableButton" onClick={(e) => this.props.handler(e, "Normal")}>Normal</button>
-				<button className="variableButton" onClick={(e) => this.props.handler(e, "Expert")}>Expert</button>
+				<Button label="Normal" handleClick={(e) => this.props.handler(e, "Normal")}/>
+				<Button label="Expert" handleClick={(e) => this.props.handler(e, "Expert")}/>
 				<br />
 				<br />
-				<button className="variableButton" onClick={(e) => this.props.handler(e, "Seeded")}>Seeded</button>
-				<button className="variableButton" onClick={(e) => this.props.handler(e, "Random")}>Random</button>
+				<Button label="Seeded" handleClick={(e) => this.props.handler(e, "Seeded")}/>
+				<Button label="Random" handleClick={(e) => this.props.handler(e, "Random")}/>
 				<br />
 				<br />
-				<button className="variableButton" onClick={(e) => this.props.handler(e, "Moon Lord")}>Moon Lord</button>
-				<button className="variableButton" onClick={(e) => this.props.handler(e, "Night's Edge")}>Night's Edge</button>
-				<button className="variableButton" onClick={(e) => this.props.handler(e, "All Bosses")}>All Bosses</button>
-				<button className="variableButton" onClick={(e) => this.props.handler(e, "All Pre-HM Bosses")}>All Pre-HM Bosses</button>
+				<Button label="Moon Lord" handleClick={(e) => this.props.handler(e, "Moon Lord")}/>
+				<Button label="Night's Edge" handleClick={(e) => this.props.handler(e, "Night's Edge")}/>
+				<Button label="All Bosses" handleClick={(e) => this.props.handler(e, "All Bosses")}/>
+				<Button label="All Pre-HM Bosses" handleClick={(e) => this.props.handler(e, "All Pre-HM Bosses")}/>
 			</div>
-			)
+		)
 	}
 }
 
-export default SideBar;
+export default BackFrame(SideBar);

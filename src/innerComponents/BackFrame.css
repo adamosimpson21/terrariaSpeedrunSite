@@ -1,0 +1,6 @@
+.backFrame{
+	background-color:rgba(66,66,66,0.5);
+	border: 2px solid darkgray;
+	border-radius:10px;
+	display:inline-flex;
+}

@@ -1,0 +1,9 @@
+.buttonHOC{
+	/*border: outset;*/
+	background: linear-gradient(to bottom right, #ddd, #aaa);
+	width:45%;
+	background-color:lightblue;
+	/*height:30px;*/
+	font-size:20px;
+	margin:3px;
+}

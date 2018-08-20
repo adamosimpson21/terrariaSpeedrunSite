@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import NavBar from '../innerComponents/NavBar';
 import Player from '../innerComponents/Player';
+import BackFrame from '../innerComponents/BackFrame';
 
 class Profile extends Component{
 	constructor(props){
@@ -36,27 +36,29 @@ class Profile extends Component{
 	    })
 	}
 
+
 	render(){
 		const {id} = this.props.match.params;
 		if(Object.keys(this.state.player).length === 0 ){
 			return(
 				<div>
-					<NavBar />
 					<Player id={id}/>
 				</div>
 			)
 		} else {
 			const player = this.state.player.data;
+			//TODO: add more user features and styles
+			//TODO: Convert country code to country name. Style names in accordance to Speedrun.com API
 			return(
 				<div>
-					<NavBar />
 					<Player id={id}/>
-					<p> Location: {player.location.country.code} </p>
-					<p> Follow me on youtube! <a href={player.youtube.uri} target="_blank">Youtube!</a></p>
+					{player.location ? <p> Location: {player.location.country.code} </p> : null}
+					{player.youtube ? <p> Follow me on youtube! <a href={player.youtube.uri} target="_blank">Youtube!</a></p> : null}
+					{player.twitter ? <p> My Twitter <a href={player.twitter.uri} target="_blank">Twitter</a></p> : null}
 				</div>
 			)
 		}		
 	}
 }
 
-export default Profile;
+export default BackFrame(Profile);

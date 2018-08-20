@@ -1,10 +1,14 @@
 import React, {Component} from 'react';
 import { Grid, Row, Col } from 'react-flexbox-grid';
+import BackFrame from '../innerComponents/BackFrame';
+import Player from '../innerComponents/Player';
 import './UpcomingRace.css'
 
 class UpcomingRace extends Component{
 	render(){
 		const {key, date, time, category, difficulty, seeded, players} = this.props;
+		// TODO: style components
+		const playerList = this.props.players.map(player => <Player id={player} />)
 		return(
 			<div className="upcomingRace">
 				<Grid fluid>
@@ -12,7 +16,7 @@ class UpcomingRace extends Component{
 						{category}, {difficulty}, {seeded} 
 					</Row>
 					<Row>
-						{players}
+						{playerList}
 					</Row>
 					<Row>
 						{date}, {time} 
@@ -23,4 +27,4 @@ class UpcomingRace extends Component{
 	}
 }
 
-export default UpcomingRace;
+export default BackFrame(UpcomingRace);

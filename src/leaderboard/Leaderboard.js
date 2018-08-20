@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './Leaderboard.css';
 import LeaderboardTitle from './LeaderboardTitle';
 import RunList from './RunList';
-import NavBar from '../innerComponents/NavBar';
 import SideBar from './SideBar';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 
@@ -38,10 +37,9 @@ class Leaderboard extends Component {
   }
 
   render() {
+    //TODO: wrap Title and RunList in BackFrame together
     return (
       <div className="App">
-        <NavBar />
-      {/* TODO: add more buttons to sidebar. Style things */}
       <Grid fluid>
         <Row>
           <Col md={2}>
@@ -58,6 +56,5 @@ class Leaderboard extends Component {
     );
   }
 }
-
 
 export default Leaderboard;

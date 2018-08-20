@@ -5,14 +5,24 @@ header {
   align-items: center;
   color: white;
   padding: 0 15px;
+  margin-bottom:5px;
+  opacity: 0.75
 }
 
 header h1 {
   text-align: center;
 }
 
+header h2{
+  margin: 10px;
+}
+
 header li {
   list-style: none;
+  padding: 15px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: rgba(58, 59, 138, 0.9);
 }
 
 header a {
@@ -31,7 +41,11 @@ header nav {
 }
 
 header nav li {
-  margin: 0 15px;
+  margin: 0 5px;
+  padding: 15px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: rgba(58, 59, 138, 0.9);
 }
 
 header nav li:first-child {
