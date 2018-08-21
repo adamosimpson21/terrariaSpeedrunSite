@@ -5,7 +5,7 @@ header {
   align-items: center;
   color: white;
   padding: 0 15px;
-  margin-bottom:5px;
+  margin-bottom:10px;
   opacity: 0.75
 }
 
@@ -19,7 +19,7 @@ header h2{
 
 header li {
   list-style: none;
-  padding: 15px;
+  padding:15px;
   border: 2px solid black;
   border-radius: 10px;
   background-color: rgba(58, 59, 138, 0.9);
@@ -27,6 +27,7 @@ header li {
 
 header a {
   text-decoration: none;
+  padding: 15px 0 15px 0;
   color: inherit;
   cursor: pointer;
   opacity: 0.9;

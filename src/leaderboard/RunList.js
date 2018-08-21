@@ -3,6 +3,7 @@ import './RunList.css';
 import {categoryIDLookUp} from '../helper/idTables.js';
 import RunDescription from './RunDescription';
 import {formattedDuration, buildURL} from '../helper/helperfunctions';
+import BackFrame from '../innerComponents/BackFrame';
 import moment from 'moment';
 
 class RunList extends Component{
@@ -77,4 +78,4 @@ class RunList extends Component{
 	}
 }
 
-export default RunList;
+export default BackFrame(RunList);

@@ -9,7 +9,6 @@ class Leaderboard extends Component {
   constructor(props){
   	super(props);
     this.state= {
-        //Changing this variable to one of the full game categories (ML, NE, APreHM, AB) will render the correct leaderboard
         category:"Night's Edge",
         diff:"Normal",
         seed:"Random"
@@ -39,7 +38,7 @@ class Leaderboard extends Component {
   render() {
     //TODO: wrap Title and RunList in BackFrame together
     return (
-      <div className="App">
+      <div className="leaderboardBody">
       <Grid fluid>
         <Row>
           <Col md={2}>
@@ -47,6 +46,7 @@ class Leaderboard extends Component {
           </Col>
           <Col md={10}>
             <LeaderboardTitle category={this.state.category} diff={this.state.diff} seed={this.state.seed}/>
+            <br />
             <RunList category={this.state.category} diff={this.state.diff} seed={this.state.seed}/>
           </Col>
         </Row>

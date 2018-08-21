@@ -17,8 +17,8 @@ class SideBar extends Component{
 				<br />
 				<br />
 				<Button label="Moon Lord" handleClick={(e) => this.props.handler(e, "Moon Lord")}/>
-				<Button label="Night's Edge" handleClick={(e) => this.props.handler(e, "Night's Edge")}/>
 				<Button label="All Bosses" handleClick={(e) => this.props.handler(e, "All Bosses")}/>
+				<Button label="Night's Edge" handleClick={(e) => this.props.handler(e, "Night's Edge")}/>
 				<Button label="All Pre-HM Bosses" handleClick={(e) => this.props.handler(e, "All Pre-HM Bosses")}/>
 			</div>
 		)

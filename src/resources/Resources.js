@@ -32,7 +32,7 @@ class Resources extends Component{
 		
 			<h3>Tools</h3>
 			<Link to="/StrategyGuide/splits"><Button label="Splits"></Button></Link>
-			<Link to="/StrategyGuide/discord"><Button label="Discord"></Button></Link>
+			<Link to="/discord"><Button label="Discord"></Button></Link>
 			
 		</div>
 		)
