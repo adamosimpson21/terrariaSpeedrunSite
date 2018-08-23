@@ -1,5 +1,11 @@
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
+[![JavaScript Style Guide](https://cdn.rawgit.com/standard/standard/master/badge.svg)](https://github.com/standard/standard)
+
+This site was created for my hobby community, Terraria Speedruns. As our community expanded, the old site (a child of a much larger speedrun site) could note provide all of the features we were looking for. Discord integration, detailed profile pages, modern styling, race sign-ups, race displays, and customized leaderboards were not available on the older platform.
+
+Technologies used for this project: React, APIs, JavaScript, HTML, JSX, CSS, React-Router, and StandardJS  
+
 Below you will find some information on how to perform common tasks.<br>
 You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
 
