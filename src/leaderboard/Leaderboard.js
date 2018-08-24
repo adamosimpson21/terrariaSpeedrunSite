@@ -7,7 +7,7 @@ import { Grid, Row, Col } from 'react-flexbox-grid'
 
 class Leaderboard extends Component {
   constructor (props) {
-  	super(props)
+    super(props)
     this.state = {
       category: "Night's Edge",
       diff: 'Normal',

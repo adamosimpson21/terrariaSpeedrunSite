@@ -8,7 +8,7 @@ const BackFrame = (WrappedComponent) => {
         <div className='backFrame'>
           <WrappedComponent
             {...this.props}
-	  		/>
+          />
         </div>)
     }
   }

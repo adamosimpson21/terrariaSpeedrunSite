@@ -8,9 +8,9 @@ import moment from 'moment'
 
 class RunList extends Component {
   constructor (props) {
-	    super(props)
-	      	this.state = {
-	      	runs: []
+    super(props)
+    this.state = {
+	     	runs: []
 	    }
   }
 
@@ -39,17 +39,17 @@ class RunList extends Component {
     // fetching using the full URL, currently can vary by difficulty, seed, and category
     fetch(buildURL(categoryIDLookUp[category].categoryID, varObj))
 	    .then(resp => {
-	      	if (!resp.ok) {
-	        	if (resp.status >= 400 && resp.status < 500) {
-	          		return resp.json().then(data => {
-	            		let err = {errorMessage: data.message}
-	            		throw err
-	          		})
-	        	} else {
-	         		let err = {errorMessage: 'Please try again later. Server down'}
-	          		throw err
-	        	}
-	      	}
+        if (!resp.ok) {
+          if (resp.status >= 400 && resp.status < 500) {
+            return resp.json().then(data => {
+              let err = {errorMessage: data.message}
+              throw err
+            })
+          } else {
+            let err = {errorMessage: 'Please try again later. Server down'}
+            throw err
+          }
+        }
 	    	return resp.json()
 	    })
 	    .then(data => {

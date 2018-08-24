@@ -21,15 +21,15 @@ class Profile extends Component {
     fetch('https://www.speedrun.com/api/v1/users/' + id)
 	    .then(resp => {
 		    if (!resp.ok) {
-		        if (resp.status >= 400 && resp.status < 500) {
-		          	return resp.json().then(data => {
-			            let err = {errorMessage: data.message}
-			            throw err
-		         	})
-		        } else {
-			        let err = {errorMessage: 'Please try again later. Server down'}
-			        throw err
-	        	}
+          if (resp.status >= 400 && resp.status < 500) {
+            return resp.json().then(data => {
+              let err = {errorMessage: data.message}
+              throw err
+            })
+          } else {
+            let err = {errorMessage: 'Please try again later. Server down'}
+            throw err
+          }
 		    }
 		    return resp.json()
 	    })

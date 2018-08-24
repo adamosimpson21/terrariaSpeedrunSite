@@ -5,23 +5,23 @@ import BackFrame from '../innerComponents/BackFrame'
 class LeaderboardTitle extends Component {
   categoryToImage (categoryName) {
     switch (categoryName) {
-		    case 'Moon Lord':
-		        return 'moonlord.png'
-		    case "Night's Edge":
-		        return 'nightsedge.png'
-		    case 'All Bosses':
-		        return 'Duke_Fishron.png'
-		    case 'All Pre-HM Bosses':
-		        return 'wallofflesh.png'
-		    default:
-		        return 'nightsedge.png'
+      case 'Moon Lord':
+        return 'moonlord.png'
+      case "Night's Edge":
+        return 'nightsedge.png'
+      case 'All Bosses':
+        return 'Duke_Fishron.png'
+      case 'All Pre-HM Bosses':
+        return 'wallofflesh.png'
+      default:
+        return 'nightsedge.png'
     }
   }
 
   importAll (r) {
-	  	let images = {}
-	  	r.keys().map((item, index) => { images[item.replace('./', '')] = r(item) })
-	    return images
+    let images = {}
+    r.keys().map((item, index) => { images[item.replace('./', '')] = r(item) })
+    return images
   }
 
   render () {
