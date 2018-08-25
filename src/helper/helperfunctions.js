@@ -3,7 +3,20 @@ export function formattedDuration(timeString){
 	return timeString.replace("PT","").toLowerCase();
 }
 
-
+export function fetchErrorHandler(resp){
+  if(!resp.ok){
+    if(resp.status>=400 && resp.status <500){
+      return resp.json().then(data=> {
+        let err= {errorMessage:data.message};
+        throw err;
+      })
+    } else {
+      let err = {errorMessage: 'Please try again later. Server down'};
+      throw err
+    }
+  }
+  return resp.json();
+}
 
 //function builds a URL to use API call for a category, sorted by variables given to it
 export function buildURL(category, variablesObj){

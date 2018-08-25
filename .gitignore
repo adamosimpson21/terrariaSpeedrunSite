@@ -3,6 +3,9 @@
 # dependencies
 /node_modules
 
+# webstorm
+./idea
+
 # testing
 /coverage
 

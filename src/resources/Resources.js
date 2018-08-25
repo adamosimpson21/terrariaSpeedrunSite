@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 import BackFrame from '../innerComponents/BackFrame';
-import Category from './Category';
-import Tools from './Tools';
-import Seeds from './Seeds';
-import StrategyGuide from './StrategyGuide';
+// import Category from './Category';
+// import Tools from './Tools';
+// import Seeds from './Seeds';
+// import StrategyGuide from './StrategyGuide';
 import Button from '../innerComponents/Button'
 import {Link} from 'react-router-dom';
 

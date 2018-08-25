@@ -1,3 +1,7 @@
 .portraitImage{
-	height:50px;
+	height:150px;
+}
+
+.profileIcons a{
+    margin:auto;
 }

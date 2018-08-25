@@ -7,7 +7,7 @@ class Discord extends Component{
 		return(
 		<div className="discord">
 			<p>Join the Discord to come and chat with us!</p>
-			<iframe title="discordWidget" src="https://discordapp.com/widget?id=140297487884877824&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
+			<iframe title="discordWidget" src="https://discordapp.com/widget?id=140297487884877824&theme=dark" width="350" height="500" allowtransparency="true" frameBorder="0"></iframe>
 		</div>
 		)
 	}

@@ -14,11 +14,16 @@ var guideBody = {
 		body:"Use these to make 'split' descisions on whether to reset your run or not", 
 		link:"https://www.google.com/"
 	},
-	"moonlord":{
+	"moonLord":{
 		title:"Moon Lord", 
 		body:"Use these to make 'split' descisions on whether to reset your run or not", 
 		link:"https://www.google.com/"
 	},
+	"pillars":{
+    title:"Celestial Pillars",
+    body:"Kill all of the pillars so da mun lerd spans",
+    link:"https://www.google.com/"
+  },
 	"nightsEdge":{
 		title:"Night's Edge", 
 		body:"Use these to make 'split' descisions on whether to reset your run or not", 

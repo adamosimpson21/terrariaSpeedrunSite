@@ -13,6 +13,8 @@ import Category from './resources/Category';
 import StrategyGuide from './resources/StrategyGuide';
 import Seeds from './resources/Seeds';
 import './App.css';
+import RunnerScore from "./runnerScore/RunnerScore";
+import "../node_modules/video-react/dist/video-react.css";
 
 const App = () => (
 	<ErrorBoundary>
@@ -20,16 +22,17 @@ const App = () => (
 			<div className="App">
 				<NavBar />
 		    	<Route exact path="/" component={Leaderboard} />
-		        <Route path="/leaderboard" component={Leaderboard} />
-		        <Route path="/discord" component={Discord} />
-		        <Route path="/races" component={Races} />
-		        <Route path="/resources" component={Resources} />
-		        <Route path="/about" component={About} />
-		        <Route path="/profile/:id" component={Profile} />
-		        <Route path="/tools" component={Tools} />
-		        <Route path="/category" component={Category} />
-		        <Route path="/strategyguide/:page" component={StrategyGuide}/>
-		        <Route path="/seeds" component={Seeds} />
+					<Route path="/leaderboard" component={Leaderboard} />
+					<Route path="/discord" component={Discord} />
+					<Route path="/races" component={Races} />
+					<Route path="/resources" component={Resources} />
+					<Route path="/about" component={About} />
+					<Route path="/profile/:id" component={Profile} />
+					<Route path="/tools" component={Tools} />
+					<Route path="/category" component={Category} />
+					<Route path="/strategyguide/:page" component={StrategyGuide}/>
+					<Route path="/seeds" component={Seeds} />
+					<Route path="/runnerScore" component={RunnerScore} />
 		    </div>
 		</Router> 
 
