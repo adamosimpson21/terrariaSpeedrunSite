@@ -1,19 +1,19 @@
-import React, {Component} from 'react';
-import './BackFrame.css';
+import React, {Component} from 'react'
+import './BackFrame.css'
 
 const BackFrame = (WrappedComponent) => {
   class HOC extends Component {
-    render() {
+    render () {
       return (
-      	<div className="backFrame">
-	      	<WrappedComponent 
-	  			{...this.props}
-	  		/>
-  		</div>);
+        <div className='backFrame'>
+          <WrappedComponent
+            {...this.props}
+          />
+        </div>)
     }
   }
-    
-  return HOC;
-};
 
-export default BackFrame;
+  return HOC
+}
+
+export default BackFrame

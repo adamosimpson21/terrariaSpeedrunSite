@@ -32,7 +32,7 @@ class Profile extends Component{
 	    .then(player => {
 	    	this.setState({player:player.data});
 	    })
-	}
+  }
 
 	loadRecentRun(id){
     fetch("https://www.speedrun.com/api/v1/runs?user="+id+"&status=verified&orderby=verify-date&direction=desc")
@@ -85,4 +85,4 @@ class Profile extends Component{
 	}
 }
 
-export default BackFrame(Profile);
+export default BackFrame(Profile)

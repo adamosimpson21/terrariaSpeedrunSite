@@ -56,4 +56,4 @@ var guideBody = {
 	},
 }
 
-export {guideBody};
+export {guideBody}

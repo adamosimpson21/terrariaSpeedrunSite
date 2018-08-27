@@ -27,4 +27,4 @@ class UpcomingRace extends Component{
 	}
 }
 
-export default BackFrame(UpcomingRace);
+export default BackFrame(UpcomingRace)
