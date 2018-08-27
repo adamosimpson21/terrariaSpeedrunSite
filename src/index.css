@@ -2,5 +2,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background: url("img/TerrariaSky.jpg") no-repeat center center fixed; 
+  background: url("img/TerrariaSky.jpg") no-repeat center center fixed;
+  width:100%
 }
