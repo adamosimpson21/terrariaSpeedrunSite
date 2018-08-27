@@ -1,3 +1,9 @@
 .runList{
 	margin:auto;
 }
+
+@media screen and (max-width:800px) {
+	.runList{
+
+	}
+}

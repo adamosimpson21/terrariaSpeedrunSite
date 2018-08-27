@@ -2,3 +2,9 @@
   text-align: center;
   height:100%;
 }
+
+@media screen and (max-width: 420px){
+  .App{
+    font-size:14px;
+  }
+}

@@ -27,3 +27,15 @@
 .runDescription:nth-child(3) .runDescriptionPlace{
 	color:orange;
 }
+
+@media screen and (max-width:800px) {
+	.runDescription{
+		min-width: auto;
+		width:80%;
+		font-size:22px;
+	}
+	.innerSpan{
+		margin-left:16px;
+		margin-right:16px;
+	}
+}

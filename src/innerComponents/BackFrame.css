@@ -8,5 +8,6 @@
 @media screen and (max-width: 420px) {
 	.backFrame {
         display: block;
+        width:auto;
     }
 }

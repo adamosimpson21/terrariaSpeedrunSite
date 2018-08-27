@@ -17,8 +17,16 @@ header {
   display:block;
 }
 
+.smallMenu li{
+    padding:8px;
+}
+
+.smallMenu header{
+    padding: 20px 0 0 0;
+}
+
 .headerCloseButton{
-  margin-bottom:0px;
+
 }
 
 .navbarAccess{

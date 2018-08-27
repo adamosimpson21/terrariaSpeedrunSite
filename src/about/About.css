@@ -7,3 +7,17 @@
 .aboutImage{
 	height:96px;
 }
+
+@media screen and (max-width: 800px) {
+	* {
+		font-size:14px;
+	}
+	.aboutBody{
+		width:auto;
+		margin-left:24px;
+		margin-right:24px;
+	}
+	.aboutImage{
+		display:none;
+	}
+}
