@@ -2,6 +2,7 @@
 	width: 55%;
 	min-width:450px;
 	font-size:1.4em;
+	color:black;
 	background:linear-gradient(darkgray, gray);
 	border: 1px solid gray;
 	margin: 10px auto 10px auto;

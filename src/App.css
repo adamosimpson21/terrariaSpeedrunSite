@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   height:100%;
+  color:#cccccc;
 }
 
 @media screen and (max-width: 420px){

@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import UpcomingRace from './UpcomingRace'
 import './RaceList.css'
+import RaceRules from './RaceRules'
 
 class RaceList extends Component {
   constructor (props) {
@@ -44,6 +45,7 @@ class RaceList extends Component {
     ))
     return (
       <div className='App'>
+        <RaceRules />
         <div className='raceList'>
           {allRaces}
         </div>

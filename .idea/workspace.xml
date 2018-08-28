@@ -2,16 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99f1ee01-c855-4763-a826-d4655a557187" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/races/RaceRules.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/races/RaceRules.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/about/About.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/about/About.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/discord/Discord.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/discord/Discord.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/discord/Discord.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/discord/Discord.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/innerComponents/BackFrame.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/innerComponents/BackFrame.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/innerComponents/Button.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/innerComponents/Button.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helper/helperfunctions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/helper/helperfunctions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helper/idTables.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/helper/idTables.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/innerComponents/NavBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/innerComponents/NavBar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leaderboard/LeaderboardTitle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/leaderboard/LeaderboardTitle.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/leaderboard/RunDescription.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/leaderboard/RunDescription.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leaderboard/RunList.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/leaderboard/RunList.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/races/RaceList.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/races/RaceList.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/races/RaceList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/races/RaceList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/races/Races.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/races/Races.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/races/UpcomingRace.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/races/UpcomingRace.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/races/UpcomingRace.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/races/UpcomingRace.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/StrategyGuide.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/StrategyGuide.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/StrategyGuide.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/StrategyGuide.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -26,48 +32,49 @@
     <session id="-155379060">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.40" value="1" />
           <entry key="project.open.time.49" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="16" />
+          <entry key="css" value="23" />
           <entry key="gitignore" value="1" />
           <entry key="html" value="2" />
-          <entry key="js" value="40" />
+          <entry key="js" value="53" />
           <entry key="json" value="2" />
           <entry key="rnc" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="16" />
+          <entry key="CSS" value="23" />
           <entry key="HTML" value="2" />
           <entry key="JSON" value="2" />
-          <entry key="JavaScript" value="40" />
+          <entry key="JavaScript" value="53" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="RNG Compact" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="1458" />
+          <entry key="css" value="2017" />
           <entry key="gitignore" value="20" />
           <entry key="html" value="5" />
-          <entry key="js" value="5267" />
+          <entry key="js" value="6656" />
           <entry key="json" value="1" />
           <entry key="txt" value="130" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="1458" />
+          <entry key="CSS" value="2017" />
           <entry key="HTML" value="5" />
           <entry key="JSON" value="1" />
-          <entry key="JavaScript" value="5267" />
+          <entry key="JavaScript" value="6656" />
           <entry key="PLAIN_TEXT" value="150" />
         </counts>
       </usages-collector>
@@ -77,66 +84,31 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/discord/Discord.js">
+        <entry file="file://$PROJECT_DIR$/src/races/UpcomingRace.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/discord/Discord.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/innerComponents/Button.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="253">
+              <caret line="29" column="24" lean-forward="true" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
               <folding>
-                <element signature="e#0#25#0" expanded="true" />
+                <element signature="e#0#39#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/innerComponents/Button.css">
+        <entry file="file://$PROJECT_DIR$/src/resources/guideBody.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+            <state relative-caret-position="437">
+              <caret line="55" column="4" lean-forward="true" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/innerComponents/BackFrame.css">
+        <entry file="file://$PROJECT_DIR$/src/resources/StrategyGuide.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/App.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="6" column="7" selection-start-line="5" selection-end-line="9" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/about/About.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+            <state relative-caret-position="69">
+              <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -145,29 +117,40 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/about/About.css">
+        <entry file="file://$PROJECT_DIR$/src/races/RaceList.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-              <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+            <state relative-caret-position="23">
+              <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/innerComponents/NavBar.css">
+        <entry file="file://$PROJECT_DIR$/src/races/RaceList.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="184">
+              <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/innerComponents/NavBar.js">
+        <entry file="file://$PROJECT_DIR$/src/resources/StrategyGuide.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="679">
-              <caret line="38" column="1" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
+            <state relative-caret-position="23">
+              <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/races/UpcomingRace.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="422">
+              <caret line="32" column="12" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -199,19 +182,28 @@
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/package-lock.json" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/src/helper/helperfunctions.js" />
-        <option value="$PROJECT_DIR$/src/helper/idTables.js" />
         <option value="$PROJECT_DIR$/src/profile/Profile.js" />
-        <option value="$PROJECT_DIR$/src/races/UpcomingRace.js" />
         <option value="$PROJECT_DIR$/src/leaderboard/RunList.css" />
-        <option value="$PROJECT_DIR$/src/leaderboard/RunDescription.css" />
         <option value="$PROJECT_DIR$/src/discord/Discord.js" />
         <option value="$PROJECT_DIR$/src/discord/Discord.css" />
         <option value="$PROJECT_DIR$/src/innerComponents/Button.css" />
         <option value="$PROJECT_DIR$/src/innerComponents/BackFrame.css" />
-        <option value="$PROJECT_DIR$/src/App.css" />
         <option value="$PROJECT_DIR$/src/about/About.css" />
         <option value="$PROJECT_DIR$/src/innerComponents/NavBar.css" />
+        <option value="$PROJECT_DIR$/src/helper/idTables.js" />
+        <option value="$PROJECT_DIR$/src/helper/helperfunctions.js" />
+        <option value="$PROJECT_DIR$/src/leaderboard/LeaderboardTitle.js" />
+        <option value="$PROJECT_DIR$/src/races/Races.js" />
+        <option value="$PROJECT_DIR$/src/races/RaceList.js" />
+        <option value="$PROJECT_DIR$/src/races/RaceRules.js" />
+        <option value="$PROJECT_DIR$/src/races/RaceRules.css" />
+        <option value="$PROJECT_DIR$/src/App.css" />
+        <option value="$PROJECT_DIR$/src/leaderboard/RunDescription.css" />
+        <option value="$PROJECT_DIR$/src/races/UpcomingRace.js" />
+        <option value="$PROJECT_DIR$/src/races/UpcomingRace.css" />
+        <option value="$PROJECT_DIR$/src/resources/StrategyGuide.js" />
+        <option value="$PROJECT_DIR$/src/resources/StrategyGuide.css" />
+        <option value="$PROJECT_DIR$/src/races/RaceList.css" />
       </list>
     </option>
   </component>
@@ -263,25 +255,7 @@
               <item name="terrariaSpeedruns" type="b2602c69:ProjectViewProjectNode" />
               <item name="terrariaSpeedruns" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="about" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="terrariaSpeedruns" type="b2602c69:ProjectViewProjectNode" />
-              <item name="terrariaSpeedruns" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="helper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="terrariaSpeedruns" type="b2602c69:ProjectViewProjectNode" />
-              <item name="terrariaSpeedruns" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="innerComponents" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="terrariaSpeedruns" type="b2602c69:ProjectViewProjectNode" />
-              <item name="terrariaSpeedruns" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="leaderboard" type="462c0819:PsiDirectoryNode" />
+              <item name="races" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -292,11 +266,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="C:/medotcom" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.smartKeys" />
+    <property name="settings.editor.selected.configurable" value="reference.idesettings.emmet.jsx" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -321,7 +295,8 @@
       <option name="presentableId" value="Default" />
       <updated>1535156801008</updated>
       <workItem from="1535156806566" duration="24165000" />
-      <workItem from="1535247387270" duration="13402000" />
+      <workItem from="1535247387270" duration="15245000" />
+      <workItem from="1535443292539" duration="9643000" />
     </task>
     <task id="LOCAL-00001" summary="Profile features expanded. Included Embedded Video, site links, colored name, layout styles.">
       <created>1535180171220</created>
@@ -341,16 +316,17 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37567000" />
+    <option name="totallyTimeSpent" value="49053000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1873" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.13678475" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.13678475" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="0" sideWeight="0.49863315" visible="true" weight="0.33544305" />
+      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49863315" visible="true" weight="0.33544305" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.50136685" side_tool="true" weight="0.335845" />
       <window_info anchor="bottom" id="Version Control" order="2" sideWeight="0.49917987" weight="0.32938644" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
@@ -411,16 +387,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/leaderboard/LeaderboardTitle.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="41" lean-forward="true" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/leaderboard/LeaderboardTitle.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -465,9 +431,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="22" column="8" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -512,16 +475,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/races/UpcomingRace.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="26" column="3" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="3" />
-          <folding>
-            <element signature="e#1#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/resources/Resources.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-540">
@@ -556,37 +509,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/helper/helperfunctions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="32" column="1" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/helper/idTables.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="126" lean-forward="true" selection-start-line="126" selection-end-line="126" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/guideBody.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="55" column="4" lean-forward="true" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/leaderboard/Leaderboard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="35" lean-forward="true" selection-start-line="4" selection-start-column="31" selection-end-line="5" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/leaderboard/RunList.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
@@ -601,27 +523,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/leaderboard/RunDescription.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="27" column="17" lean-forward="true" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/discord/Discord.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
           <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/about/About.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -648,17 +553,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/about/About.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/innerComponents/NavBar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="38" column="1" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/innerComponents/NavBar.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/innerComponents/BackFrame.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
           <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="7" selection-start-line="5" selection-end-line="9" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -670,17 +592,133 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/innerComponents/NavBar.js">
+    <entry file="file://$PROJECT_DIR$/src/helper/helperfunctions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="679">
-          <caret line="38" column="1" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
+        <state relative-caret-position="426">
+          <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/innerComponents/NavBar.css">
+    <entry file="file://$PROJECT_DIR$/src/helper/idTables.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="69">
+          <caret line="3" column="20" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="20" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/leaderboard/Leaderboard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-598">
+          <caret line="5" column="35" lean-forward="true" selection-start-line="4" selection-start-column="31" selection-end-line="5" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/races/Races.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/races/RaceRules.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/leaderboard/RunDescription.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/leaderboard/LeaderboardTitle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="16" column="40" lean-forward="true" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/races/RaceRules.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="8" lean-forward="true" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/races/UpcomingRace.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="32" column="12" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/races/UpcomingRace.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="29" column="24" lean-forward="true" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/guideBody.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="55" column="4" lean-forward="true" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/StrategyGuide.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/StrategyGuide.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/races/RaceList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/races/RaceList.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
         </state>
       </provider>
     </entry>

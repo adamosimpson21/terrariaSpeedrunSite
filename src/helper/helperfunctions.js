@@ -1,4 +1,3 @@
-
 export function formattedDuration (timeString) {
   return timeString.replace('PT', '').toLowerCase()
 }

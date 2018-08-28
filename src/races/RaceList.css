@@ -2,3 +2,9 @@
 	width:40vw;
 	margin:auto auto;
 }
+
+@media screen and (max-width: 800px) {
+	.raceList{
+		width:100vw;
+	}
+}

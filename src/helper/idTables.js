@@ -4,6 +4,7 @@
 var categoryIDLookUp = {
   'Moon Lord': {
     'categoryID': 'zd3yzvn2',
+		'image': 'moonlord.png',
     'variables': {
       'Difficulty': {
         'id': 'p852qv8g',
@@ -32,6 +33,7 @@ var categoryIDLookUp = {
   },
   'All Bosses': {
 	  'categoryID': 'rklgo5wd',
+		'image':'Duke_Fishron.png',
 	  'variables': {
 	    'Difficulty': {
 	      'id': '38dq24n0',
@@ -60,6 +62,7 @@ var categoryIDLookUp = {
   },
   'All Pre-HM Bosses': {
 	  'categoryID': 'n2y1lve2',
+		'image':'wallofflesh.png',
 	  'variables': {
 	    'Difficulty': {
 	      'id': 'r8r2y5le',
@@ -88,6 +91,7 @@ var categoryIDLookUp = {
   },
   "Night's Edge": {
     'categoryID': '7kjr0gg2',
+		'image':'nightsedge.png',
 	  'variables': {
 	    'Difficulty': {
 	      'id': '5ly322n4',

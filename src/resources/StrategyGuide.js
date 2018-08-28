@@ -1,12 +1,13 @@
 import React, {Component} from 'react'
 import BackFrame from '../innerComponents/BackFrame'
 import {guideBody} from './guideBody'
+import './StrategyGuide.css';
 
 class StrategyGuide extends Component {
   render () {
     const guideInfo = guideBody[this.props.match.params.page]
     return (
-      <div>
+      <div className="guideBody">
         <h1>{guideInfo.title}</h1>
         <br />
         <p>
