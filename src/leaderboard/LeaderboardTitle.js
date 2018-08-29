@@ -6,6 +6,7 @@ import {categoryIDLookUp} from '../helper/idTables'
 class LeaderboardTitle extends Component {
   importAll (r) {
     let images = {}
+    // eslint-disable-next-line
     r.keys().map((item, index) => { images[item.replace('./', '')] = r(item) })
     return images
   }

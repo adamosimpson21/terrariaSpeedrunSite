@@ -5,3 +5,19 @@
 .profileIcons a{
     margin:auto;
 }
+
+.recentRunLink{
+    color:inherit;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 425px){
+    .profilePortrait{
+        display:none
+    }
+
+    .profileVideo{
+        width:100vw!important;
+        height:fit-content!important;
+    }
+}

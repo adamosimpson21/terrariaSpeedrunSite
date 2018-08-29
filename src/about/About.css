@@ -1,7 +1,6 @@
 .aboutBody{
 	width:50vw;
 	font-size:18px;
-	color:lightgray;
 }
 
 .aboutImage{
@@ -9,13 +8,14 @@
 }
 
 @media screen and (max-width: 800px) {
-	* {
+	h1{
 		font-size:14px;
 	}
 	.aboutBody{
-		width:auto;
-		margin-left:24px;
-		margin-right:24px;
+		width:75vw;
+		font-size:14px;
+		margin-left:28px;
+		margin-right:28px;
 	}
 	.aboutImage{
 		display:none;

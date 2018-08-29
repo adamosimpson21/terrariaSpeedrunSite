@@ -5,7 +5,6 @@ import { Grid, Row, Col } from 'react-flexbox-grid'
 
 class About extends Component {
   render () {
-    // TODO: Style Text, Center text, Expand on content, add pictures?
     return (
       <div className='aboutBody'>
         <Grid fluid>

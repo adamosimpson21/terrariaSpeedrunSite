@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
 import BackFrame from '../innerComponents/BackFrame';
 import {fetchErrorHandler, formattedDuration} from "../helper/helperfunctions";
-import {categoryIDLookUp} from '../helper/idTables';
 import Player from '../innerComponents/Player';
 import moment from 'moment';
+import ReactPlayer from 'react-player';
+import './Speedrun.css'
 
 class Speedrun extends Component {
   constructor (props){
@@ -22,36 +23,39 @@ class Speedrun extends Component {
       .then(fetchErrorHandler)
       .then(run => {
         this.setState({run:run.data});
-        console.log(run);
       })
   }
 
   render(){
     const {run} = this.state
-    if(Object.keys(run).length !== 0 ){
-      const difficulty = run.category.data.variables.data.forEach(variableObj => {
+    const terrariaID = "kdk4e21m"
+    if(Object.keys(run).length !== 0 && run.game===terrariaID){
+      const variableStrings = {}
+      run.category.data.variables.data.forEach(variableObj => {
         for(let property in run.values){
           if(property===variableObj.id){
-            //TODO: get category variables and values through embedding
-            // console.log("property is " + property + " variableObj name is " + variableObj.values.values["5lmo3ej1"].label)
+            variableStrings[variableObj.name] = variableObj.values.values[run.values[property]].label;
           }
         }
       })
       return(<div>
-        <p>category: {run.category.data.name}</p>
-        <p>date submitted is : {run.date}</p>
-        <p>game is : Terraria</p>
-        <p>runner is : <Player id={run.players[0].id}/></p>
-        <p>status is : {run.status.status}</p>
-        {run.status["verify-date"]&&<p>verified at : {moment(run.status["verify-date"]).format('MM-DD-YY')}</p>}
-        {run.status.examiner&&<p>examined by : <Player id={run.status.examiner}/></p>}
-        {/*<p>variables:{categoryIDLookUp.category.variables}</p>*/}
-        <p>time: {formattedDuration(run.times.primary)}</p>
-
+        <h2>{run.category.data.name}, {variableStrings.Difficulty}, {variableStrings.Seeds} in {variableStrings["Patch Used"]}</h2>
+        <h4>By:<Player id={run.players[0].id}/> ({variableStrings["# of Players"]}) in {formattedDuration(run.times.primary)}</h4>
+        <ReactPlayer className="speedrunVideo" url={run.videos.links[0].uri} playing controls width={720} height={480}/>
+        {run.comment&&<p className="commentBody">{run.comment}</p>}
+        <p>Submitted on {run.date}</p>
+        <p>Current status is {run.status.status}</p>
+        {run.status["verify-date"]&&<p>This run was verified on {moment(run.status["verify-date"]).format('MM-DD-YY')}{run.status.examiner&& <span> by <Player id={run.status.examiner}/></span>} </p>}
+        <p><a href={run.weblink}>Watch me on speedrun.com!</a></p>
+      </div>)
+    } else if(Object.keys(run).length !== 0 && run.game!==terrariaID) {
+      return (<div>
+        <p>This run does not appear to be a Terraria speedrun. It will not display correctly on this site. If you believe this is an error, please contact BandsWithLegends through discord</p>
       </div>)
     } else {
       return (<div>
         <p>Loading this run...</p>
+        <p>If this persists for more than 15 seconds, there has been an error fetching this speedrun.</p>
       </div>)
     }
   }

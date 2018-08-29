@@ -9,6 +9,7 @@ import Icon from '../innerComponents/Icon';
 import ReactPlayer from 'react-player';
 import { fetchErrorHandler } from '../helper/helperfunctions';
 import PlayerLinkIcon from "../innerComponents/PlayerLinkIcon";
+import {Link} from 'react-router-dom';
 
 class Profile extends Component{
 	constructor(props){
@@ -51,7 +52,6 @@ class Profile extends Component{
 		const {id} = this.props.match.params;
 		if(Object.keys(this.state.player).length !== 0 ){
 			const {player, recentRun} = this.state;
-			//TODO: add more user features and styles!
 			//TODO: add an individual's runs and some type of measurement system/score for ranking purposes
 			return(
 				<div className="profileBody">
@@ -62,10 +62,10 @@ class Profile extends Component{
                 {(player.location) && <p><Icon icon="airplane" /> Location: {player.location.country.names.international} </p>}
                 {(player.signup) && <p> Member of <a href={player.weblink}>speedrun.com</a> since {moment(player.signup).format('MM-DD-YY')} </p>}
                 {(Object.keys(this.state.recentRun).length !== 0) && <div>
-                  <p>My most recent speedrun: (includes non-Terraria games)</p><ReactPlayer url={recentRun.videos.links[0].uri} playing controls width={480} height={270}/>
+                  <p><Link className="recentRunLink" to={"/speedrun/" + recentRun.id}>My most recent speedrun: (includes non-Terraria games)</Link></p><ReactPlayer className="profileVideo" url={recentRun.videos.links[0].uri} playing controls width={480} height={270}/>
                 </div>}
               </Col>
-              <Col>
+              <Col className="profilePortrait">
                 <p>Extremely inaccurate portrait: </p><img className="portraitImage" src={GuideImage} alt="Terraria Guide" />
               </Col>
             </Row>

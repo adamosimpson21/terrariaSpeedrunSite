@@ -1,0 +1,14 @@
+.commentBody{
+    width:60vw;
+}
+
+.speedrunVideo{
+    margin:auto;
+}
+
+@media screen and (max-width:425px){
+    .speedrunVideo{
+        width:100vw!important;
+        height:fit-content!important;
+    }
+}

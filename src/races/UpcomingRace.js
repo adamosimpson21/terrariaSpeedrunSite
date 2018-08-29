@@ -10,12 +10,13 @@ class UpcomingRace extends Component{
 
   importAll (r) {
     let images = {}
+    // eslint-disable-next-line
     r.keys().map(item => { images[item.replace('./', '')] = r(item) })
     return images
   }
 
 	render(){
-		const {key, date, time, category, difficulty, seeded} = this.props;
+		const {date, time, category, difficulty, seeded} = this.props;
     const images = this.importAll(require.context('../img', false, /\.(png|jpe?g|svg)$/))
 		const twitchLink = "https://twitch.tv/BandsWithLegends"
 		// TODO: style components
