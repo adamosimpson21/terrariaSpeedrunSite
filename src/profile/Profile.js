@@ -42,18 +42,14 @@ class Profile extends Component{
       })
   }
 
+  //TODO: load runners personal bests and calculate a 'score'
   loadPBs(id){
 	  return true;
   }
+
 	render(){
 		const {id} = this.props.match.params;
-		if(Object.keys(this.state.player).length === 0 ){
-			return(
-				<div>
-					<Player id={id}/>
-				</div>
-			)
-		} else {
+		if(Object.keys(this.state.player).length !== 0 ){
 			const {player, recentRun} = this.state;
 			//TODO: add more user features and styles!
 			//TODO: add an individual's runs and some type of measurement system/score for ranking purposes
@@ -81,8 +77,15 @@ class Profile extends Component{
           </Grid>
 				</div>
 			)
-		}		
-	}
+		}	else {
+      return(
+        <div>
+          <Player id={id}/>
+					<p>Loading player data...</p>
+        </div>
+      )
+    }
+  }
 }
 
 export default BackFrame(Profile)

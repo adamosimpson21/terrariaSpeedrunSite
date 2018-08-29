@@ -11,6 +11,11 @@
 	     -o-transform: skewX(-40deg);
 }
 
+.linkToSpeedrun{
+	text-decoration: none;
+	color:inherit;
+}
+
 .innerSpan{
 	-webkit-transform: skewX(40deg);
 	   -moz-transform: skewX(40deg);

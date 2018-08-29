@@ -12,6 +12,7 @@ import Tools from './resources/Tools'
 import Category from './resources/Category'
 import StrategyGuide from './resources/StrategyGuide'
 import Seeds from './resources/Seeds'
+import Speedrun from './speedrun/Speedrun';
 import './App.css'
 
 const App = () => (
@@ -30,6 +31,7 @@ const App = () => (
         <Route path='/category' component={Category} />
         <Route path='/strategyguide/:page' component={StrategyGuide} />
         <Route path='/seeds' component={Seeds} />
+        <Route path='/speedrun/:id' component={Speedrun} />
       </div>
     </Router>
 

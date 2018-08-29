@@ -55,13 +55,15 @@ class RunList extends Component {
 	    .then(data => {
 	     	let runs = data.data.runs
 	     	this.setState({runs})
+        console.log(runs);
 	    })
   }
 
   render () {
     const allRuns = this.state.runs.map((run, index) => (
       <RunDescription
-        key={index}
+        key={run.run.id}
+        id={run.run.id}
         place={index + 1}
         runner={run.run.players[0].id}
         date={moment(run.run.submitted).format('MM-DD-YY')}
