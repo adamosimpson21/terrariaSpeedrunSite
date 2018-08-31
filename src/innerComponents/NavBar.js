@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './NavBar.css';
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Icon from '../innerComponents/Icon';
 import ResponsiveMenu from 'react-responsive-navbar';
 
@@ -21,14 +21,14 @@ class NavBar extends Component{
           <header>
             <div className="fullNavbar">
               <h2>
-                <li><Link to="/">Home</Link></li>
+                <NavLink to="/"><li>Home</li></NavLink>
               </h2>
               <nav>
-                <li><Link to="/leaderboard">Leaderboard</Link></li>
-                <li><Link to="/discord">Discord</Link></li>
-                <li><Link to="/races">Races</Link></li>
-                <li><Link to="/resources">Resources</Link></li>
-                <li><Link to="/about">About</Link></li>
+                <NavLink activeClassName="activeNavLink" to="/leaderboard"><li>Leaderboard</li></NavLink>
+                <NavLink activeClassName="activeNavLink" to="/discord"><li>Discord</li></NavLink>
+                <NavLink activeClassName="activeNavLink" to="/races"><li>Races</li></NavLink>
+                <NavLink activeClassName="activeNavLink" to="/resources"><li>Resources</li></NavLink>
+                <NavLink activeClassName="activeNavLink" to="/about"><li>About</li></NavLink>
               </nav>
             </div>
           </header>

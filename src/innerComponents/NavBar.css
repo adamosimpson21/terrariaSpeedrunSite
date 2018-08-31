@@ -8,6 +8,11 @@ header {
   opacity: 0.75
 }
 
+.activeNavLink li{
+    background: url("../img/FavoriteBanner.png") round;
+    background-size:cover;
+}
+
 .fullNavbar{
   display:contents;
 }
@@ -20,9 +25,14 @@ header {
     padding:8px;
 }
 
-.smallMenu header{
-    padding: 20px 0 0 0;
+.smallMenu .headerCloseButton{
+    padding-top:20px;
 }
+
+.headerCloseButton{
+    margin-bottom:0;
+}
+
 
 .navbarAccess{
   background-color: #2c3e50;
