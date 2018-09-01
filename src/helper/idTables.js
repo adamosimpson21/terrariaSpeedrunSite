@@ -85,7 +85,7 @@ var categoryIDLookUp = {
   'Duke Fishron':{
     'type' : 'level',
     'id' : 'rdq0rygw',
-    'image':'Duke_Fishron.png'
+    'image':'dukefishron.png'
   },
   'Goblin Invasion':{
     'type' : 'level',
