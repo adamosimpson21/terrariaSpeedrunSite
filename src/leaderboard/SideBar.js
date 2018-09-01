@@ -2,9 +2,14 @@ import React, {Component} from 'react'
 import './SideBar.css'
 import Button from '../innerComponents/Button'
 import BackFrame from '../innerComponents/BackFrame'
+import {categoryIDLookUp} from '../helper/idTables';
 
 class SideBar extends Component {
   render () {
+    const categoryButtons = []
+    for(let boss in categoryIDLookUp){
+      categoryButtons.push(<Button label={boss} handleClick={(e) => this.props.handler(e, boss)} />)
+    }
     return (
       <div className='sideBar'>
         <br />
@@ -16,10 +21,7 @@ class SideBar extends Component {
         <Button label='Random' handleClick={(e) => this.props.handler(e, 'Random')} />
         <br />
         <br />
-        <Button label='Moon Lord' handleClick={(e) => this.props.handler(e, 'Moon Lord')} />
-        <Button label='All Bosses' handleClick={(e) => this.props.handler(e, 'All Bosses')} />
-        <Button label="Night's Edge" handleClick={(e) => this.props.handler(e, "Night's Edge")} />
-        <Button label='All Pre-HM Bosses' handleClick={(e) => this.props.handler(e, 'All Pre-HM Bosses')} />
+        {categoryButtons}
       </div>
     )
   }

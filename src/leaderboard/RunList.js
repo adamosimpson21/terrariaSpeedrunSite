@@ -1,8 +1,8 @@
 import React, {Component} from 'react'
 import './RunList.css'
-import {categoryIDLookUp} from '../helper/idTables.js'
+import {categoryIDLookUp, variableIDLookUp} from '../helper/idTables.js'
 import RunDescription from './RunDescription'
-import {formattedDuration, buildURL} from '../helper/helperfunctions'
+import {formattedDuration, buildURL, fetchErrorHandler} from '../helper/helperfunctions'
 import BackFrame from '../innerComponents/BackFrame'
 import moment from 'moment'
 
@@ -15,47 +15,31 @@ class RunList extends Component {
   }
 
   	componentDidMount () {
-    	this.loadRuns(this.props.category, this.props.diff, this.props.seed, categoryIDLookUp[this.props.category].variables['Patch Used']['1.3.5'])
+    	this.loadRuns(this.props.category, this.props.diff, this.props.seed, variableIDLookUp['Patch Used']['1.3.5'])
   	}
 
   // When the handler changes the state, make a new API call
   	componentDidUpdate (prevProps) {
   	// prevent infinite loops of updating
   		if (this.props !== prevProps) {
-	    	this.loadRuns(this.props.category, this.props.diff, this.props.seed, categoryIDLookUp[this.props.category].variables['Patch Used']['1.3.5'])
+	    	this.loadRuns(this.props.category, this.props.diff, this.props.seed, variableIDLookUp['Patch Used']['1.3.5'])
 	  	}
   	}
 
   	loadRuns (category, difficulty, seed, version) {
-    var varObj = {}
+    let varObj = {}
 
-    var categoryVariables = categoryIDLookUp[category].variables
-
-    varObj[categoryVariables.Difficulty.id] = categoryVariables.Difficulty[difficulty]
-    varObj[categoryVariables.Seeds.id] = categoryVariables.Seeds[seed]
-    varObj[categoryVariables['# of Players'].id] = categoryVariables['# of Players']['1 Player']
-    varObj[categoryVariables['Patch Used'].id] = categoryVariables['Patch Used']['1.3.5']
+    varObj[variableIDLookUp.Difficulty.id] = variableIDLookUp.Difficulty[difficulty]
+    varObj[variableIDLookUp.Seeds.id] = variableIDLookUp.Seeds[seed]
+    varObj[variableIDLookUp['# of Players'].id] = variableIDLookUp['# of Players']['1 Player']
+    varObj[variableIDLookUp['Patch Used'].id] = variableIDLookUp['Patch Used']['1.3.5']
 
     // fetching using the full URL, currently can vary by difficulty, seed, and category
-    fetch(buildURL(categoryIDLookUp[category].categoryID, varObj))
-	    .then(resp => {
-        if (!resp.ok) {
-          if (resp.status >= 400 && resp.status < 500) {
-            return resp.json().then(data => {
-              let err = {errorMessage: data.message}
-              throw err
-            })
-          } else {
-            let err = {errorMessage: 'Please try again later. Server down'}
-            throw err
-          }
-        }
-	    	return resp.json()
-	    })
+    fetch(buildURL(category, varObj))
+	    .then(fetchErrorHandler)
 	    .then(data => {
 	     	let runs = data.data.runs
 	     	this.setState({runs})
-        console.log(runs);
 	    })
   }
 

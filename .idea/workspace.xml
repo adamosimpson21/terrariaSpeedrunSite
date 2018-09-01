@@ -2,8 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99f1ee01-c855-4763-a826-d4655a557187" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/innerComponents/NavBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/innerComponents/NavBar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/innerComponents/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/innerComponents/NavBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helper/helperfunctions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/helper/helperfunctions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helper/idTables.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/helper/idTables.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/Placed_Calamity_Trophies.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/brainofcthulu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/eyeofcthulu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/grassground.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/sky.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/terrariaNPCs.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/theGuide.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leaderboard/Leaderboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/leaderboard/Leaderboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leaderboard/RunDescription.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/leaderboard/RunDescription.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leaderboard/RunList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/leaderboard/RunList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leaderboard/SideBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/leaderboard/SideBar.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -31,7 +43,7 @@
           <entry key="css" value="31" />
           <entry key="gitignore" value="1" />
           <entry key="html" value="2" />
-          <entry key="js" value="72" />
+          <entry key="js" value="78" />
           <entry key="json" value="2" />
           <entry key="png" value="2" />
           <entry key="rnc" value="2" />
@@ -43,7 +55,7 @@
           <entry key="HTML" value="2" />
           <entry key="Image" value="2" />
           <entry key="JSON" value="2" />
-          <entry key="JavaScript" value="72" />
+          <entry key="JavaScript" value="78" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="RNG Compact" value="2" />
         </counts>
@@ -53,7 +65,7 @@
           <entry key="css" value="2815" />
           <entry key="gitignore" value="20" />
           <entry key="html" value="5" />
-          <entry key="js" value="10460" />
+          <entry key="js" value="11839" />
           <entry key="json" value="1" />
           <entry key="txt" value="130" />
         </counts>
@@ -63,7 +75,7 @@
           <entry key="CSS" value="2815" />
           <entry key="HTML" value="5" />
           <entry key="JSON" value="1" />
-          <entry key="JavaScript" value="10460" />
+          <entry key="JavaScript" value="11839" />
           <entry key="PLAIN_TEXT" value="150" />
         </counts>
       </usages-collector>
@@ -75,8 +87,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/races/UpcomingRace.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+            <state relative-caret-position="506">
+              <caret line="22" column="79" lean-forward="true" selection-start-line="22" selection-start-column="79" selection-end-line="22" selection-end-column="79" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -85,88 +97,46 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/innerComponents/NavBar.js">
+        <entry file="file://$PROJECT_DIR$/src/leaderboard/Leaderboard.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="23" column="55" lean-forward="true" selection-start-line="23" selection-start-column="55" selection-end-line="23" selection-end-column="55" />
+            <state relative-caret-position="-184">
+              <caret line="31" column="54" selection-start-line="31" selection-start-column="54" selection-end-line="31" selection-end-column="54" />
               <folding>
-                <element signature="e#0#39#0" expanded="true" />
+                <element signature="e#0#40#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/helper/helperfunctions.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="368">
+              <caret line="28" column="3" lean-forward="true" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/innerComponents/NavBar.css">
+        <entry file="file://$PROJECT_DIR$/src/helper/idTables.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+            <state relative-caret-position="2691">
+              <caret line="117" column="14" selection-start-line="117" selection-start-column="14" selection-end-line="117" selection-end-column="14" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/leaderboard/LeaderboardTitle.js">
+        <entry file="file://$PROJECT_DIR$/src/leaderboard/RunList.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+            <state relative-caret-position="368">
+              <caret line="37" column="27" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/races/Races.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="1" column="33" selection-start-line="1" selection-start-column="33" selection-end-line="1" selection-end-column="33" />
-              <folding>
-                <element signature="e#0#38#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/speedrun/Speedrun.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-598">
-              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/speedrun/Speedrun.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="8" column="5" selection-start-line="8" selection-end-line="13" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/profile/Profile.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="64" column="187" selection-start-line="64" selection-start-column="175" selection-end-line="64" selection-end-column="187" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/profile/Profile.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -176,6 +146,9 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>HEAD</find>
+      <find>Normal</find>
+      <find>categoryID</find>
+      <find>categoryIDLookUp</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -199,8 +172,6 @@
         <option value="$PROJECT_DIR$/src/discord/Discord.js" />
         <option value="$PROJECT_DIR$/src/discord/Discord.css" />
         <option value="$PROJECT_DIR$/src/innerComponents/Button.css" />
-        <option value="$PROJECT_DIR$/src/helper/idTables.js" />
-        <option value="$PROJECT_DIR$/src/helper/helperfunctions.js" />
         <option value="$PROJECT_DIR$/src/races/RaceList.js" />
         <option value="$PROJECT_DIR$/src/races/RaceRules.js" />
         <option value="$PROJECT_DIR$/src/races/RaceRules.css" />
@@ -210,8 +181,6 @@
         <option value="$PROJECT_DIR$/src/resources/StrategyGuide.css" />
         <option value="$PROJECT_DIR$/src/races/RaceList.css" />
         <option value="$PROJECT_DIR$/src/App.js" />
-        <option value="$PROJECT_DIR$/src/leaderboard/RunList.js" />
-        <option value="$PROJECT_DIR$/src/leaderboard/RunDescription.js" />
         <option value="$PROJECT_DIR$/src/leaderboard/RunDescription.css" />
         <option value="$PROJECT_DIR$/src/speedrun/Speedrun.js" />
         <option value="$PROJECT_DIR$/src/about/About.js" />
@@ -225,6 +194,12 @@
         <option value="$PROJECT_DIR$/src/races/UpcomingRace.js" />
         <option value="$PROJECT_DIR$/src/innerComponents/NavBar.js" />
         <option value="$PROJECT_DIR$/src/innerComponents/NavBar.css" />
+        <option value="$PROJECT_DIR$/src/leaderboard/RunDescription.js" />
+        <option value="$PROJECT_DIR$/src/leaderboard/SideBar.js" />
+        <option value="$PROJECT_DIR$/src/leaderboard/Leaderboard.js" />
+        <option value="$PROJECT_DIR$/src/leaderboard/RunList.js" />
+        <option value="$PROJECT_DIR$/src/helper/helperfunctions.js" />
+        <option value="$PROJECT_DIR$/src/helper/idTables.js" />
       </list>
     </option>
   </component>
@@ -276,37 +251,7 @@
               <item name="terrariaSpeedruns" type="b2602c69:ProjectViewProjectNode" />
               <item name="terrariaSpeedruns" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="about" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="terrariaSpeedruns" type="b2602c69:ProjectViewProjectNode" />
-              <item name="terrariaSpeedruns" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="helper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="terrariaSpeedruns" type="b2602c69:ProjectViewProjectNode" />
-              <item name="terrariaSpeedruns" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="terrariaSpeedruns" type="b2602c69:ProjectViewProjectNode" />
-              <item name="terrariaSpeedruns" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="innerComponents" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="terrariaSpeedruns" type="b2602c69:ProjectViewProjectNode" />
-              <item name="terrariaSpeedruns" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="leaderboard" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="terrariaSpeedruns" type="b2602c69:ProjectViewProjectNode" />
-              <item name="terrariaSpeedruns" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="races" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -348,7 +293,7 @@
       <workItem from="1535156806566" duration="24165000" />
       <workItem from="1535247387270" duration="15245000" />
       <workItem from="1535443292539" duration="9757000" />
-      <workItem from="1535526602420" duration="19354000" />
+      <workItem from="1535526602420" duration="31214000" />
     </task>
     <task id="LOCAL-00001" summary="Profile features expanded. Included Embedded Video, site links, colored name, layout styles.">
       <created>1535180171220</created>
@@ -368,22 +313,21 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68521000" />
+    <option name="totallyTimeSpent" value="80381000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1873" height="1096" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.13678475" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.13678475" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="0" sideWeight="0.49863315" visible="true" weight="0.33544305" />
+      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49863315" visible="true" weight="0.08122363" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.50136685" side_tool="true" weight="0.335845" />
       <window_info anchor="bottom" id="Version Control" order="2" sideWeight="0.49917987" weight="0.32938644" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="4" />
-      <window_info anchor="bottom" id="Find" order="5" />
+      <window_info anchor="bottom" id="Find" order="5" weight="0.2078059" />
       <window_info anchor="bottom" id="Run" order="6" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
@@ -432,13 +376,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Profile features expanded. Included Embedded Video, site links, colored name, layout styles." />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/leaderboard/LeaderboardTitle.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -498,7 +435,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/resources/Resources.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-540" />
+        <state relative-caret-position="-540">
+          <folding>
+            <element signature="e#1#39#0" expanded="true" />
+            <element signature="e#239#285#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
@@ -537,19 +479,18 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/innerComponents/Button.js">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/innerComponents/Button.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
           <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/leaderboard/Leaderboard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-598">
-          <caret line="5" column="35" lean-forward="true" selection-start-line="4" selection-start-column="31" selection-end-line="5" selection-end-column="51" />
         </state>
       </provider>
     </entry>
@@ -643,44 +584,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/leaderboard/RunList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="68" column="57" selection-start-line="68" selection-start-column="14" selection-end-line="68" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/helper/helperfunctions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="713">
-          <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/leaderboard/RunDescription.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="32" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/block.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="7" column="18" lean-forward="true" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/helper/idTables.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2277">
-          <caret line="6" column="28" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="28" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -744,20 +651,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/img/FavoriteBanner.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/profile/Profile.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
           <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/leaderboard/LeaderboardTitle.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -771,33 +671,94 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/races/UpcomingRace.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/img/FavoriteBanner.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/innerComponents/NavBar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="23" column="55" lean-forward="true" selection-start-line="23" selection-start-column="55" selection-end-line="23" selection-end-column="55" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/innerComponents/NavBar.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
           <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/innerComponents/NavBar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="23" column="55" selection-start-line="23" selection-start-column="55" selection-end-line="23" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/races/UpcomingRace.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="22" column="79" lean-forward="true" selection-start-line="22" selection-start-column="79" selection-end-line="22" selection-end-column="79" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/leaderboard/LeaderboardTitle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-69">
+          <caret line="3" column="24" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/leaderboard/RunDescription.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="12" column="39" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/leaderboard/SideBar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/leaderboard/RunList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="37" column="27" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/helper/helperfunctions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="28" column="3" lean-forward="true" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/leaderboard/Leaderboard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-184">
+          <caret line="31" column="54" selection-start-line="31" selection-start-column="54" selection-end-line="31" selection-end-column="54" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/helper/idTables.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2691">
+          <caret line="117" column="14" selection-start-line="117" selection-start-column="14" selection-end-line="117" selection-end-column="14" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

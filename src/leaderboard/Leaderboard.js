@@ -4,6 +4,7 @@ import LeaderboardTitle from './LeaderboardTitle'
 import RunList from './RunList'
 import SideBar from './SideBar'
 import { Grid, Row, Col } from 'react-flexbox-grid'
+import {categoryIDLookUp} from "../helper/idTables";
 
 class Leaderboard extends Component {
   constructor (props) {
@@ -28,7 +29,7 @@ class Leaderboard extends Component {
       this.setState({
         seed: variable
       })
-    } else if (variable === 'Moon Lord' || variable === "Night's Edge" || variable === 'All Bosses' || variable === 'All Pre-HM Bosses') {
+    } else if (categoryIDLookUp.hasOwnProperty(variable)) {
       this.setState({
         category: variable
       })

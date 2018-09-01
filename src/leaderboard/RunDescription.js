@@ -10,7 +10,7 @@ class RunDescription extends Component {
       <div className='runDescription'>
         <div className='innerSpan'>
           <span className='runDescriptionPlace'>{place}. </span>
-          <span><Player id={runner} /></span>
+          <span><Player id={runner} /> </span>
           <Link className="linkToSpeedrun" to={'/speedrun/' + id}>
             <span>{time} </span>
             <span>{date} </span>
