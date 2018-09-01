@@ -1,0 +1,10 @@
+.variableButton.active{
+    color:red;
+}
+
+.bossBar button{
+    width:inherit;
+    margin-left:10px;
+    margin-top:4px;
+    margin-bottom:4px;
+}

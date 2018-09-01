@@ -2,12 +2,18 @@
 	color:#ccc;
 }
 
-
 .leaderboardTitle h3 {
   font-size: 2em;
 }
 
-
 .categoryTitleImage{
 	height:60px;
-} 
+}
+
+.titleVariableDisplay{
+	font-size:1.5em;
+}
+
+.titleCategoryDisplay{
+	font-size:3.5em;
+}

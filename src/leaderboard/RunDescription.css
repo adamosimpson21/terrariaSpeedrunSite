@@ -1,5 +1,5 @@
 .runDescription{
-	width: 55%;
+	width: 65%;
 	min-width:450px;
 	font-size:1.4em;
 	color:black;
@@ -9,6 +9,17 @@
 	-webkit-transform: skewX(-40deg);
 	   -moz-transform: skewX(-40deg);
 	     -o-transform: skewX(-40deg);
+}
+
+.playerDisplay2{
+	display:inline-flex;
+	min-width:240px;
+}
+
+.timeDisplay{
+	display:inline-flex;
+	margin-right:12px;
+	min-width:120px;
 }
 
 .linkToSpeedrun{
@@ -32,6 +43,17 @@
 
 .runDescription:nth-child(3) .runDescriptionPlace{
 	color:orange;
+}
+
+@media screen and (max-width: 1000px) {
+	.playerDisplay2{
+		min-width:0;
+	}
+
+	.timeDisplay{
+		min-width:0;
+		margin-left:12px;
+	}
 }
 
 @media screen and (max-width:800px) {

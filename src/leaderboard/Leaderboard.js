@@ -3,6 +3,7 @@ import './Leaderboard.css'
 import LeaderboardTitle from './LeaderboardTitle'
 import RunList from './RunList'
 import SideBar from './SideBar'
+import BossBar from './BossBar'
 import { Grid, Row, Col } from 'react-flexbox-grid'
 import {categoryIDLookUp} from "../helper/idTables";
 
@@ -50,6 +51,9 @@ class Leaderboard extends Component {
               <br />
               <RunList category={this.state.category} diff={this.state.diff} seed={this.state.seed} />
             </Col>
+          </Row>
+          <Row>
+            <BossBar handler={this.handler}/>
           </Row>
         </Grid>
       </div>

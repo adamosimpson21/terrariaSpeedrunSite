@@ -7,9 +7,9 @@ class Player extends Component {
   render () {
     const {id} = this.props
     return (
-      <span className='playerDisplay'>
+      <div className='playerDisplay'>
         <Link className='playerLink' to={'/profile/' + id}>{runnerIdToNames[id]}</Link>
-      </span>
+      </div>
     )
   }
 }
