@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import './RunList.css'
-import {categoryIDLookUp, variableIDLookUp} from '../helper/idTables.js'
+import {variableIDLookUp} from '../helper/idTables.js'
 import RunDescription from './RunDescription'
 import {formattedDuration, buildURL, fetchErrorHandler} from '../helper/helperfunctions'
 import BackFrame from '../innerComponents/BackFrame'
