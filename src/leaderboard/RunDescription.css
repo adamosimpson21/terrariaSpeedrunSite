@@ -16,6 +16,10 @@
 	min-width:240px;
 }
 
+.Player2Display{
+	padding-left:8px;
+}
+
 .timeDisplay{
 	display:inline-flex;
 	margin-right:12px;

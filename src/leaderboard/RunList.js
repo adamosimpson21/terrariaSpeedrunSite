@@ -15,23 +15,23 @@ class RunList extends Component {
   }
 
   	componentDidMount () {
-    	this.loadRuns(this.props.category, this.props.diff, this.props.seed, variableIDLookUp['Patch Used']['1.3.5'])
+    	this.loadRuns(this.props.category, this.props.diff, this.props.seed, this.props.numPlayers, variableIDLookUp['Patch Used']['1.3.5'])
   	}
 
   // When the handler changes the state, make a new API call
   	componentDidUpdate (prevProps) {
   	// prevent infinite loops of updating
   		if (this.props !== prevProps) {
-	    	this.loadRuns(this.props.category, this.props.diff, this.props.seed, variableIDLookUp['Patch Used']['1.3.5'])
+	    	this.loadRuns(this.props.category, this.props.diff, this.props.seed, this.props.numPlayers, variableIDLookUp['Patch Used']['1.3.5'])
 	  	}
   	}
 
-  	loadRuns (category, difficulty, seed, version) {
+  	loadRuns (category, difficulty, seed, numPlayers ,version) {
     let varObj = {}
 
     varObj[variableIDLookUp.Difficulty.id] = variableIDLookUp.Difficulty[difficulty]
     varObj[variableIDLookUp.Seeds.id] = variableIDLookUp.Seeds[seed]
-    varObj[variableIDLookUp['# of Players'].id] = variableIDLookUp['# of Players']['1 Player']
+    varObj[variableIDLookUp['# of Players'].id] = variableIDLookUp['# of Players'][numPlayers]
     varObj[variableIDLookUp['Patch Used'].id] = variableIDLookUp['Patch Used']['1.3.5']
 
     // fetching using the full URL, currently can vary by difficulty, seed, and category
@@ -49,7 +49,8 @@ class RunList extends Component {
         key={run.run.id}
         id={run.run.id}
         place={index + 1}
-        runner={run.run.players[0].id}
+        // runner={run.run.players[0].id}
+        runner={run.run.players}
         date={moment(run.run.submitted).format('MM-DD-YY')}
         time={formattedDuration(run.run.times.primary)}
       />

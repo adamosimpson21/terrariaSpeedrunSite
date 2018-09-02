@@ -28,8 +28,8 @@ export function buildURL(category, variablesObj){
     variablesString += `var-${key}=${variablesObj[key]}&`;
   }
   if(categoryIDLookUp[category].type==='level'){
-    return `${baseURL}level/${categoryIDLookUp[category].id}/vdo4e5o2?${variablesString}embed=players,variables`
+    return `${baseURL}level/${categoryIDLookUp[category].id}/vdo4e5o2?${variablesString}`
   } else {
-    return `${baseURL}category/${categoryIDLookUp[category].id}?${variablesString}embed=players,variables`
+    return `${baseURL}category/${categoryIDLookUp[category].id}?${variablesString}`
   }
 }

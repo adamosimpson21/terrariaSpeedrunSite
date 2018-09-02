@@ -12,7 +12,7 @@ class LeaderboardTitle extends Component {
   }
 
   render () {
-    const {category, diff, seed} = this.props
+    const {category, diff, seed, numPlayers} = this.props
     const images = this.importAll(require.context('../img', false, /\.(png|jpe?g|svg)$/))
     return (
       <div className='leaderboardTitle'>
@@ -21,7 +21,7 @@ class LeaderboardTitle extends Component {
             <img className='categoryTitleImage' src={images[categoryIDLookUp[category].image]} alt='category' />
             {category}
             <img className='categoryTitleImage' src={images[categoryIDLookUp[category].image]} alt='category' /></div><br/>
-          <div className="titleVariableDisplay">{diff}, {seed}</div>
+          <div className="titleVariableDisplay">{diff}, {seed}, {numPlayers}</div>
         </div>
         <p>Here you can find all of the approved runs of the game.  See a category you enjoy?  Try running it yourself!  You never know until you try!</p>
       </div>

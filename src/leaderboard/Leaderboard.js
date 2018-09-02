@@ -13,7 +13,8 @@ class Leaderboard extends Component {
     this.state = {
       category: "Night's Edge",
       diff: 'Normal',
-      seed: 'Random'
+      seed: 'Random',
+      numPlayers: '1 Player'
     }
 
     this.handler = this.handler.bind(this)
@@ -29,6 +30,10 @@ class Leaderboard extends Component {
     } else if (variable === 'Random' || variable === 'Seeded') {
       this.setState({
         seed: variable
+      })
+    } else if (variable === '1 Player' || variable === '2 Players') {
+      this.setState({
+        numPlayers: variable
       })
     } else if (categoryIDLookUp.hasOwnProperty(variable)) {
       this.setState({
@@ -47,9 +52,9 @@ class Leaderboard extends Component {
               <SideBar handler={this.handler} />
             </Col>
             <Col md={10}>
-              <LeaderboardTitle category={this.state.category} diff={this.state.diff} seed={this.state.seed} />
+              <LeaderboardTitle category={this.state.category} diff={this.state.diff} seed={this.state.seed} numPlayers={this.state.numPlayers} />
               <br />
-              <RunList category={this.state.category} diff={this.state.diff} seed={this.state.seed} />
+              <RunList category={this.state.category} diff={this.state.diff} seed={this.state.seed} numPlayers={this.state.numPlayers} />
             </Col>
           </Row>
           <Row>

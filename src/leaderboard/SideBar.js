@@ -16,6 +16,8 @@ class SideBar extends Component {
         <Button label='Random' handleClick={(e) => this.props.handler(e, 'Random')} />
         <br />
         <br />
+        <Button label='1 Player' handleClick={(e) => this.props.handler(e, '1 Player')} />
+        <Button label='2 Player' handleClick={(e) => this.props.handler(e, '2 Players')} />
       </div>
     )
   }
