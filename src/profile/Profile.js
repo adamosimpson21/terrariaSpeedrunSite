@@ -58,7 +58,7 @@ class Profile extends Component{
           <Grid fluid>
             <Row>
               <Col>
-                <h1 style={{color:player["name-style"]["color-to"].light}}><Player id={id}/></h1>
+                <h1 style={{color:player["name-style"]["color-to"].light}} className="profilePlayerName"><Player id={id}/></h1>
                 {(player.location) && <p><Icon icon="airplane" /> Location: {player.location.country.names.international} </p>}
                 {(player.signup) && <p> Member of <a href={player.weblink}>speedrun.com</a> since {moment(player.signup).format('MM-DD-YY')} </p>}
                 {(Object.keys(this.state.recentRun).length !== 0) && <div>

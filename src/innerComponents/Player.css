@@ -1,11 +1,14 @@
 .playerLink:link, .playerLink:visited{
+	transition: text-shadow 0.2s ease-in;
 	text-decoration:none;
 	color:inherit;
 }
 
 .playerLink:hover{
-	text-decoration: underline;
-	color:blue;
+	text-decoration: none;
+	color:inherit;
+	text-shadow: 0 0 15px #FFFFFF;
+	transform: scale(1.05);
 }
 
 .playerDisplay{

@@ -1,10 +1,15 @@
 .buttonHOC{
-	background: linear-gradient(to bottom right, #ddd, #aaa);
+	background: linear-gradient(to bottom right, #6d99f8, #4b58f4);
 	width:45%;
 	min-width:90px;
-	background-color:lightblue;
+	border: 2px solid #5162f6;
+	color:#ddd;
+	text-shadow: 3px 1px 1px rgba(100, 100, 100, 0.8);
+	padding: 2px 6px 2px 6px;
+	border-radius:12px;
 	font-size:20px;
 	margin:3px;
+	cursor: pointer;
 }
 
 @media screen and (max-width: 800px) {

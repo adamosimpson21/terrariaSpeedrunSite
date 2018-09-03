@@ -40,9 +40,9 @@ class Speedrun extends Component {
       })
       return(<div>
         <h2>{run.category.data.name}, {variableStrings.Difficulty}, {variableStrings.Seeds} in {variableStrings["Patch Used"]}</h2>
-        <h4>By:<Player id={run.players[0].id}/> ({variableStrings["# of Players"]}) in {formattedDuration(run.times.primary)}</h4>
+        <h4>By:<Player id={run.players[0].id}/> {run.players[1]&&<span> and <Player id={run.players[1].id}/> </span>}({variableStrings["# of Players"]}) in {formattedDuration(run.times.primary)}</h4>
         <ReactPlayer className="speedrunVideo" url={run.videos.links[0].uri} playing controls width={720} height={480}/>
-        {run.comment&&<p className="commentBody">{run.comment}</p>}
+        {run.comment&&<p className="commentBody">Comment: {run.comment}</p>}
         <p>Submitted on {run.date}</p>
         <p>Current status is {run.status.status}</p>
         {run.status["verify-date"]&&<p>This run was verified on {moment(run.status["verify-date"]).format('MM-DD-YY')}{run.status.examiner&& <span> by <Player id={run.status.examiner}/></span>} </p>}

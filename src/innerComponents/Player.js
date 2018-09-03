@@ -6,11 +6,20 @@ import './Player.css'
 class Player extends Component {
   render () {
     const {id} = this.props
-    return (
-      <div className='playerDisplay'>
-        <Link className='playerLink' to={'/profile/' + id}>{runnerIdToNames[id]}</Link>
-      </div>
-    )
+    if(id){
+      return (
+        <div className='playerDisplay'>
+          <Link className='playerLink' to={'/profile/' + id}>{runnerIdToNames[id]}</Link>
+        </div>
+      )
+    } else {
+      return (
+        <div className='playerDisplay'>
+          <span className='playerLink'>Guest</span>
+        </div>
+      )
+    }
+
   }
 }
 

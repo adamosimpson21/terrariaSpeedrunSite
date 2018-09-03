@@ -3,6 +3,7 @@
 	border: 2px solid darkgray;
 	border-radius:10px;
 	display:inline-flex;
+	padding:8px;
 }
 
 @media screen and (max-width: 420px) {

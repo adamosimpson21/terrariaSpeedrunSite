@@ -21,7 +21,7 @@ class NavBar extends Component{
           <header>
             <div className="fullNavbar">
               <h2>
-                <NavLink to="/"><li>Home</li></NavLink>
+                <NavLink to="/leaderboard"><li>Home</li></NavLink>
               </h2>
               <nav>
                 <NavLink activeClassName="activeNavLink" to="/leaderboard"><li>Leaderboard</li></NavLink>

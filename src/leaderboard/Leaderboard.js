@@ -11,9 +11,9 @@ class Leaderboard extends Component {
   constructor (props) {
     super(props)
     this.state = {
-      category: "Night's Edge",
+      category: "Moon Lord",
       diff: 'Normal',
-      seed: 'Random',
+      seed: 'Seeded',
       numPlayers: '1 Player'
     }
 

@@ -28,7 +28,12 @@ export function buildURL(category, variablesObj){
     variablesString += `var-${key}=${variablesObj[key]}&`;
   }
   if(categoryIDLookUp[category].type==='level'){
-    return `${baseURL}level/${categoryIDLookUp[category].id}/vdo4e5o2?${variablesString}`
+    //checks number of players for levels
+    if (variablesObj["ylpzvk8g"]==="21g9exxq") {
+      return `${baseURL}level/${categoryIDLookUp[category].id}/vdo4e5o2?${variablesString}`
+    } else {
+      return `${baseURL}level/${categoryIDLookUp[category].id}/wkpyw5vk?${variablesString}`
+    }
   } else {
     return `${baseURL}category/${categoryIDLookUp[category].id}?${variablesString}`
   }

@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom'
 import Leaderboard from './leaderboard/Leaderboard'
 import Discord from './discord/Discord'
 import Resources from './resources/Resources'
@@ -20,7 +20,7 @@ const App = () => (
     <Router>
       <div className='App'>
         <NavBar />
-        <Route exact path='/' component={Leaderboard} />
+        <Redirect from="/" to="/leaderboard" />
         <Route path='/leaderboard' component={Leaderboard} />
         <Route path='/discord' component={Discord} />
         <Route path='/races' component={Races} />
@@ -34,8 +34,6 @@ const App = () => (
         <Route path='/speedrun/:id' component={Speedrun} />
       </div>
     </Router>
-
-    {/* Don't forget your error handling! */}
   </ErrorBoundary>
 )
 
