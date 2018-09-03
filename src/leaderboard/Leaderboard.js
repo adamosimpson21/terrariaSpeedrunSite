@@ -43,13 +43,12 @@ class Leaderboard extends Component {
   }
 
   render () {
-    // TODO: wrap Title and RunList in BackFrame together
     return (
       <div className='leaderboardBody'>
         <Grid fluid>
           <Row>
             <Col md={2}>
-              <SideBar handler={this.handler} />
+              <SideBar handler={this.handler} category={this.state.category} diff={this.state.diff} seed={this.state.seed} numPlayers={this.state.numPlayers} />
             </Col>
             <Col md={10}>
               <LeaderboardTitle category={this.state.category} diff={this.state.diff} seed={this.state.seed} numPlayers={this.state.numPlayers} />

@@ -4,13 +4,22 @@
 	min-width:90px;
 	border: 2px solid #5162f6;
 	color:#ddd;
-	text-shadow: 3px 1px 1px rgba(100, 100, 100, 0.8);
+	text-shadow: 2px 1px 1px rgba(100, 100, 100, 0.8);
 	padding: 2px 6px 2px 6px;
 	border-radius:12px;
 	font-size:20px;
 	margin:3px;
 	cursor: pointer;
 }
+
+.buttonHOC:active{
+	transform: translate(0px, 2px) ;
+	border: 2px solid #2a2e68;
+	background: linear-gradient(to bottom right, #323269, #262d69);
+}
+
+
+
 
 @media screen and (max-width: 800px) {
 	.buttonHOC{

@@ -19,7 +19,6 @@ class UpcomingRace extends Component{
 		const {date, time, category, difficulty, seeded} = this.props;
     const images = this.importAll(require.context('../img', false, /\.(png|jpe?g|svg)$/))
 		const twitchLink = "https://twitch.tv/BandsWithLegends"
-		// TODO: style components
 		const playerList = this.props.players.map(player => <Player id={player} />)
 		return(
 			<div className="upcomingRace">
@@ -36,7 +35,7 @@ class UpcomingRace extends Component{
 								{playerList}
 							</Row>
 							<Row>
-								{date}, {time} <a href={twitchLink}><Icon icon="twitch" /></a>
+								{date}, {time} <a href={twitchLink}> <Icon icon="twitch" /></a>
 							</Row>
 						</Col>
           </Row>

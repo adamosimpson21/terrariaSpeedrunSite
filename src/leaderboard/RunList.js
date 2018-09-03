@@ -26,7 +26,7 @@ class RunList extends Component {
 	  	}
   	}
 
-  	loadRuns (category, difficulty, seed, numPlayers ,version) {
+  	loadRuns (category, difficulty, seed, numPlayers) {
     let varObj = {}
 
     varObj[variableIDLookUp.Difficulty.id] = variableIDLookUp.Difficulty[difficulty]
@@ -49,18 +49,26 @@ class RunList extends Component {
         key={run.run.id}
         id={run.run.id}
         place={index + 1}
-        // runner={run.run.players[0].id}
         runner={run.run.players}
         date={moment(run.run.submitted).format('MM-DD-YY')}
         time={formattedDuration(run.run.times.primary)}
       />
     ))
 
-    return (
-      <div className='runList'>
-        {allRuns}
-      </div>
-    )
+    if(Object.keys(allRuns).length === 0){
+      const {category, diff, seed, numPlayers} = this.props
+      return(
+        <div className='runList'>
+          <p>There are no runs for this category! Once someone submits a valid run for {category}: {diff}, {seed}, {numPlayers} it will appear here. You could get this world record today by submitting a run through SpeedRun.com</p>
+        </div>
+      )
+    } else {
+      return (
+        <div className='runList'>
+          {allRuns}
+        </div>
+      )
+    }
   }
 }
 
