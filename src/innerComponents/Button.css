@@ -3,7 +3,7 @@
 	width:45%;
 	min-width:90px;
 	border: 2px solid #5162f6;
-	color:#ddd;
+	color: #dddddd;
 	text-shadow: 2px 1px 1px rgba(100, 100, 100, 0.8);
 	padding: 2px 6px 2px 6px;
 	border-radius:12px;
@@ -18,7 +18,12 @@
 	background: linear-gradient(to bottom right, #323269, #262d69);
 }
 
-
+.pressed {
+	color: rgba( 221, 221, 221, 0.7);
+	transform: translate(0px, 2px) ;
+	border: 2px solid #2a2e68;
+	background: linear-gradient(to bottom right, #323269, #262d69);
+}
 
 
 @media screen and (max-width: 800px) {

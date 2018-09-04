@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import BackFrame from '../innerComponents/BackFrame';
 import {fetchErrorHandler, formattedDuration} from "../helper/helperfunctions";
+import {categoryIDLookUp} from "../helper/idTables";
 import Player from '../innerComponents/Player';
 import moment from 'moment';
 import ReactPlayer from 'react-player';
@@ -31,6 +32,14 @@ class Speedrun extends Component {
     const terrariaID = "kdk4e21m"
     if(Object.keys(run).length !== 0 && run.game===terrariaID){
       const variableStrings = {}
+      let categoryName = run.category.data.name
+      if(run.category.data.name==='1 Player' || '2 Players'){
+        for(let boss in categoryIDLookUp){
+          if(categoryIDLookUp[boss].id === run.level){
+            categoryName = boss;
+          }
+        }
+      }
       run.category.data.variables.data.forEach(variableObj => {
         for(let property in run.values){
           if(property===variableObj.id){
@@ -39,8 +48,8 @@ class Speedrun extends Component {
         }
       })
       return(<div>
-        <h2>{run.category.data.name}, {variableStrings.Difficulty}, {variableStrings.Seeds} in {variableStrings["Patch Used"]}</h2>
-        <h4>By:<Player id={run.players[0].id}/> {run.players[1]&&<span> and <Player id={run.players[1].id}/> </span>}({variableStrings["# of Players"]}) in {formattedDuration(run.times.primary)}</h4>
+        <h2>{categoryName}, {variableStrings.Difficulty}, {variableStrings.Seeds} in {variableStrings["Patch Used"]}</h2>
+        <h4>By:<Player id={run.players[0].id}/> {run.players[1]&&<span> and <Player id={run.players[1].id}/> </span>}({run.players[1] ? '2 Players' : '1 Player'}) in {formattedDuration(run.times.primary)}</h4>
         <ReactPlayer className="speedrunVideo" url={run.videos.links[0].uri} playing controls width={720} height={480}/>
         {run.comment&&<p className="commentBody">Comment: {run.comment}</p>}
         <p>Submitted on {run.date}</p>

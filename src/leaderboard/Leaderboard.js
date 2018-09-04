@@ -48,7 +48,7 @@ class Leaderboard extends Component {
         <Grid fluid>
           <Row>
             <Col md={2}>
-              <SideBar handler={this.handler} category={this.state.category} diff={this.state.diff} seed={this.state.seed} numPlayers={this.state.numPlayers} />
+              <SideBar handler={this.handler} diff={this.state.diff} seed={this.state.seed} numPlayers={this.state.numPlayers} />
             </Col>
             <Col md={10}>
               <LeaderboardTitle category={this.state.category} diff={this.state.diff} seed={this.state.seed} numPlayers={this.state.numPlayers} />
@@ -57,7 +57,7 @@ class Leaderboard extends Component {
             </Col>
           </Row>
           <Row>
-            <BossBar handler={this.handler}/>
+            <BossBar category={this.state.category} handler={this.handler}/>
           </Row>
         </Grid>
       </div>

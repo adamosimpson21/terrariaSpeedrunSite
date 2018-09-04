@@ -1,5 +1,0 @@
-.sideBar .pressed {
-	transform: translate(0px, 2px) ;
-	border: 2px solid #2a2e68;
-	background: linear-gradient(to bottom right, #323269, #262d69);
-}
