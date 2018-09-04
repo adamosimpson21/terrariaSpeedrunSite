@@ -5,3 +5,9 @@ body {
   background: url("img/TerrariaSky.jpg") no-repeat center center fixed;
   width:100%
 }
+
+@media screen and (max-width: 700px) {
+  body{
+    background: url("img/TerrariaSky.jpg") fixed;
+  }
+}

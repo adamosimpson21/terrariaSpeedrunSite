@@ -81,7 +81,7 @@ header nav li {
   background-color: rgba(58, 59, 138, 0.9);
 }
 
-@media (max-width: 700px) {
+@media screen and (max-width: 700px) {
   header{
     flex-direction: column;
     width:100%;
