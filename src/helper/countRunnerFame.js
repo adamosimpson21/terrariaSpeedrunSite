@@ -2,24 +2,7 @@ import buildUrl from '../helper/helperfunctions';
 import {categoryIDLookUp, runnerIdToNames} from '../helper/idTables';
 
 function createRunnerScoreObj(){
-  let playerObj = {};
-  //for every category, and every variable of each category make an fetch call and increment score determined by place
-  function countRunnerScore(runs, playerObj) {
-    function scorePerPlace(place) {
-      switch (place) {
-        case 1:
-          return 10;
-        case 2:
-          return 5;
-        case 3:
-          return 3;
-        default:
-          return 1;
-      }
-    }
-  }
-
-  //psuedoCode for runnerSCore element
+   //psuedoCode for runnerSCore element
   //TODO: makes an object with playerID:numPoints where numPoints is score determined by placement in records
   // listOfCategories.forEach(category => {
   //   category.forEach(variable => {
@@ -38,4 +21,38 @@ function createRunnerScoreObj(){
   //     })
   //   })
   // })
+}
+
+export function calculateRunnerFame(PBs){
+  let fameData = {};
+  fameData.fame = 0;
+  fameData.place = {"1":0, "2":0, "3":0, "other": 0};
+  function checkVersion(run){
+    return (run.run.game==="kdk4e21m")
+  }
+  function calculateFamePerRun(run){
+    let addedFame = 0;
+    switch (run.place) {
+      case 1:
+        addedFame += 10;
+        ++fameData.place["1"];
+        break;
+      case 2:
+        addedFame += 5;
+        ++fameData.place["2"];
+        break;
+      case 3:
+        addedFame += 3;
+        ++fameData.place["3"];
+        break;
+      default:
+        addedFame += 1;
+        ++fameData.place["other"];
+        break;
+    }
+    fameData.fame += addedFame;
+  }
+
+  PBs.data.filter(checkVersion).forEach(calculateFamePerRun);
+  return fameData;
 }

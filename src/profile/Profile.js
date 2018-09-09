@@ -10,6 +10,7 @@ import ReactPlayer from 'react-player';
 import { fetchErrorHandler } from '../helper/helperfunctions';
 import PlayerLinkIcon from "../innerComponents/PlayerLinkIcon";
 import {Link} from 'react-router-dom';
+import {calculateRunnerFame} from '../helper/countRunnerFame';
 
 class Profile extends Component{
 	constructor(props){
@@ -17,14 +18,14 @@ class Profile extends Component{
 		this.state={
 			player:{},
       recentRun:{},
-      PBs:{}
+      fameData:{}
 		}
 	}
 
 	componentDidMount(){
 	  this.loadPlayer(this.props.match.params.id);
 	  this.loadRecentRun(this.props.match.params.id);
-	  // this.loadPBs(this.props.match.params.id);
+	  this.loadFame(this.props.match.params.id);
 	}
 
 	loadPlayer(id){
@@ -43,16 +44,21 @@ class Profile extends Component{
       })
   }
 
-  //TODO: load runners personal bests and calculate a 'score'
-  loadPBs(id){
-	  return true;
+  //TODO: load runners personal bests and calculate a 'fame'
+  loadFame(id){
+    fetch("https://www.speedrun.com/api/v1/users/" + id + "/personal-bests")
+			.then(fetchErrorHandler)
+			.then(data => {
+				let fameData = calculateRunnerFame(data);
+				this.setState({fameData})
+			})
   }
 
 	render(){
 		const {id} = this.props.match.params;
 		if(Object.keys(this.state.player).length !== 0 ){
-			const {player, recentRun} = this.state;
-			//TODO: add an individual's runs and some type of measurement system/score for ranking purposes
+			const {player, recentRun, fameData} = this.state;
+			//TODO: add an individual's runs and some type of measurement system/fame for ranking purposes
 			return(
 				<div className="profileBody">
           <Grid fluid>
@@ -67,6 +73,13 @@ class Profile extends Component{
               </Col>
               <Col className="profilePortrait">
                 <p>Extremely inaccurate portrait: </p><img className="portraitImage" src={GuideImage} alt="Terraria Guide" />
+								{(Object.keys(fameData).length !== 0) && <div>
+                  <p>My Terraria Speedrun fame: {fameData.fame}</p>
+                  <p>My World Records: {fameData.place["1"]}</p>
+                  <p>My Silver Medals: {fameData.place["2"]}</p>
+                  <p>My Bronze Medals: {fameData.place["3"]}</p>
+
+                </div>}
               </Col>
             </Row>
             <Row className="profileIcons">

@@ -25,6 +25,7 @@ class NavBar extends Component{
               </h2>
               <nav>
                 <NavLink activeClassName="activeNavLink" to="/leaderboard"><li>Leaderboard</li></NavLink>
+                <NavLink activeClassName="activeNavLink" to="/halloffame"><li>Hall of Fame</li></NavLink>
                 <NavLink activeClassName="activeNavLink" to="/discord"><li>Discord</li></NavLink>
                 <NavLink activeClassName="activeNavLink" to="/races"><li>Races</li></NavLink>
                 <NavLink activeClassName="activeNavLink" to="/resources"><li>Resources</li></NavLink>

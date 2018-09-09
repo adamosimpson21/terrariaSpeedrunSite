@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Redirect, Switch } from 'react-router-dom'
 import Leaderboard from './leaderboard/Leaderboard'
 import Discord from './discord/Discord'
 import Resources from './resources/Resources'
@@ -14,24 +14,28 @@ import StrategyGuide from './resources/StrategyGuide'
 import Seeds from './resources/Seeds'
 import Speedrun from './speedrun/Speedrun';
 import './App.css'
+import HallOfFame from "./hallOfFame/HallOfFame";
 
 const App = () => (
   <ErrorBoundary>
     <Router>
       <div className='App'>
         <NavBar />
-        <Redirect from="/" to="/leaderboard" />
-        <Route path='/leaderboard' component={Leaderboard} />
-        <Route path='/discord' component={Discord} />
-        <Route path='/races' component={Races} />
-        <Route path='/resources' component={Resources} />
-        <Route path='/about' component={About} />
-        <Route path='/profile/:id' component={Profile} />
-        <Route path='/tools' component={Tools} />
-        <Route path='/category' component={Category} />
-        <Route path='/strategyguide/:page' component={StrategyGuide} />
-        <Route path='/seeds' component={Seeds} />
-        <Route path='/speedrun/:id' component={Speedrun} />
+        <Switch>
+          <Route path='/leaderboard' component={Leaderboard} />
+          <Route path='/discord' component={Discord} />
+          <Route path='/races' component={Races} />
+          <Route path='/resources' component={Resources} />
+          <Route path='/about' component={About} />
+          <Route path='/profile/:id' component={Profile} />
+          <Route path='/tools' component={Tools} />
+          <Route path='/category' component={Category} />
+          <Route path='/strategyguide/:page' component={StrategyGuide} />
+          <Route path='/seeds' component={Seeds} />
+          <Route path='/speedrun/:id' component={Speedrun} />
+          <Route path='/halloffame' component={HallOfFame} />
+          <Redirect from="/" to="/leaderboard" />
+        </Switch>
       </div>
     </Router>
   </ErrorBoundary>

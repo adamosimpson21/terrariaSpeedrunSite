@@ -1,0 +1,50 @@
+.hallOfFamePlacard{
+    width: 65%;
+    min-width:450px;
+    font-size:1.4em;
+    color:black;
+    background:linear-gradient(darkgray, gray);
+    border: 1px solid gray;
+    margin: 10px auto 10px auto;
+    -webkit-transform: skewX(-40deg);
+    -moz-transform: skewX(-40deg);
+    -o-transform: skewX(-40deg);
+}
+
+.innerSpan{
+    -webkit-transform: skewX(40deg);
+    -moz-transform: skewX(40deg);
+    -o-transform: skewX(40deg);
+    text-align:left;
+    margin-left:20px;
+}
+
+.fameDisplay{
+    display:inline-flex;
+    min-width:120px;
+    float:right;
+}
+
+.hallOfFamePlacard:nth-child(1) .hallOfFamePlace{
+    color:gold;
+}
+
+.hallOfFamePlacard:nth-child(2) .hallOfFamePlace{
+    color:silver;
+}
+
+.hallOfFamePlacard:nth-child(3) .hallOfFamePlace{
+    color:orange;
+}
+
+@media screen and (max-width:800px) {
+    .hallOfFamePlacard{
+        min-width: auto;
+        width:80%;
+        font-size:22px;
+    }
+    .innerSpan{
+        margin-left:16px;
+        margin-right:16px;
+    }
+}
