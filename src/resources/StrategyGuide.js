@@ -10,10 +10,8 @@ class StrategyGuide extends Component {
       <div className="guideBody">
         <h1>{guideInfo.title}</h1>
         <br />
-        <p>
-          {guideInfo.body}
-        </p>
-        <a href={guideInfo.link}>Link to {guideInfo.title}</a>
+        {guideInfo.body}
+        {guideInfo.link && <a href={guideInfo.link}>Link to {guideInfo.title}</a>}
       </div>
     )
   }

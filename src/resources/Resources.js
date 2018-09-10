@@ -18,12 +18,13 @@ class Resources extends Component {
         <Link to='/StrategyGuide/nightsEdge'><Button label="Night's Edge" /></Link>
         <Link to='/StrategyGuide/allBosses'><Button label='All Bosses' /></Link>
         <Link to='/StrategyGuide/allPreHMBosses'><Button label='All Pre-HM Bosses' /></Link>
+        <Link to='/StrategyGuide/eyeOfCthulhu'><Button label='Eye of Cthulhu: First Day' /></Link>
+        <Link to='/StrategyGuide/nightsEdgeFirstDay'><Button label="Night's Edge before first night" /></Link>
 
         <h3>How to Break the Game</h3>
         <Link to='/StrategyGuide/duping'><Button label='Duping' /></Link>
         <Link to='/StrategyGuide/duckSkip'><Button label='Duck Skip' /></Link>
         <Link to='/StrategyGuide/pillars'><Button label='Pillars' /></Link>
-
         <Link to='/StrategyGuide/splits'><Button label='Splits' /></Link>
 
         <h3>World Record Seeds</h3>
