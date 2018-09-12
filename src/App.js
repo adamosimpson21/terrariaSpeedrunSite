@@ -15,6 +15,7 @@ import Seeds from './resources/Seeds'
 import Speedrun from './speedrun/Speedrun';
 import './App.css'
 import HallOfFame from "./hallOfFame/HallOfFame";
+import 'react-tippy/dist/tippy.css';
 
 const App = () => (
   <ErrorBoundary>

@@ -90,7 +90,14 @@ class Profile extends Component{
           </Grid>
 				</div>
 			)
-		}	else {
+		}	else if (true){
+      return(
+        <div>
+          <Player id={id}/>
+          <p>Loading player data...</p>
+        </div>
+      )
+    } else {
       return(
         <div>
           <Player id={id}/>

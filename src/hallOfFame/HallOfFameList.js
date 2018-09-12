@@ -14,7 +14,9 @@ class HallOfFameList extends Component {
 
   render () {
     if(this.props.fameList.length>0){
-      const allPlacards = this.props.fameList.sort(this.compareFame).slice(0,10).map((fameData, index) => (
+      let numDisplayed = 10
+      this.props.fameList.sort(this.compareFame).slice(0,numDisplayed).map(fameData => console.log(fameData.id))
+      const allPlacards = this.props.fameList.sort(this.compareFame).slice(0,numDisplayed).map((fameData, index) => (
         <HallOfFamePlacard
           key = {fameData.id}
           index={index}

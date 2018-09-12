@@ -2,8 +2,11 @@ export function calculateRunnerFame(PBs){
   let fameData = {};
   fameData.fame = 0;
   fameData.place = {"1":0, "2":0, "3":0, "other": 0};
-  function checkVersion(run){
+  function checkGame(run){
     return (run.run.game==="kdk4e21m")
+  }
+  function checkVersion(run){
+    return (run.run.values['e8morel6']==='21d65p3q')
   }
   function calculateFamePerRun(run){
     let addedFame = 0;
@@ -25,9 +28,38 @@ export function calculateRunnerFame(PBs){
         ++fameData.place["other"];
         break;
     }
-    fameData.fame += addedFame;
+    //full game categories get +5 points, hard mode categories get +2
+    switch (run.run.category){
+      case 'zd3yzvn2':
+      case 'rklgo5wd':
+      case 'n2y1lve2':
+      case '7kjr0gg2':
+        addedFame += 5;
+        break;
+      default:
+        break;
+    }
+    switch(run.run.level){
+      case 'ywe4g04d':
+      case '69zrj74d':
+      case 'r9gz562d':
+      case 'o9x2q67w':
+      case '495jgp4w':
+      case 'rdq0rygw':
+      case 'kwjyj01w':
+      case 'owokn83d':
+        addedFame += 2;
+        break;
+      default:
+        break;
+    }
+    //Expert runs are multiplied by 1.5x
+    if(run.run.values["wleq7kl6"] && run.run.values["wleq7kl6"]==="rqvv0n5q"){
+      addedFame += addedFame/2
+    }
+    fameData.fame += Math.floor(addedFame);
   }
 
-  PBs.data.filter(checkVersion).forEach(calculateFamePerRun);
+  PBs.data.filter(checkGame).filter(checkVersion).forEach(calculateFamePerRun);
   return fameData;
 }

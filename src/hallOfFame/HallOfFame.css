@@ -1,3 +1,8 @@
 .hallOfFameBody{
     display:block
 }
+
+.hallOfFameDataRow{
+    margin: 0 auto;
+    width: fit-content;
+}
