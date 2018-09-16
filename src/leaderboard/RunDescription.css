@@ -1,6 +1,6 @@
 .runDescription{
-	width: 65%;
-	min-width:450px;
+	width: fit-content;
+	min-width:600px;
 	font-size:1.4em;
 	color:black;
 	background:linear-gradient(darkgray, gray);

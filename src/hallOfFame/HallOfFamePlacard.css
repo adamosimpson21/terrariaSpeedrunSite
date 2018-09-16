@@ -16,7 +16,7 @@
     -moz-transform: skewX(40deg);
     -o-transform: skewX(40deg);
     text-align:left;
-    margin-left:20px;
+    margin: 0 20px;
 }
 
 .fameDisplay{

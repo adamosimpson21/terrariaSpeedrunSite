@@ -11,6 +11,7 @@ import { fetchErrorHandler } from '../helper/helperfunctions';
 import PlayerLinkIcon from "../innerComponents/PlayerLinkIcon";
 import {Link} from 'react-router-dom';
 import {calculateRunnerFame} from '../helper/countRunnerFame';
+import {runnerIdToNames} from "../helper/idTables";
 
 class Profile extends Component{
 	constructor(props){
@@ -18,14 +19,18 @@ class Profile extends Component{
 		this.state={
 			player:{},
       recentRun:{},
-      fameData:{}
+      fameData:{},
+			error:{}
 		}
 	}
 
 	componentDidMount(){
-	  this.loadPlayer(this.props.match.params.id);
-	  this.loadRecentRun(this.props.match.params.id);
-	  this.loadFame(this.props.match.params.id);
+		//handles if url param is a username instead of ID
+		const isUsername = Object.entries(runnerIdToNames).find(([_, value]) => value === this.props.match.params.id)
+    let id = isUsername ? isUsername[0] : this.props.match.params.id;
+	  this.loadPlayer(id);
+	  this.loadRecentRun(id);
+	  this.loadFame(id);
 	}
 
 	loadPlayer(id){
@@ -34,6 +39,9 @@ class Profile extends Component{
 	    .then(player => {
 	    	this.setState({player:player.data});
 	    })
+			.catch(error =>{
+				this.setState({error})
+			})
   }
 
 	loadRecentRun(id){
@@ -55,20 +63,20 @@ class Profile extends Component{
   }
 
 	render(){
-		const {id} = this.props.match.params;
 		if(Object.keys(this.state.player).length !== 0 ){
 			const {player, recentRun, fameData} = this.state;
-			//TODO: add an individual's runs and some type of measurement system/fame for ranking purposes
 			return(
 				<div className="profileBody">
           <Grid fluid>
             <Row>
               <Col>
-                <h1 style={{color:player["name-style"]["color-to"].light}} className="profilePlayerName"><Player id={id}/></h1>
+                <h1 style={{color:player["name-style"]["color-to"].light}} className="profilePlayerName"><Player id={player.id}/></h1>
                 {(player.location) && <p><Icon icon="airplane" /> Location: {player.location.country.names.international} </p>}
                 {(player.signup) && <p> Member of <a href={player.weblink}>speedrun.com</a> since {moment(player.signup).format('MM-DD-YY')} </p>}
-                {(Object.keys(this.state.recentRun).length !== 0) && <div>
-                  <p><Link className="recentRunLink" to={"/speedrun/" + recentRun.id}>My most recent speedrun: (includes non-Terraria games)</Link></p><ReactPlayer className="profileVideo" url={recentRun.videos.links[0].uri} playing controls width={480} height={270}/>
+                {(Object.keys(this.state.recentRun).length !== 0) &&
+								<div>
+                  <p><Link className="recentRunLink" to={"/speedrun/" + recentRun.id}>My most recent speedrun: (includes non-Terraria games)</Link></p>
+									<ReactPlayer className="profileVideo" url={recentRun.videos.links[0].uri} playing controls width={480} height={270}/>
                 </div>}
               </Col>
               <Col className="profilePortrait">
@@ -78,7 +86,6 @@ class Profile extends Component{
                   <p>My World Records: {fameData.place["1"]}</p>
                   <p>My Silver Medals: {fameData.place["2"]}</p>
                   <p>My Bronze Medals: {fameData.place["3"]}</p>
-
                 </div>}
               </Col>
             </Row>
@@ -90,17 +97,16 @@ class Profile extends Component{
           </Grid>
 				</div>
 			)
-		}	else if (true){
+		}	else if (Object.keys(this.state.error).length !== 0){
       return(
         <div>
-          <Player id={id}/>
-          <p>Loading player data...</p>
+          <p>{this.state.error.errorMessage}</p>
         </div>
       )
     } else {
       return(
         <div>
-          <Player id={id}/>
+          <Player id={this.props.match.params.id}/>
 					<p>Loading player data...</p>
         </div>
       )

@@ -43,21 +43,22 @@ class Leaderboard extends Component {
   }
 
   render () {
+    const {diff, seed, numPlayers, category} = this.state
     return (
       <div className='leaderboardBody'>
         <Grid fluid>
           <Row>
             <Col md={2}>
-              <SideBar handler={this.handler} diff={this.state.diff} seed={this.state.seed} numPlayers={this.state.numPlayers} />
+              <SideBar handler={this.handler} diff={diff} seed={seed} numPlayers={numPlayers} />
             </Col>
             <Col md={10}>
-              <LeaderboardTitle category={this.state.category} diff={this.state.diff} seed={this.state.seed} numPlayers={this.state.numPlayers} />
+              <LeaderboardTitle category={category} diff={diff} seed={seed} numPlayers={numPlayers} />
               <br />
-              <RunList category={this.state.category} diff={this.state.diff} seed={this.state.seed} numPlayers={this.state.numPlayers} />
+              <RunList category={category} diff={diff} seed={seed} numPlayers={numPlayers} />
             </Col>
           </Row>
           <Row>
-            <BossBar category={this.state.category} handler={this.handler}/>
+            <BossBar category={category} handler={this.handler}/>
           </Row>
         </Grid>
       </div>
