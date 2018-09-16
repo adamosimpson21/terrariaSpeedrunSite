@@ -1,5 +1,7 @@
 .hallOfFameBody{
-    display:block
+    display:block;
+    width:60%;
+    margin:auto;
 }
 
 .hallOfFameDataRow{

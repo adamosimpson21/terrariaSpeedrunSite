@@ -10,6 +10,8 @@ class HallOfFameViz extends Component {
       const arc = d3.arc()
         .innerRadius(innerRadius)
         .outerRadius(outerRadius)
+        .startAngle(d => d.startAngle + Math.PI*1.5)
+        .endAngle(d => d.endAngle + Math.PI*1.5)
       const colors = d3.scaleOrdinal(d3.schemeAccent)
       const pie = d3.pie().padAngle(.05)
       const arcs = pie(fameList.map(d => d.fame))
@@ -17,9 +19,9 @@ class HallOfFameViz extends Component {
         <g transform={`translate(${width / 2}, ${height / 2})`}>
           {arcs.map(d => (
             <g className="arc" key={`a${d.index}`} >
-              <title>Gold Medals:{fameList[d.index].place["1"]},
-                      Silver Medals:{fameList[d.index].place["2"]},
-                      Bronze Medals:{fameList[d.index].place["3"]}</title>
+              <title>Gold:{fameList[d.index].place["1"]},
+                      Silver:{fameList[d.index].place["2"]},
+                      Bronze:{fameList[d.index].place["3"]}</title>
               <path d={arc(d)} fill={colors(d.index)} />
               <text transform={`translate(${arc.centroid(d)})`} dy=".35em" className="hallOfFamePieLabel">
                 {runnerIdToNames[fameList[d.index].id]}

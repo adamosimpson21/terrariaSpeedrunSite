@@ -1,7 +1,17 @@
-import {categoryIDLookUp} from "./idTables";
+import {categoryIDLookUp, runnerIdToNames} from "./idTables";
 
 export function formattedDuration (timeString) {
   return timeString.replace('PT', '').toLowerCase()
+}
+
+//translates runner Name to Id, returns false if does not exist
+export function runnerNameToId(string){
+  let isUsername = Object.entries(runnerIdToNames).find(([_, value]) => value.toLowerCase() === string.toLowerCase())
+  if (isUsername) {
+    return isUsername[0]
+  } else {
+    return false
+  }
 }
 
 export function fetchErrorHandler(resp){

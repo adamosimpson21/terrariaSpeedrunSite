@@ -7,11 +7,10 @@ import moment from 'moment';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import Icon from '../innerComponents/Icon';
 import ReactPlayer from 'react-player';
-import { fetchErrorHandler } from '../helper/helperfunctions';
+import { fetchErrorHandler, runnerNameToId } from '../helper/helperfunctions';
 import PlayerLinkIcon from "../innerComponents/PlayerLinkIcon";
 import {Link} from 'react-router-dom';
 import {calculateRunnerFame} from '../helper/countRunnerFame';
-import {runnerIdToNames} from "../helper/idTables";
 
 class Profile extends Component{
 	constructor(props){
@@ -26,8 +25,8 @@ class Profile extends Component{
 
 	componentDidMount(){
 		//handles if url param is a username instead of ID
-		const isUsername = Object.entries(runnerIdToNames).find(([_, value]) => value === this.props.match.params.id)
-    let id = isUsername ? isUsername[0] : this.props.match.params.id;
+		const isUsername = runnerNameToId(this.props.match.params.id)
+    let id = isUsername ? isUsername : this.props.match.params.id;
 	  this.loadPlayer(id);
 	  this.loadRecentRun(id);
 	  this.loadFame(id);

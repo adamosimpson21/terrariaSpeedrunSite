@@ -13,10 +13,11 @@ class HallOfFame extends Component {
   constructor(props){
     super(props)
     this.state={
+      // use when generating new lists
       // idList:runnerIds,
-      //top runners all time
+      // top runners all time
       // idList:["68w1y0lx","kj92v478","v81vpgp8","zxzl7vn8","48gn04pj","98r41qj1","y8dwmolj","pj0v59xw","dx3mek28","7j4ge05j"],
-      //top runners in 1.3.5
+      // top runners in 1.3.5
       idList:['v81vpgp8','68w1y0lx','48gn04pj','7j4ge05j','kj92v478','e8enr778','1xyr75vj','y8dp6nm8','zx7253y8','zx7zw3q8'],
       fameList: []
     }
@@ -58,12 +59,12 @@ class HallOfFame extends Component {
   render () {
     return (
       <div className="hallOfFameBody">
-        <HallOfFameTitle />
-        <HallOfFameDescription />
-        <Row className="hallOfFameDataRow">
-          <HallOfFameList fameList = {this.state.fameList}/>
-          <HallOfFameViz fameList={this.state.fameList} height={400} width={400} outerRadius={200} innerRadius={10} />
-        </Row>
+          <HallOfFameTitle />
+          <HallOfFameDescription />
+          <Row className="hallOfFameDataRow">
+            <HallOfFameList fameList = {this.state.fameList}/>
+            <HallOfFameViz fameList={this.state.fameList} height={400} width={400} outerRadius={200} innerRadius={10} />
+          </Row>
       </div>
     )
   }

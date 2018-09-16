@@ -1,0 +1,18 @@
+.playerFound{
+    font-size:24px;
+    margin: 24px 0;
+}
+
+.profileSearchInput{
+    color:#ccc;
+    font-size:24px;
+    height:32px;
+    width:256px;
+    border:0;
+    border-bottom: 4px solid #56ae44;
+    background:none;
+}
+
+.profileSearchInput:focus {
+    outline: none;
+}

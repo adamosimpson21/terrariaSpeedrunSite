@@ -13,6 +13,7 @@ import Category from './resources/Category'
 import StrategyGuide from './resources/StrategyGuide'
 import Seeds from './resources/Seeds'
 import Speedrun from './speedrun/Speedrun';
+import ProfileSearch from './profile/ProfileSearch'
 import './App.css'
 import HallOfFame from "./hallOfFame/HallOfFame";
 import 'react-tippy/dist/tippy.css';
@@ -29,6 +30,7 @@ const App = () => (
           <Route path='/resources' component={Resources} />
           <Route path='/about' component={About} />
           <Route path='/profile/:id' component={Profile} />
+          <Route path='/profile' component={ProfileSearch} />
           <Route path='/tools' component={Tools} />
           <Route path='/category' component={Category} />
           <Route path='/strategyguide/:page' component={StrategyGuide} />
