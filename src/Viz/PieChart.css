@@ -1,0 +1,27 @@
+#hallOfFamePie{
+    margin-left:24px;
+}
+
+.hallOfFamePieLabel{
+    text-anchor:middle;
+}
+
+.arc .hallOfFamePieLabel{
+    position: absolute;
+    display: none;
+}
+
+.arc:hover .hallOfFamePieLabel {
+    z-index: 5;
+    display:inline;
+}
+
+.tooltip {
+    opacity:.75;
+    padding:4px;
+    border-radius:8px;
+    height:fit-content;
+    width:fit-content;
+    background-color: #474d8b;
+    border: 1px solid #ccc;
+}

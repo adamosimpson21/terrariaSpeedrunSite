@@ -7,6 +7,7 @@ import HallOfFameViz from './HallOfFameViz'
 import {fetchErrorHandler} from "../helper/helperfunctions";
 import {calculateRunnerFame} from "../helper/countRunnerFame";
 import { Row } from 'react-flexbox-grid'
+import Button from '../innerComponents/Button'
 // import {runnerIds} from "../helper/idTables";
 
 class HallOfFame extends Component {
@@ -19,8 +20,11 @@ class HallOfFame extends Component {
       // idList:["68w1y0lx","kj92v478","v81vpgp8","zxzl7vn8","48gn04pj","98r41qj1","y8dwmolj","pj0v59xw","dx3mek28","7j4ge05j"],
       // top runners in 1.3.5
       idList:['v81vpgp8','68w1y0lx','48gn04pj','7j4ge05j','kj92v478','e8enr778','1xyr75vj','y8dp6nm8','zx7253y8','zx7zw3q8'],
-      fameList: []
+      fameList: [],
+      typeOfViz:'Histogram'
     }
+
+    this.handler = this.handler.bind(this)
   }
 
   componentDidMount(){
@@ -56,15 +60,22 @@ class HallOfFame extends Component {
     })
   }
 
+  handler(event, variable){
+    event.preventDefault()
+    this.setState({typeOfViz:variable})
+  }
+
   render () {
     return (
       <div className="hallOfFameBody">
-          <HallOfFameTitle />
-          <HallOfFameDescription />
-          <Row className="hallOfFameDataRow">
-            <HallOfFameList fameList = {this.state.fameList}/>
-            <HallOfFameViz fameList={this.state.fameList} height={400} width={400} outerRadius={200} innerRadius={10} />
-          </Row>
+        <HallOfFameTitle />
+        <Row className="hallOfFameDataRow">
+          <HallOfFameList fameList = {this.state.fameList}/>
+          <HallOfFameViz data={this.state.fameList} type={this.state.typeOfViz}/>
+          <Button label='Pie' handleClick={(e) => this.handler(e, 'Pie')} />
+          <Button label='Histogram' handleClick={(e) => this.handler(e, 'Histogram')} />
+        </Row>
+        <HallOfFameDescription />
       </div>
     )
   }
