@@ -1,18 +1,13 @@
-#hallOfFamePie{
-    margin-left:24px;
-}
-
 .hallOfFamePieLabel{
     text-anchor:middle;
 }
 
 .arc .hallOfFamePieLabel{
-    position: absolute;
+    z-index: 5;
     display: none;
 }
 
 .arc:hover .hallOfFamePieLabel {
-    z-index: 5;
     display:inline;
 }
 

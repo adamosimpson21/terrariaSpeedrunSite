@@ -2,15 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99f1ee01-c855-4763-a826-d4655a557187" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Viz/Histogram.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Viz/Histogram.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Viz/PieChart.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Viz/PieChart.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hallOfFame/HallOfFame.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/hallOfFame/HallOfFame.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Viz/Histogram.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Viz/Histogram.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Viz/Histogram.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Viz/Histogram.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Viz/PieChart.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Viz/PieChart.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hallOfFame/HallOfFame.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hallOfFame/HallOfFame.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hallOfFame/HallOfFameViz.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/hallOfFame/HallOfFameViz.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hallOfFame/HallOfFameViz.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hallOfFame/HallOfFameViz.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/innerComponents/BackFrame.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/innerComponents/BackFrame.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/innerComponents/BackFrame.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/innerComponents/BackFrame.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/races/UpcomingRace.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/races/UpcomingRace.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -42,10 +43,10 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="96" />
+          <entry key="css" value="127" />
           <entry key="gitignore" value="1" />
           <entry key="html" value="4" />
-          <entry key="js" value="197" />
+          <entry key="js" value="204" />
           <entry key="json" value="8" />
           <entry key="png" value="4" />
           <entry key="rnc" value="3" />
@@ -54,11 +55,11 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="96" />
+          <entry key="CSS" value="127" />
           <entry key="HTML" value="4" />
           <entry key="Image" value="4" />
           <entry key="JSON" value="8" />
-          <entry key="JavaScript" value="195" />
+          <entry key="JavaScript" value="202" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="RNG Compact" value="3" />
           <entry key="SVG" value="1" />
@@ -67,10 +68,10 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="5675" />
+          <entry key="css" value="5973" />
           <entry key="gitignore" value="20" />
           <entry key="html" value="15" />
-          <entry key="js" value="28801" />
+          <entry key="js" value="29283" />
           <entry key="json" value="11" />
           <entry key="svg" value="8" />
           <entry key="txt" value="130" />
@@ -78,10 +79,10 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="5675" />
+          <entry key="CSS" value="5973" />
           <entry key="HTML" value="15" />
           <entry key="JSON" value="11" />
-          <entry key="JavaScript" value="28729" />
+          <entry key="JavaScript" value="29211" />
           <entry key="PLAIN_TEXT" value="150" />
           <entry key="SVG" value="8" />
           <entry key="Scratch" value="72" />
@@ -94,46 +95,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/hallOfFame/HallOfFame.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
-              <folding>
-                <element signature="e#0#38#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/leaderboard/Leaderboard.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-22">
-              <caret line="19" column="42" lean-forward="true" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/leaderboard/SideBar.js">
+        <entry file="file://$PROJECT_DIR$/src/Viz/Histogram.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="161">
-              <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
-              <folding>
-                <element signature="e#0#38#0" expanded="true" />
-              </folding>
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Viz/PieChart.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/profile/Profile.js">
+        <entry file="file://$PROJECT_DIR$/src/hallOfFame/HallOfFameViz.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1104">
-              <caret line="12" column="62" selection-start-line="12" selection-start-column="62" selection-end-line="12" selection-end-column="62" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="23">
+              <caret line="1" column="13" lean-forward="true" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -141,32 +124,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/hallOfFame/HallOfFameViz.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
-              <folding>
-                <element signature="e#0#38#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Viz/Histogram.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="5" column="35" lean-forward="true" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Viz/PieChart.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="23" column="41" lean-forward="true" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
+            <state relative-caret-position="253">
+              <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -190,6 +149,8 @@
       <find>pears</find>
       <find>null</find>
       <find>98rm</find>
+      <find>HOC</find>
+      <find>margin-bottom</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -198,11 +159,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/innerComponents/Player.css" />
-        <option value="$PROJECT_DIR$/src/innerComponents/BackFrame.css" />
-        <option value="$PROJECT_DIR$/src/profile/Profile.css" />
         <option value="$PROJECT_DIR$/src/leaderboard/RunList.js" />
-        <option value="$PROJECT_DIR$/src/races/UpcomingRace.css" />
         <option value="$PROJECT_DIR$/src/races/UpcomingRace.js" />
         <option value="$PROJECT_DIR$/src/leaderboard/SideBar.css" />
         <option value="$PROJECT_DIR$/src/leaderboard/BossBar.css" />
@@ -242,13 +199,17 @@
         <option value="$PROJECT_DIR$/src/innerComponents/Icon.js" />
         <option value="$PROJECT_DIR$/src/profile/ProfileSearch.css" />
         <option value="$PROJECT_DIR$/src/innerComponents/Tooltip.js" />
-        <option value="$PROJECT_DIR$/src/Viz/PieChart.css" />
         <option value="$PROJECT_DIR$/src/Viz/PieChart.js" />
         <option value="$PROJECT_DIR$/src/hallOfFame/HallOfFame.css" />
-        <option value="$PROJECT_DIR$/src/hallOfFame/HallOfFameViz.css" />
-        <option value="$PROJECT_DIR$/src/hallOfFame/HallOfFameViz.js" />
         <option value="$PROJECT_DIR$/src/hallOfFame/HallOfFame.js" />
+        <option value="$PROJECT_DIR$/src/Viz/Histogram.css" />
         <option value="$PROJECT_DIR$/src/Viz/Histogram.js" />
+        <option value="$PROJECT_DIR$/src/innerComponents/BackFrame.css" />
+        <option value="$PROJECT_DIR$/src/innerComponents/BackFrame.js" />
+        <option value="$PROJECT_DIR$/src/races/UpcomingRace.css" />
+        <option value="$PROJECT_DIR$/src/hallOfFame/HallOfFameViz.js" />
+        <option value="$PROJECT_DIR$/src/hallOfFame/HallOfFameViz.css" />
+        <option value="$PROJECT_DIR$/src/Viz/PieChart.css" />
       </list>
     </option>
   </component>
@@ -296,25 +257,7 @@
               <item name="terrariaSpeedruns" type="b2602c69:ProjectViewProjectNode" />
               <item name="terrariaSpeedruns" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="helper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="terrariaSpeedruns" type="b2602c69:ProjectViewProjectNode" />
-              <item name="terrariaSpeedruns" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="innerComponents" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="terrariaSpeedruns" type="b2602c69:ProjectViewProjectNode" />
-              <item name="terrariaSpeedruns" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="leaderboard" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="terrariaSpeedruns" type="b2602c69:ProjectViewProjectNode" />
-              <item name="terrariaSpeedruns" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="profile" type="462c0819:PsiDirectoryNode" />
+              <item name="hallOfFame" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="terrariaSpeedruns" type="b2602c69:ProjectViewProjectNode" />
@@ -338,6 +281,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="margin-bottom&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JavaScript" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -381,7 +325,7 @@
       <workItem from="1536705157300" duration="14784000" />
       <workItem from="1536738544948" duration="1995000" />
       <workItem from="1537053882799" duration="359000" />
-      <workItem from="1537054504202" duration="27882000" />
+      <workItem from="1537054504202" duration="32452000" />
     </task>
     <task id="LOCAL-00001" summary="Profile features expanded. Included Embedded Video, site links, colored name, layout styles.">
       <created>1535180171220</created>
@@ -401,7 +345,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="210822000" />
+    <option name="totallyTimeSpent" value="215392000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1873" height="1096" extended-state="6" />
@@ -409,9 +353,9 @@
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.13678475" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.13678475" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="0" sideWeight="0.49809265" visible="true" weight="0.37130803" />
+      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49809265" visible="true" weight="0.37130803" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.50190735" side_tool="true" weight="0.37130803" />
       <window_info anchor="bottom" id="Version Control" order="2" sideWeight="0.49917987" weight="0.32938644" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
@@ -465,129 +409,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Profile features expanded. Included Embedded Video, site links, colored name, layout styles." />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/speedrun/Speedrun.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/innerComponents/BackFrame.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/discord/Discord.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="49" selection-start-column="38" selection-end-line="1" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="30" column="1" selection-start-line="30" selection-end-line="30" selection-end-column="111" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/leaderboard/RunList.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/leaderboard/LeaderboardTitle.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="20" column="14" lean-forward="true" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="112" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/img/FavoriteBanner.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/guideBody.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="66" column="4" lean-forward="true" selection-start-line="66" selection-start-column="4" selection-end-line="66" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/StrategyGuide.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/Resources.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="21" column="68" selection-start-line="21" selection-start-column="68" selection-end-line="21" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/leaderboard/LeaderboardTitle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
-          <caret line="39" column="7" selection-start-line="39" selection-start-column="7" selection-end-line="39" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/leaderboard/RunList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1173">
-          <caret line="57" column="36" selection-start-line="57" selection-start-column="7" selection-end-line="57" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/leaderboard/Leaderboard.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hallOfFame/HallOfFameList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="17" column="76" selection-start-line="17" selection-start-column="76" selection-end-line="17" selection-end-column="76" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hallOfFame/HallOfFameDescription.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hallOfFame/HallOfFamePlacard.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hallOfFame/HallOfFamePlacard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="10" column="55" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/leaderboard/RunDescription.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="7" selection-start-column="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/leaderboard/RunDescription.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-161">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -611,13 +436,6 @@
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hallOfFame/HallOfFameList.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
@@ -702,30 +520,33 @@
     <entry file="file://$PROJECT_DIR$/src/innerComponents/PieChart.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Viz/PieChart.css">
+    <entry file="file://$PROJECT_DIR$/src/Viz/PieChart.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="484">
-          <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+          <caret line="23" column="41" lean-forward="true" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/hallOfFame/HallOfFame.css">
+    <entry file="file://$PROJECT_DIR$/src/Viz/Histogram.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        <state relative-caret-position="1173">
+          <caret line="51" column="24" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/hallOfFame/HallOfFameViz.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Viz/Histogram.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/innerComponents/Icon.js">
+    <entry file="file://$PROJECT_DIR$/src/profile/Profile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="9" column="81" selection-start-line="9" selection-start-column="81" selection-end-line="9" selection-end-column="81" />
+        <state relative-caret-position="-1449">
+          <caret line="12" column="62" selection-start-line="12" selection-start-column="62" selection-end-line="12" selection-end-column="62" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -739,60 +560,168 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/profile/Profile.js">
+    <entry file="file://$PROJECT_DIR$/src/hallOfFame/HallOfFame.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1104">
-          <caret line="12" column="62" selection-start-line="12" selection-start-column="62" selection-end-line="12" selection-end-column="62" />
+        <state relative-caret-position="323">
+          <caret line="75" column="13" lean-forward="true" selection-start-line="75" selection-start-column="13" selection-end-line="75" selection-end-column="13" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#0#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/innerComponents/BackFrame.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/innerComponents/Button.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/innerComponents/Icon.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/innerComponents/Icon.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="9" column="81" selection-start-line="9" selection-start-column="81" selection-end-line="9" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/innerComponents/BackFrame.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/innerComponents/NavBar.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/innerComponents/Player.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/innerComponents/Button.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/leaderboard/Leaderboard.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/leaderboard/Leaderboard.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-22">
+        <state relative-caret-position="23">
           <caret line="19" column="42" lean-forward="true" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/leaderboard/LeaderboardTitle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/leaderboard/BossBar.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/leaderboard/LeaderboardTitle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/leaderboard/RunDescription.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="58" column="15" selection-start-line="58" selection-start-column="15" selection-end-line="58" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/races/UpcomingRace.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-161">
+          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/races/Races.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/races/RaceRules.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/races/RaceList.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hallOfFame/HallOfFamePlacard.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hallOfFame/HallOfFameList.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hallOfFame/HallOfFameDescription.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hallOfFame/HallOfFame.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/leaderboard/SideBar.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/leaderboard/RunList.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/hallOfFame/HallOfFameViz.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
+        <state relative-caret-position="253">
+          <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Viz/PieChart.js">
+    <entry file="file://$PROJECT_DIR$/src/hallOfFame/HallOfFameViz.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="23" column="41" lean-forward="true" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="23">
+          <caret line="1" column="13" lean-forward="true" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/hallOfFame/HallOfFame.js">
+    <entry file="file://$PROJECT_DIR$/src/Viz/Histogram.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="161">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Viz/Histogram.js">
+    <entry file="file://$PROJECT_DIR$/src/Viz/PieChart.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="35" lean-forward="true" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="207">
+          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
         </state>
       </provider>
     </entry>

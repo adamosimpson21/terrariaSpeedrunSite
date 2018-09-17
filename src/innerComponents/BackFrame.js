@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import './BackFrame.css'
 
 const BackFrame = (WrappedComponent) => {
-  class HOC extends Component {
+  class BackFrame extends Component {
     render () {
       return (
         <div className='backFrame'>
@@ -13,7 +13,7 @@ const BackFrame = (WrappedComponent) => {
     }
   }
 
-  return HOC
+  return BackFrame
 }
 
 export default BackFrame
