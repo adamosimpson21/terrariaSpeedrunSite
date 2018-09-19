@@ -1,3 +1,9 @@
 .hallOfFameViz{
     margin: 0 auto;
 }
+
+@media screen and (max-width: 800px){
+    .hallOfFameViz{
+        width:100%;
+    }
+}

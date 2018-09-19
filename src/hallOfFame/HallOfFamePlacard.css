@@ -20,7 +20,7 @@
 }
 
 .fameDisplay{
-    display:inline-flex;
+    display:flex;
     min-width:120px;
     float:right;
 }
@@ -40,11 +40,15 @@
 @media screen and (max-width:800px) {
     .hallOfFamePlacard{
         min-width: auto;
-        width:80%;
-        font-size:22px;
+        width:85vw;
+        font-size:14px;
     }
-    .innerSpan{
+    .hallOfFamePlacard .innerSpan{
         margin-left:16px;
         margin-right:16px;
+    }
+
+    .hallOfFamePlacard .fameDisplay{
+        float:right;
     }
 }

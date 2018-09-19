@@ -17,6 +17,11 @@ header {
   display:contents;
 }
 
+/* Mobile Navbar */
+header svg{
+  margin-top:16px;
+}
+
 .smallMenu nav{
   display:block;
 }
@@ -25,14 +30,17 @@ header {
     padding:8px;
 }
 
-.smallMenu .headerCloseButton{
-    padding-top:20px;
+.navSmallMenuRow{
+  display:inline-flex;
+}
+
+.smallMenu .navSmallMenuRow a{
+  padding:2px;
 }
 
 .headerCloseButton{
     margin-bottom:0;
 }
-
 
 .navbarAccess{
   background-color: #2c3e50;

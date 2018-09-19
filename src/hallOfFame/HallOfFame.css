@@ -8,3 +8,11 @@
     margin: 0 auto;
     width: fit-content;
 }
+
+@media screen and (max-width:800px) {
+    .hallOfFameBody{
+        width:100%;
+        margin:0;
+    }
+
+}

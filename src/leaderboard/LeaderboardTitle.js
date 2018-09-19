@@ -20,7 +20,7 @@ class LeaderboardTitle extends Component {
           <div className="titleCategoryDisplay">
             <img className='categoryTitleImage' src={images[categoryIDLookUp[category].image]} alt='category' />
             {category}
-            <img className='categoryTitleImage' src={images[categoryIDLookUp[category].image]} alt='category' /></div><br/>
+            <img className='categoryTitleImage categoryTitleImageRightSide' src={images[categoryIDLookUp[category].image]} alt='category' /></div><br/>
           <div className="titleVariableDisplay">{diff}, {seed}, {numPlayers}</div>
         </div>
         <p>Here you can find all of the approved runs of the game.  See a category you enjoy?  Try running it yourself!  You never know until you try!</p>

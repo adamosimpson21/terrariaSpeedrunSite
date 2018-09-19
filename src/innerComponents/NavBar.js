@@ -24,13 +24,17 @@ class NavBar extends Component{
                 <NavLink to="/leaderboard"><li>Home</li></NavLink>
               </h2>
               <nav>
-                <NavLink activeClassName="activeNavLink" to="/leaderboard"><li>Leaderboard</li></NavLink>
-                <NavLink activeClassName="activeNavLink" to="/halloffame"><li>Hall of Fame</li></NavLink>
-                <NavLink activeClassName="activeNavLink" to="/profile"><li>Profiles</li></NavLink>
-                <NavLink activeClassName="activeNavLink" to="/discord"><li>Discord</li></NavLink>
-                <NavLink activeClassName="activeNavLink" to="/races"><li>Races</li></NavLink>
-                <NavLink activeClassName="activeNavLink" to="/resources"><li>Resources</li></NavLink>
-                <NavLink activeClassName="activeNavLink" to="/about"><li>About</li></NavLink>
+                <span className='navSmallMenuRow'>
+                  <NavLink activeClassName="activeNavLink" to="/leaderboard"><li>Leaderboard</li></NavLink>
+                  <NavLink activeClassName="activeNavLink" to="/halloffame"><li>Hall of Fame</li></NavLink>
+                  <NavLink activeClassName="activeNavLink" to="/profile"><li>Profiles</li></NavLink>
+                </span>
+                <span className='navSmallMenuRow'>
+                  <NavLink activeClassName="activeNavLink" to="/discord"><li>Discord</li></NavLink>
+                  <NavLink activeClassName="activeNavLink" to="/races"><li>Races</li></NavLink>
+                  <NavLink activeClassName="activeNavLink" to="/resources"><li>Resources</li></NavLink>
+                  <NavLink activeClassName="activeNavLink" to="/about"><li>About</li></NavLink>
+                </span>
               </nav>
             </div>
           </header>

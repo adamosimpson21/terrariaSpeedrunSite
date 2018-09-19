@@ -31,10 +31,11 @@
 	color:inherit;
 }
 
-.innerSpan{
+.runDescription .innerSpan{
 	-webkit-transform: skewX(40deg);
 	   -moz-transform: skewX(40deg);
 	     -o-transform: skewX(40deg);
+    display:inline-flex;
 }
 
 .runDescription:nth-child(1) .runDescriptionPlace{
@@ -46,18 +47,7 @@
 }
 
 .runDescription:nth-child(3) .runDescriptionPlace{
-	color:orange;
-}
-
-@media screen and (max-width: 1000px) {
-	.playerDisplay2{
-		min-width:0;
-	}
-
-	.timeDisplay{
-		min-width:0;
-		margin-left:12px;
-	}
+	color: #de9032;
 }
 
 @media screen and (max-width:800px) {
@@ -66,13 +56,13 @@
 		width:80%;
 		font-size:14px;
 	}
-	.innerSpan{
+    .runDescription .innerSpan{
 		margin-left:16px;
 		margin-right:16px;
 		display:block;
 	}
 
-	.innerSpan .playerDisplayTopLine, .playerDisplayBottomLine{
+    .runDescription .innerSpan .playerDisplayTopLine, .playerDisplayBottomLine{
 		display:inline;
 	}
 }
