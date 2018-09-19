@@ -64,10 +64,15 @@
 	.runDescription{
 		min-width: auto;
 		width:80%;
-		font-size:22px;
+		font-size:14px;
 	}
 	.innerSpan{
 		margin-left:16px;
 		margin-right:16px;
+		display:block;
+	}
+
+	.innerSpan .playerDisplayTopLine, .playerDisplayBottomLine{
+		display:inline;
 	}
 }

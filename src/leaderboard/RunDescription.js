@@ -9,14 +9,18 @@ class RunDescription extends Component {
     return (
       <div className='runDescription'>
         <div className='innerSpan'>
-          <span className='runDescriptionPlace'>{place}. </span>
-          <div className='playerDisplay2'><Player id={runner[0].id} />
+          <div className='playerDisplayTopLine'>
+            <span className='runDescriptionPlace'>{place}. </span>
+            <div className='playerDisplay2'><Player id={runner[0].id} />
+          </div>
             {runner[1] && <span className='Player2Display'> and <Player id={runner[1].id} /></span>}
           </div>
-          <Link className="linkToSpeedrun" to={'/speedrun/' + id}>
-            <div className="timeDisplay">{time} </div>
-            <span>{date} </span>
-          </Link>
+          <div className='playerDisplayBottomLine'>
+            <Link className="linkToSpeedrun" to={'/speedrun/' + id}>
+              <div className="timeDisplay">{time} </div>
+              <span>{date} </span>
+            </Link>
+          </div>
         </div>
       </div>
     )
