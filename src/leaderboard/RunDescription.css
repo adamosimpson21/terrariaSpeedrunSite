@@ -51,8 +51,11 @@
 }
 
 @media screen and (max-width:800px) {
+    /*.runList {*/
+        /*width:100vw;*/
+    /*}*/
 	.runDescription{
-		min-width: auto;
+		min-width: fit-content;
 		width:80%;
 		font-size:14px;
 	}
@@ -61,8 +64,10 @@
 		margin-right:16px;
 		display:block;
 	}
-
-    .runDescription .innerSpan .playerDisplayTopLine, .playerDisplayBottomLine{
-		display:inline;
-	}
+    /*.runDescription .playerDisplay2,.timeDisplay{*/
+        /*min-width:fit-content;*/
+    /*}*/
+    /*.runDescription .innerSpan .playerDisplayTopLine, .playerDisplayBottomLine{*/
+		/*display:inline;*/
+	/*}*/
 }
