@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99f1ee01-c855-4763-a826-d4655a557187" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hallOfFame/HallOfFame.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/hallOfFame/HallOfFame.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hallOfFame/HallOfFame.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hallOfFame/HallOfFame.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/innerComponents/BackFrame.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/innerComponents/BackFrame.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/innerComponents/Button.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/innerComponents/Button.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/innerComponents/Button.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/innerComponents/Button.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leaderboard/BossBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/leaderboard/BossBar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/leaderboard/RunDescription.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/leaderboard/RunDescription.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leaderboard/RunDescription.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/leaderboard/RunDescription.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leaderboard/SideBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/leaderboard/SideBar.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -35,10 +44,10 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="147" />
+          <entry key="css" value="150" />
           <entry key="gitignore" value="2" />
           <entry key="html" value="5" />
-          <entry key="js" value="225" />
+          <entry key="js" value="230" />
           <entry key="json" value="8" />
           <entry key="md" value="1" />
           <entry key="png" value="4" />
@@ -50,11 +59,11 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="147" />
+          <entry key="CSS" value="150" />
           <entry key="HTML" value="5" />
           <entry key="Image" value="4" />
           <entry key="JSON" value="8" />
-          <entry key="JavaScript" value="223" />
+          <entry key="JavaScript" value="228" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="6" />
           <entry key="RNG Compact" value="3" />
@@ -64,10 +73,10 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="7074" />
+          <entry key="css" value="7263" />
           <entry key="gitignore" value="20" />
           <entry key="html" value="15" />
-          <entry key="js" value="29543" />
+          <entry key="js" value="29634" />
           <entry key="json" value="11" />
           <entry key="pre-commit" value="2" />
           <entry key="sample" value="2" />
@@ -77,10 +86,10 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="7074" />
+          <entry key="CSS" value="7263" />
           <entry key="HTML" value="15" />
           <entry key="JSON" value="11" />
-          <entry key="JavaScript" value="29471" />
+          <entry key="JavaScript" value="29562" />
           <entry key="PLAIN_TEXT" value="154" />
           <entry key="SVG" value="8" />
           <entry key="Scratch" value="72" />
@@ -95,73 +104,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/hallOfFame/HallOfFame.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="75" column="13" lean-forward="true" selection-start-line="75" selection-start-column="13" selection-end-line="75" selection-end-column="13" />
-              <folding>
-                <element signature="e#0#38#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/hallOfFame/HallOfFameTitle.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="8" column="30" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="37" />
-              <folding>
-                <element signature="e#0#38#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/hallOfFame/HallOfFameViz.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="9" column="22" lean-forward="true" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-              <folding>
-                <element signature="e#0#38#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/hallOfFame/HallOfFameViz.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/hallOfFame/HallOfFameList.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#38#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/hallOfFame/HallOfFameList.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/leaderboard/RunDescription.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+            <state relative-caret-position="369">
+              <caret line="75" column="36" lean-forward="true" selection-start-line="75" selection-start-column="24" selection-end-line="75" selection-end-column="45" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -170,18 +114,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/leaderboard/RunDescription.css">
+        <entry file="file://$PROJECT_DIR$/src/hallOfFame/HallOfFame.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="93">
-              <caret line="54" column="19" lean-forward="true" selection-start-line="54" selection-start-column="19" selection-end-line="54" selection-end-column="19" />
+            <state relative-caret-position="368">
+              <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/hallOfFame/HallOfFamePlacard.js">
+        <entry file="file://$PROJECT_DIR$/src/innerComponents/Button.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="115">
+              <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -190,10 +135,74 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/hallOfFame/HallOfFamePlacard.css">
+        <entry file="file://$PROJECT_DIR$/src/leaderboard/SideBar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="50" column="36" selection-start-line="50" selection-start-column="36" selection-end-line="50" selection-end-column="36" />
+            <state relative-caret-position="230">
+              <caret line="20" column="83" selection-start-line="20" selection-start-column="83" selection-end-line="20" selection-end-column="83" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/leaderboard/BossBar.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="16" column="105" selection-start-line="16" selection-start-column="105" selection-end-line="16" selection-end-column="105" />
+              <caret line="18" column="108" selection-start-line="18" selection-start-column="108" selection-end-line="18" selection-end-column="108" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/leaderboard/RunDescription.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/leaderboard/RunDescription.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="553">
+              <caret line="74" column="24" selection-start-line="74" selection-start-column="24" selection-end-line="74" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/innerComponents/BackFrame.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23">
+              <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/innerComponents/BackFrame.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="9" column="30" lean-forward="true" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/innerComponents/Button.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="368">
+              <caret line="31" column="23" lean-forward="true" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -224,9 +233,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/innerComponents/Button.js" />
-        <option value="$PROJECT_DIR$/src/speedrun/Speedrun.css" />
-        <option value="$PROJECT_DIR$/src/races/RaceList.css" />
         <option value="$PROJECT_DIR$/src/index.css" />
         <option value="$PROJECT_DIR$/src/helper/countRunnerScore.js" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.js" />
@@ -250,7 +256,6 @@
         <option value="$PROJECT_DIR$/src/profile/ProfileSearch.css" />
         <option value="$PROJECT_DIR$/src/innerComponents/Tooltip.js" />
         <option value="$PROJECT_DIR$/src/Viz/PieChart.js" />
-        <option value="$PROJECT_DIR$/src/hallOfFame/HallOfFame.js" />
         <option value="$PROJECT_DIR$/src/Viz/Histogram.css" />
         <option value="$PROJECT_DIR$/src/innerComponents/BackFrame.js" />
         <option value="$PROJECT_DIR$/src/races/UpcomingRace.css" />
@@ -260,21 +265,25 @@
         <option value="$PROJECT_DIR$/.git/hooks/pre-commit.sample" />
         <option value="$PROJECT_DIR$/.git/hooks/prepare-commit-msg.sample" />
         <option value="$PROJECT_DIR$/.git/hooks/pre-commit" />
-        <option value="$PROJECT_DIR$/src/innerComponents/BackFrame.css" />
         <option value="$PROJECT_DIR$/src/App.css" />
-        <option value="$PROJECT_DIR$/src/leaderboard/RunDescription.js" />
-        <option value="$PROJECT_DIR$/src/leaderboard/SideBar.js" />
         <option value="$PROJECT_DIR$/src/leaderboard/SideBar.css" />
         <option value="$PROJECT_DIR$/src/leaderboard/LeaderboardTitle.js" />
         <option value="$PROJECT_DIR$/src/leaderboard/LeaderboardTitle.css" />
         <option value="$PROJECT_DIR$/src/innerComponents/NavBar.js" />
         <option value="$PROJECT_DIR$/src/innerComponents/NavBar.css" />
-        <option value="$PROJECT_DIR$/src/hallOfFame/HallOfFame.css" />
         <option value="$PROJECT_DIR$/src/hallOfFame/HallOfFameTitle.css" />
         <option value="$PROJECT_DIR$/src/hallOfFame/HallOfFameList.css" />
         <option value="$PROJECT_DIR$/src/hallOfFame/HallOfFamePlacard.css" />
         <option value="$PROJECT_DIR$/src/hallOfFame/HallOfFameViz.css" />
+        <option value="$PROJECT_DIR$/src/innerComponents/BackFrame.css" />
+        <option value="$PROJECT_DIR$/src/leaderboard/SideBar.js" />
+        <option value="$PROJECT_DIR$/src/innerComponents/Button.js" />
+        <option value="$PROJECT_DIR$/src/leaderboard/BossBar.js" />
+        <option value="$PROJECT_DIR$/src/leaderboard/RunDescription.js" />
         <option value="$PROJECT_DIR$/src/leaderboard/RunDescription.css" />
+        <option value="$PROJECT_DIR$/src/innerComponents/Button.css" />
+        <option value="$PROJECT_DIR$/src/hallOfFame/HallOfFame.js" />
+        <option value="$PROJECT_DIR$/src/hallOfFame/HallOfFame.css" />
       </list>
     </option>
   </component>
@@ -322,7 +331,19 @@
               <item name="terrariaSpeedruns" type="b2602c69:ProjectViewProjectNode" />
               <item name="terrariaSpeedruns" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="hallOfFame" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="terrariaSpeedruns" type="b2602c69:ProjectViewProjectNode" />
+              <item name="terrariaSpeedruns" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="leaderboard" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="terrariaSpeedruns" type="b2602c69:ProjectViewProjectNode" />
+              <item name="terrariaSpeedruns" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -376,7 +397,7 @@
       <workItem from="1536738544948" duration="1995000" />
       <workItem from="1537053882799" duration="359000" />
       <workItem from="1537054504202" duration="40327000" />
-      <workItem from="1537338420130" duration="9667000" />
+      <workItem from="1537338420130" duration="13911000" />
     </task>
     <task id="LOCAL-00001" summary="Profile features expanded. Included Embedded Video, site links, colored name, layout styles.">
       <created>1535180171220</created>
@@ -396,7 +417,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="232934000" />
+    <option name="totallyTimeSpent" value="237178000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1873" height="1096" extended-state="6" />
@@ -404,9 +425,9 @@
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.13678475" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.13678475" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="0" sideWeight="0.49809265" visible="true" weight="0.37130803" />
+      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49809265" visible="true" weight="0.37130803" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.50190735" side_tool="true" weight="0.37130803" />
       <window_info anchor="bottom" id="Version Control" order="2" sideWeight="0.49917987" weight="0.32911393" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
@@ -460,19 +481,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Profile features expanded. Included Embedded Video, site links, colored name, layout styles." />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/profile/Profile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1449">
-          <caret line="12" column="62" selection-start-line="12" selection-start-column="62" selection-end-line="12" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/innerComponents/Button.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/innerComponents/Icon.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/innerComponents/Icon.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
@@ -481,9 +489,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/innerComponents/Player.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/innerComponents/Button.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/races/UpcomingRace.css">
@@ -578,34 +583,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/innerComponents/BackFrame.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
           <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/innerComponents/BackFrame.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/leaderboard/SideBar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="19" column="44" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -691,13 +672,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/hallOfFame/HallOfFame.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/hallOfFame/HallOfFameTitle.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
@@ -709,16 +683,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
           <caret line="8" column="30" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hallOfFame/HallOfFame.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="75" column="13" lean-forward="true" selection-start-line="75" selection-start-column="13" selection-end-line="75" selection-end-column="13" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
@@ -757,6 +721,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/hallOfFame/HallOfFameViz.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/Resources.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="37" lean-forward="true" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+            <element signature="e#238#284#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/hallOfFame/HallOfFameViz.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
@@ -767,17 +749,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/hallOfFame/HallOfFameViz.css">
+    <entry file="file://$PROJECT_DIR$/src/leaderboard/BossBar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+        <state relative-caret-position="414">
+          <caret line="16" column="105" selection-start-line="16" selection-start-column="105" selection-end-line="16" selection-end-column="105" />
+          <caret line="18" column="108" selection-start-line="18" selection-start-column="108" selection-end-line="18" selection-end-column="108" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/innerComponents/Button.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/leaderboard/SideBar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="20" column="83" selection-start-line="20" selection-start-column="83" selection-end-line="20" selection-end-column="83" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/leaderboard/RunDescription.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+        <state relative-caret-position="276">
+          <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
@@ -786,8 +792,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/leaderboard/RunDescription.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="54" column="19" lean-forward="true" selection-start-line="54" selection-start-column="19" selection-end-line="54" selection-end-column="19" />
+        <state relative-caret-position="553">
+          <caret line="74" column="24" selection-start-line="74" selection-start-column="24" selection-end-line="74" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/innerComponents/BackFrame.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/innerComponents/BackFrame.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="30" lean-forward="true" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/innerComponents/Button.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="31" column="23" lean-forward="true" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hallOfFame/HallOfFame.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="75" column="36" lean-forward="true" selection-start-line="75" selection-start-column="24" selection-end-line="75" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hallOfFame/HallOfFame.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
         </state>
       </provider>
     </entry>

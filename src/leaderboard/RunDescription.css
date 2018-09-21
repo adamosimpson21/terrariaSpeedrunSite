@@ -1,6 +1,6 @@
 .runDescription{
 	width: fit-content;
-	min-width:600px;
+	min-width:60%;
 	font-size:1.4em;
 	color:black;
 	background:linear-gradient(darkgray, gray);
@@ -11,12 +11,23 @@
 	     -o-transform: skewX(-40deg);
 }
 
-.playerDisplay2{
-	display:inline-flex;
-	min-width:240px;
+.runDescription .innerSpan{
+    -webkit-transform: skewX(40deg);
+    -moz-transform: skewX(40deg);
+    -o-transform: skewX(40deg);
+    display:inline-flex;
 }
 
-.Player2Display{
+.player1Display{
+	display:inline-flex;
+}
+
+.playerDisplayTopLine{
+    min-width:375px;
+    margin-right:20px;
+}
+
+.player2Display{
 	padding-left:8px;
 }
 
@@ -31,12 +42,7 @@
 	color:inherit;
 }
 
-.runDescription .innerSpan{
-	-webkit-transform: skewX(40deg);
-	   -moz-transform: skewX(40deg);
-	     -o-transform: skewX(40deg);
-    display:inline-flex;
-}
+
 
 .runDescription:nth-child(1) .runDescriptionPlace{
 	color:gold;
@@ -64,10 +70,8 @@
 		margin-right:16px;
 		display:block;
 	}
-    /*.runDescription .playerDisplay2,.timeDisplay{*/
-        /*min-width:fit-content;*/
-    /*}*/
-    /*.runDescription .innerSpan .playerDisplayTopLine, .playerDisplayBottomLine{*/
-		/*display:inline;*/
-	/*}*/
+
+    .runDescription .playerDisplayTopLine{
+        min-width:240px;
+    }
 }

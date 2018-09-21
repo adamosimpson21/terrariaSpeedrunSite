@@ -14,9 +14,9 @@ class BossBar extends Component {
     const {category} = this.props
     for(let boss in categoryIDLookUp){
       if(categoryIDLookUp[boss].type==='level'){
-        levelButtons.push(<Button className={this.isPressed(category===boss)} label={boss} key={boss} handleClick={(e) => this.props.handler(e, boss)}/>)
+        levelButtons.push(<Button className={this.isPressed(category===boss)} label={boss} key={boss} onClick={(e) => this.props.handler(e, boss)}/>)
       } else if(categoryIDLookUp[boss].type==='category'){
-        categoryButtons.push(<Button className={this.isPressed(category===boss)} label={boss} key={boss} handleClick={(e) => this.props.handler(e, boss)}/>)
+        categoryButtons.push(<Button className={this.isPressed(category===boss)} label={boss} key={boss} onClick={(e) => this.props.handler(e, boss)}/>)
       }
     }
 

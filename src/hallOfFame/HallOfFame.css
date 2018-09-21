@@ -9,6 +9,14 @@
     width: fit-content;
 }
 
+.hallOfFameButtonGroup{
+    display:block;
+}
+
+.hallOfFameButtonGroup .buttonHOC{
+    width:inherit
+}
+
 @media screen and (max-width:800px) {
     .hallOfFameBody{
         width:100%;

@@ -7,11 +7,11 @@
 	margin:4px;
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 800px) {
 	.backFrame {
         display: block;
         width:fit-content;
-		margin:0;
+		margin: 0 auto;
 		padding:0;
     }
 }

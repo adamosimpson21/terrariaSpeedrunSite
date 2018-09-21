@@ -3,11 +3,10 @@ import './Button.css'
 
 class Button extends Component {
   render (){
-    const {label, handleClick} = this.props
+    const {label} = this.props
       return (
         <button
           className='buttonHOC'
-          onClick={handleClick}
           {...this.props}>
           {label}
         </button>

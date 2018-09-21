@@ -73,9 +73,9 @@ class HallOfFame extends Component {
           <HallOfFameList fameList = {this.state.fameList}/>
           <HallOfFameViz data={this.state.fameList} type={this.state.typeOfViz}/>
         </Row>
-        <Row>
-          <Button label='Pie' handleClick={(e) => this.handler(e, 'Pie')} />
-          <Button label='Histogram' handleClick={(e) => this.handler(e, 'Histogram')} />
+        <Row className='hallOfFameButtonGroup'>
+          <Button label='Pie' onClick={(e) => this.handler(e, 'Pie')} />
+          <Button label='Histogram' onClick={(e) => this.handler(e, 'Histogram')} />
         </Row>
         <HallOfFameDescription />
       </div>

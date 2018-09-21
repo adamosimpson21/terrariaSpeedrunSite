@@ -11,9 +11,9 @@ class RunDescription extends Component {
         <div className='innerSpan'>
           <div className='playerDisplayTopLine'>
             <span className='runDescriptionPlace'>{place}. </span>
-            <div className='playerDisplay2'><Player id={runner[0].id} />
+            <div className='player1Display'><Player id={runner[0].id} />
           </div>
-            {runner[1] && <span className='Player2Display'> and <Player id={runner[1].id} /></span>}
+            {runner[1] && <span className='player2Display'> and <Player id={runner[1].id} /></span>}
           </div>
           <div className='playerDisplayBottomLine'>
             <Link className="linkToSpeedrun" to={'/speedrun/' + id}>

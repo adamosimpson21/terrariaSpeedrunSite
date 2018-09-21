@@ -14,16 +14,16 @@ class SideBar extends Component {
       <div className='sideBar'>
         <Grid>
           <Row className='sideBarVariableRow'>
-            <Button label='Normal' className={this.isPressed(diff==='Normal')} handleClick={(e) => this.props.handler(e, 'Normal')} />
-            <Button label='Expert' className={this.isPressed(diff==='Expert')} handleClick={(e) => this.props.handler(e, 'Expert')} />
+            <Button label='Normal' className={this.isPressed(diff==='Normal')} onClick={(e) => this.props.handler(e, 'Normal')} />
+            <Button label='Expert' className={this.isPressed(diff==='Expert')} onClick={(e) => this.props.handler(e, 'Expert')} />
           </Row>
           <Row className='sideBarVariableRow'>
-            <Button label='Seeded' className={this.isPressed(seed==='Seeded')} handleClick={(e) => this.props.handler(e, 'Seeded')} />
-            <Button label='Random' className={this.isPressed(seed==='Random')} handleClick={(e) => this.props.handler(e, 'Random')} />
+            <Button label='Seeded' className={this.isPressed(seed==='Seeded')} onClick={(e) => this.props.handler(e, 'Seeded')} />
+            <Button label='Random' className={this.isPressed(seed==='Random')} onClick={(e) => this.props.handler(e, 'Random')} />
           </Row>
           <Row className='sideBarVariableRow'>
-            <Button label='1 Player' className={this.isPressed(numPlayers==='1 Player')} handleClick={(e) => this.props.handler(e, '1 Player')} />
-            <Button label='2 Player' className={this.isPressed(numPlayers==='2 Players')} handleClick={(e) => this.props.handler(e, '2 Players')} />
+            <Button label='1 Player' className={this.isPressed(numPlayers==='1 Player')} onClick={(e) => this.props.handler(e, '1 Player')} />
+            <Button label='2 Player' className={this.isPressed(numPlayers==='2 Players')} onClick={(e) => this.props.handler(e, '2 Players')} />
           </Row>
         </Grid>
       </div>
