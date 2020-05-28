@@ -1,7 +1,22 @@
 import {categoryIDLookUp, runnerIdToNames} from "./idTables";
 
 export function formattedDuration (timeString) {
-  return timeString.replace('PT', '').toLowerCase()
+  let newTimeString = timeString.replace('PT', '').toLowerCase()
+  if(newTimeString.match(new RegExp(  "h(.*)m" ))){
+    if (newTimeString.match(new RegExp("h(.*)m"))[0].length === 3) {
+      newTimeString = newTimeString.replace('h', 'h 0');
+    } else {
+      newTimeString = newTimeString.replace('h', 'h ');
+    }
+  }
+  if(newTimeString.match(new RegExp(  "m(.*)s" ))){
+    if (newTimeString.match(new RegExp("m(.*)s"))[0].length === 3) {
+      newTimeString = newTimeString.replace('m', 'm 0');
+    } else {
+      newTimeString = newTimeString.replace('m', 'm ');
+    }
+  }
+  return newTimeString;
 }
 
 //translates runner Name to Id, returns false if does not exist

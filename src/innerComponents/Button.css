@@ -1,27 +1,29 @@
 .buttonHOC{
 	background: linear-gradient(to bottom right, #6d99f8, #4b58f4);
-	width:45%;
-	min-width:90px;
-	border: 2px solid #5162f6;
+	/*width:45%;*/
+	min-width: 8vw;
+	border: 0.1vw solid #5162f6;
 	color: #dddddd;
-	text-shadow: 2px 1px 1px rgba(100, 100, 100, 0.8);
-	padding: 2px 6px 2px 6px;
-	border-radius:12px;
-	font-size:20px;
-	margin:3px;
+	text-shadow: 0.1vw 0.1vw 0.1vw rgba(100, 100, 100, 0.8);
+	padding: 0.1vw 0.5vw;
+	border-radius: 1vw;
+	font-size: 1.5vw;
+	margin: 0.2vw;
 	cursor: pointer;
+	outline: none;
 }
 
 .buttonHOC:active{
-	transform: translate(0px, 2px) ;
-	border: 2px solid #2a2e68;
+	transform: translate(0px, 0.1vw) ;
+	border: 0.1vw solid #2a2e68;
 	background: linear-gradient(to bottom right, #323269, #262d69);
 }
 
 .pressed {
-	color: rgba( 221, 221, 221, 0.7);
-	transform: translate(0px, 2px) ;
-	border: 2px solid #2a2e68;
+	color: rgba(100, 126, 153, 0.7);
+	transform: translate(0px, 0.1vw);
+	text-shadow: none;
+	border: 0.1vw solid #2a2e68;
 	background: linear-gradient(to bottom right, #323269, #262d69);
 }
 

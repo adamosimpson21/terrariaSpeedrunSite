@@ -21,7 +21,7 @@ const color = {
 }
 
 const Icon = (props) => (
-  <svg width="48" height="48" viewBox="0 0 1024 1024">
+  <svg width={window.innerWidth*0.03} height={window.innerWidth*0.03} viewBox="0 0 1024 1024">
     <path style={{fill: color[props.icon]}} d={icons[props.icon]}></path>
   </svg>
 );

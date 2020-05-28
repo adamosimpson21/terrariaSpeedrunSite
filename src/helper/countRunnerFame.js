@@ -5,9 +5,9 @@ export function calculateRunnerFame(PBs){
   function checkGame(run){
     return (run.run.game==="kdk4e21m")
   }
-  function checkVersion(run){
-    return (run.run.values['e8morel6']==='21d65p3q')
-  }
+  // function checkVersion(run){
+  //   return (run.run.values['e8morel6']==='21d65p3q')
+  // }
   function calculateFamePerRun(run){
     let addedFame = 0;
     switch (run.place) {
@@ -43,8 +43,10 @@ export function calculateRunnerFame(PBs){
       case 'ywe4g04d':
       case '69zrj74d':
       case 'r9gz562d':
+      case 'rdn2x4qd':
       case 'o9x2q67w':
       case '495jgp4w':
+      case 'ldy8klkw':
       case 'rdq0rygw':
       case 'kwjyj01w':
       case 'owokn83d':
@@ -53,13 +55,18 @@ export function calculateRunnerFame(PBs){
       default:
         break;
     }
-    //Expert runs are multiplied by 1.5x
-    if(run.run.values["wleq7kl6"] && run.run.values["wleq7kl6"]==="rqvv0n5q"){
+    //Expert runs are multiplied by 1.5x, master mode by 2x
+    if(run.run.values["wleq7kl6"] && run.run.values["wleq7kl6"]==="0q5k6j2q"){
+      addedFame += addedFame
+    } else if(run.run.values["wleq7kl6"] && run.run.values["wleq7kl6"]==="rqvv0n5q"){
       addedFame += addedFame/2
     }
     fameData.fame += Math.floor(addedFame);
   }
 
-  PBs.data.filter(checkGame).filter(checkVersion).forEach(calculateFamePerRun);
+  // for 1.3.5 only
+  // PBs.data.filter(checkGame).filter(checkVersion).forEach(calculateFamePerRun);
+  // all time
+  PBs.data.filter(checkGame).forEach(calculateFamePerRun);
   return fameData;
 }

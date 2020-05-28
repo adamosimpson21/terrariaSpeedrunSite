@@ -1,11 +1,11 @@
 .hallOfFamePlacard{
     width: 65%;
-    min-width:450px;
-    font-size:1.4em;
+    min-width:30vw;
+    font-size:1.6vw;
     color:black;
     background:linear-gradient(darkgray, gray);
-    border: 1px solid gray;
-    margin: 10px auto 10px auto;
+    border: 0.1vw solid gray;
+    margin: 0.75vw auto;
     -webkit-transform: skewX(-40deg);
     -moz-transform: skewX(-40deg);
     -o-transform: skewX(-40deg);
@@ -16,12 +16,12 @@
     -moz-transform: skewX(40deg);
     -o-transform: skewX(40deg);
     text-align:left;
-    margin: 0 20px;
+    margin: 0 1.25vw;
 }
 
 .fameDisplay{
     display:flex;
-    min-width:120px;
+    min-width: 5vw;
     float:right;
 }
 

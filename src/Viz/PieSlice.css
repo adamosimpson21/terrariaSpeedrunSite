@@ -1,0 +1,9 @@
+.arc{
+    z-index:1;
+}
+
+.arc.pie-slice-is-hovered{
+    stroke: #ccc;
+    stroke-width: 8;
+    stroke-opacity: 0.5;
+}

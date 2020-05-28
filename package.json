@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "classnames": "^2.2.6",
     "d3": "^5.7.0",
     "moment": "^2.22.2",
-    "react": "^16.4.2",
+    "react": "^16.13.1",
     "react-bootstrap": "^0.32.3",
     "react-dom": "^16.4.2",
     "react-flexbox-grid": "^2.1.2",

@@ -9,7 +9,8 @@ class Player extends Component {
     if(id){
       return (
         <div className='playerDisplay'>
-          <Link className='playerLink' to={'/profile/' + id}>{runnerIdToNames[id]}</Link>
+          {/* TODO: fix runnerIdToNames to get sensible default/look up new runners */}
+          <Link className='playerLink' to={'/profile/' + id}>{runnerIdToNames[id] || `New Runner id: ${id}`}</Link>
         </div>
       )
     } else {

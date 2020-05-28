@@ -4,7 +4,20 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 This site was created for my hobby community, Terraria Speedruns. As our community expanded, the old site (a child of a much larger speedrun site) could note provide all of the features we were looking for. Discord integration, detailed profile pages, modern styling, race sign-ups, race displays, and customized leaderboards were not available on the older platform.
 
-Technologies used for this project: React, APIs, JavaScript, HTML, JSX, CSS, React-Router, and StandardJS  
+Technologies used for this project: React, APIs, D3, JavaScript, HTML, JSX, CSS, React-Router, and StandardJS
+
+Upcoming features: Better visualizations, state management (redux), Back-end for Races, Dynamic Hall of Fame lists and visualizations, testing!, improved responsive mobile design, improved styling for user profiles, and Hall of Fame database
+
+Basics: npm install => npm start to begin running the app.
+
+Folder Structure: Each view has a separate folder. The component structure is usually:
+ page name => title/description/other => list of items => placards
+
+innerComponents folder contains Re-usable and multi-page components to use through the app.
+helper folder contains middleware functions and tables to use through app (idTables, error handling, etc.)
+speedrun folder is a page for displaying individual speedruns, but does not have it's own view in the navbar
+
+If you're interested in contacting BandsWithLegends for more details or to contribute, please contact him through discord or twitter. His website can be found at http://BandsWithLegends.com
 
 Below you will find some information on how to perform common tasks.<br>
 You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
