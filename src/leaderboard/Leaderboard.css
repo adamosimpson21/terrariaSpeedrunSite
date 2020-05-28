@@ -2,3 +2,16 @@
 	display:block;
 }
 
+.leaderboardBody{
+	display: block;
+}
+
+.leaderboardBody .leaderboard-core{
+	display: flex;
+	margin: auto;
+	width: 80%;
+}
+
+.leaderboardBody .leaderboard-core .backFrame{
+	margin: 1vw 2vw;
+}

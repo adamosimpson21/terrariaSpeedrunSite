@@ -1,5 +1,6 @@
 .hallOfFameViz{
     margin: 0 auto;
+    padding: 0 1vw;
 }
 
 @media screen and (max-width: 800px){

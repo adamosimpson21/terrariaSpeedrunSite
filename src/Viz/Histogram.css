@@ -1,9 +1,11 @@
 .axis--x .tick text{
-    font-size:1em;
+    font-size:1vw;
     text-anchor:start;
-    transform:rotate(45deg) ;
+    transform:rotate(35deg) ;
 }
 
-rect{
-    fill:#ccc;
+.bar.is-bar-hovered{
+    stroke: #ccc;
+    stroke-width: 4;
+    stroke-opacity: 0.5;
 }

@@ -8,23 +8,26 @@ import {fetchErrorHandler} from "../helper/helperfunctions";
 import {calculateRunnerFame} from "../helper/countRunnerFame";
 import { Row } from 'react-flexbox-grid'
 import Button from '../innerComponents/Button'
-// import {runnerIds} from "../helper/idTables";
+import classNames from 'classnames';
+import {runnerIdToNames} from "../helper/idTables";
 
-class HallOfFame extends Component {
+export default class HallOfFame extends Component {
   constructor(props){
     super(props)
     this.state={
       // use when generating new lists
       // idList:runnerIds,
-      // top runners all time
-      // idList:["68w1y0lx","kj92v478","v81vpgp8","zxzl7vn8","48gn04pj","98r41qj1","y8dwmolj","pj0v59xw","dx3mek28","7j4ge05j"],
-      // top runners in 1.3.5
-      idList:['v81vpgp8','68w1y0lx','48gn04pj','7j4ge05j','kj92v478','e8enr778','1xyr75vj','y8dp6nm8','zx7253y8','zx7zw3q8'],
+      // top runners 1.3.5
+      // idList:["48gn04pj","zxzkonnx","68w1y0lx","v81vpgp8","18qg35ox","7j4ge05j","1xyr75vj","y8dp6nm8","kj92v478","zxzl7vn8"],
+      // top runner all time
+      idList: ["48gn04pj", "68w1y0lx", "zxzkonnx", "v81vpgp8", "kj92v478", "18qg35ox", "zxzl7vn8", "y8dp6nm8", "7j4ge05j", "1xyr75vj"],
       fameList: [],
-      typeOfViz:'Histogram'
+      typeOfViz:'Histogram',
+      hoveredRunner: {"fame":880,"place":{"1":45,"2":16,"3":9,"other":19},"id":"68w1y0lx", color: "blue"}
     }
 
     this.handler = this.handler.bind(this)
+    this.setHoveredRunner = this.setHoveredRunner.bind(this);
   }
 
   componentDidMount(){
@@ -38,6 +41,7 @@ class HallOfFame extends Component {
     }
   }
 
+  // loads all Hall of Fame scores in parallel
   loadScores(idList){
     function loadScore(id){
       return fetch("https://www.speedrun.com/api/v1/users/" + id + "/personal-bests")
@@ -56,31 +60,55 @@ class HallOfFame extends Component {
     }
 
     loadAll(idList).then(fameList => {
+      // use when generating new fame list
+      // console.log("fameList:", fameList.sort(this.compareFame).slice(0, FAME_LIST_LENGTH).map(user => user.id));
       this.setState({fameList})
     })
   }
 
   handler(event, variable){
-    event.preventDefault()
+    event.preventDefault();
     this.setState({typeOfViz:variable})
   }
 
+  setHoveredRunner(runnerInfo){
+    this.setState({ hoveredRunner: runnerInfo})
+  }
+
   render () {
+    const { fameList, typeOfViz, hoveredRunner} = this.state;
     return (
       <div className="hallOfFameBody">
         <HallOfFameTitle />
         <Row className="hallOfFameDataRow">
-          <HallOfFameList fameList = {this.state.fameList}/>
-          <HallOfFameViz data={this.state.fameList} type={this.state.typeOfViz}/>
+          <HallOfFameList fameList={fameList}/>
+          <HallOfFameViz data={fameList} type={typeOfViz} setHoveredRunner={this.setHoveredRunner} />
         </Row>
         <Row className='hallOfFameButtonGroup'>
-          <Button label='Pie' onClick={(e) => this.handler(e, 'Pie')} />
-          <Button label='Histogram' onClick={(e) => this.handler(e, 'Histogram')} />
-        </Row>
+          <div className="hall-of-fame-button-group-right-side">
+            <Button label='Pie' className={classNames('buttonHOC',{'pressed': typeOfViz!=='Pie'})} onClick={(e) => this.handler(e, 'Pie')} />
+            <Button label='Histogram' className={classNames('buttonHOC',{'pressed': typeOfViz!=='Histogram'})}  onClick={(e) => this.handler(e, 'Histogram')} />
+          </div>
+          <div className='hall-of-fame-runner-personal-stats-wrapper'>
+            {
+              hoveredRunner ?
+                <div className="runner-person-stats" style={{ color: hoveredRunner.color}}>
+                  {runnerIdToNames[hoveredRunner.id]}
+                  <br />
+                  Gold:{hoveredRunner.place["1"]},
+                  Silver:{hoveredRunner.place["2"]},
+                  Bronze:{hoveredRunner.place["3"]}
+                </div>
+              :
+              <div>
+                Hover over the chart to see a runner's Personal Achievements
+              </div>
+            }
+          </div>
+
+          </Row>
         <HallOfFameDescription />
       </div>
     )
   }
 }
-
-export default HallOfFame

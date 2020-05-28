@@ -3,7 +3,7 @@ import './RunDescription.css'
 import Player from '../innerComponents/Player'
 import {Link} from 'react-router-dom'
 
-class RunDescription extends Component {
+export default class RunDescription extends Component {
   render () {
     const {runner, time, date, place, id} = this.props
     return (
@@ -11,8 +11,9 @@ class RunDescription extends Component {
         <div className='innerSpan'>
           <div className='playerDisplayTopLine'>
             <span className='runDescriptionPlace'>{place}. </span>
-            <div className='player1Display'><Player id={runner[0].id} />
-          </div>
+            <div className='player1Display'>
+              <Player id={runner[0].id} />
+            </div>
             {runner[1] && <span className='player2Display'> and <Player id={runner[1].id} /></span>}
           </div>
           <div className='playerDisplayBottomLine'>
@@ -26,5 +27,3 @@ class RunDescription extends Component {
     )
   }
 }
-
-export default RunDescription

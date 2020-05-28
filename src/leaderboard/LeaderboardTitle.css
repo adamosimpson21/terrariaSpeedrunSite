@@ -1,29 +1,29 @@
-.leaderboardTitle{
-	color:#ccc;
+.leaderboard-title{
+	display: flex;
 }
 
-.leaderboardTitle h3 {
-  font-size: 2em;
+.leaderboard-variable-wrapper{
+	display: flex;
+	width: 17vw;
+	height: 8vw;
 }
 
-.categoryTitleImage{
-	height:60px;
+.leaderboard-variable-wrapper .leaderboard-image-wrapper{
+	background-image: url("../img/WeaponRack.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin-top: 1vw;
+	width: 7vw;
 }
 
-.titleVariableDisplay{
-	font-size:1.5em;
+
+.leaderboard-variable-wrapper .leaderboard-image-wrapper img{
+	height: 70%;
+	margin: 10% auto 15% auto;
 }
 
-.titleCategoryDisplay{
-	font-size:3.5em;
-}
-
-@media screen and (max-width: 800px) {
-	.titleCategoryDisplay{
-		font-size:2em;
-	}
-
-	.categoryTitleImageRightSide{
-		display:none;
-	}
+.leaderboard-variable-buttons{
+	width: 10vw;
+	display: block;
+	margin: auto auto;
 }

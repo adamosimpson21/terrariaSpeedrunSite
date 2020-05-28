@@ -15,27 +15,28 @@ class RunList extends Component {
   }
 
   	componentDidMount () {
-    	this.loadRuns(this.props.category, this.props.diff, this.props.seed, this.props.numPlayers, variableIDLookUp['Patch Used']['1.3.5'])
+      this.loadRuns(this.props.category, this.props.diff, this.props.seed, this.props.numPlayers, this.props.patch)
   	}
 
   // When the handler changes the state, make a new API call
   	componentDidUpdate (prevProps) {
   	// prevent infinite loops of updating
   		if (this.props !== prevProps) {
-	    	this.loadRuns(this.props.category, this.props.diff, this.props.seed, this.props.numPlayers, variableIDLookUp['Patch Used']['1.3.5'])
+        this.loadRuns(this.props.category, this.props.diff, this.props.seed, this.props.numPlayers, this.props.patch)
 	  	}
   	}
 
-  	loadRuns (category, difficulty, seed, numPlayers) {
-    let varObj = {}
+    loadRuns (category, difficulty, seed, numPlayers, patch) {
+      const { Difficulty, 'Major patch' : majorPatch, Players, Seeds} = variableIDLookUp;
+      let varObj = {}
 
-    varObj[variableIDLookUp.Difficulty.id] = variableIDLookUp.Difficulty[difficulty]
-    varObj[variableIDLookUp.Seeds.id] = variableIDLookUp.Seeds[seed]
-    varObj[variableIDLookUp['# of Players'].id] = variableIDLookUp['# of Players'][numPlayers]
-    varObj[variableIDLookUp['Patch Used'].id] = variableIDLookUp['Patch Used']['1.3.5']
+      varObj[Difficulty.id] = Difficulty[difficulty]
+      varObj[Seeds.id] = Seeds[seed]
+      varObj[Players.id] = Players[numPlayers]
+      varObj[majorPatch.id] = majorPatch[patch]
 
-    // fetching using the full URL, currently can vary by difficulty, seed, and category
-    fetch(buildURL(category, varObj))
+      // fetching using the full URL, currently can vary by difficulty, seed, and category, and patch
+      fetch(buildURL(category, varObj))
 	    .then(fetchErrorHandler)
 	    .then(data => {
 	     	let runs = data.data.runs
@@ -55,7 +56,7 @@ class RunList extends Component {
       />
     ))
 
-    if(Object.keys(allRuns).length === 0){
+    if(Object.keys(allRuns).length < 1){
       const {category, diff, seed, numPlayers} = this.props
       return(
         <div className='runList'>

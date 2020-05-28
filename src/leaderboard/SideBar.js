@@ -1,31 +1,31 @@
-import React, {Component} from 'react'
-import './SideBar.css'
-import Button from '../innerComponents/Button'
+import React, {Component} from 'react';
+import './SideBar.css';
 import BackFrame from '../innerComponents/BackFrame'
-import {Grid, Row, Col} from 'react-flexbox-grid';
+import {categoryIDLookUp} from "../helper/idTables";
 
 class SideBar extends Component {
-  isPressed(boolean){
-    return 'buttonHOC ' + (boolean ? 'pressed':'')
+  importAll (r) {
+    let images = {}
+    // eslint-disable-next-line
+    r.keys().map(item => { images[item.replace('./', '')] = r(item) })
+    return images
   }
+
+
   render () {
-    const {diff, seed, numPlayers} = this.props
-    return (
+    const { category} = this.props;
+    const images = this.importAll(require.context('../img', false, /\.(png|jpe?g|svg)$/))
+    return(
       <div className='sideBar'>
-        <Grid>
-          <Row className='sideBarVariableRow'>
-            <Button label='Normal' className={this.isPressed(diff==='Normal')} onClick={(e) => this.props.handler(e, 'Normal')} />
-            <Button label='Expert' className={this.isPressed(diff==='Expert')} onClick={(e) => this.props.handler(e, 'Expert')} />
-          </Row>
-          <Row className='sideBarVariableRow'>
-            <Button label='Seeded' className={this.isPressed(seed==='Seeded')} onClick={(e) => this.props.handler(e, 'Seeded')} />
-            <Button label='Random' className={this.isPressed(seed==='Random')} onClick={(e) => this.props.handler(e, 'Random')} />
-          </Row>
-          <Row className='sideBarVariableRow'>
-            <Button label='1 Player' className={this.isPressed(numPlayers==='1 Player')} onClick={(e) => this.props.handler(e, '1 Player')} />
-            <Button label='2 Player' className={this.isPressed(numPlayers==='2 Players')} onClick={(e) => this.props.handler(e, '2 Players')} />
-          </Row>
-        </Grid>
+        <div className="category-title-image-wrapper" >
+          <img className='categoryTitleImage' src={images[categoryIDLookUp[category].image]} alt='category' />
+        </div>
+        <div className="titleCategoryDisplay">
+          {category}
+        </div>
+        <div className="category-title-image-wrapper" >
+          <img className='categoryTitleImage' src={images[categoryIDLookUp[category].image]} alt='category' />
+        </div>
       </div>
     )
   }

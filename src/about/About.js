@@ -2,11 +2,15 @@ import React, {Component} from 'react'
 import BackFrame from '../innerComponents/BackFrame'
 import './About.css'
 import { Grid, Row, Col } from 'react-flexbox-grid'
+import {addRunnerNames, findAllUniqueRunners} from "../helper/idConstructors";
 
 class About extends Component {
   render () {
     return (
       <div className='aboutBody'>
+        {/* These buttons will output the variables runnerIds or runnerIdToNames in the console. They also return the value, as well */}
+        {/*<button onClick={() => findAllUniqueRunners("https://www.speedrun.com/api/v1/runs?game=kdk4e21m")}>Find All Runner IDs</button>*/}
+        {/*<button onClick={() => addRunnerNames()}>Find Current Runner Usernames </button>*/}
         <Grid fluid>
           <h1>TerrariaSpeedruns.com</h1>
           <p>Hello! Welcome to the official website of the Terraria Speedrunning Community!</p>

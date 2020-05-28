@@ -7,7 +7,7 @@
 .playerLink:hover{
 	text-decoration: none;
 	color:inherit;
-	text-shadow: 0 0 15px #FFFFFF;
+	text-shadow: 0 0 1vw #FFFFFF;
 	transform: scale(1.05);
 }
 

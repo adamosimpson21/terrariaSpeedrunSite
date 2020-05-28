@@ -20,7 +20,7 @@ class ProfileSearch extends Component {
 
   render () {
     return (
-      <div>
+      <div className="player-profile-search">
         <h1>Search for a player's profile</h1>
         <form action="">
           <label htmlFor="username">

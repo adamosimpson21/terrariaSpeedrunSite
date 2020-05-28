@@ -1,16 +1,21 @@
 .playerFound{
-    font-size:24px;
-    margin: 24px 0;
+    font-size:2.5vw;
+    margin: 1.5vw 0;
+}
+
+.player-profile-search{
+    padding: 2vw;
 }
 
 .profileSearchInput{
     color:#ccc;
-    font-size:24px;
-    height:32px;
-    width:256px;
+    font-size:2vw;
+    height:4vw;
+    width:25vw;
     border:0;
-    border-bottom: 4px solid #56ae44;
+    border-bottom: 0.25vw solid #56ae44;
     background:none;
+    text-align: center;
 }
 
 .profileSearchInput:focus {

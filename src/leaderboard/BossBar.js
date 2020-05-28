@@ -3,29 +3,28 @@ import './BossBar.css'
 import Button from '../innerComponents/Button'
 import BackFrame from '../innerComponents/BackFrame'
 import {categoryIDLookUp} from '../helper/idTables';
+import classNames from 'classnames';
 
 class BossBar extends Component {
-  isPressed(boolean){
-    return 'buttonHOC ' + (boolean ? 'pressed':'')
-  }
   render () {
     const categoryButtons = []
     const levelButtons = []
-    const {category} = this.props
-    for(let boss in categoryIDLookUp){
-      if(categoryIDLookUp[boss].type==='level'){
-        levelButtons.push(<Button className={this.isPressed(category===boss)} label={boss} key={boss} onClick={(e) => this.props.handler(e, boss)}/>)
-      } else if(categoryIDLookUp[boss].type==='category'){
-        categoryButtons.push(<Button className={this.isPressed(category===boss)} label={boss} key={boss} onClick={(e) => this.props.handler(e, boss)}/>)
-      }
-    }
+    const {category, changeLeaderboardHandler} = this.props
+    Object.keys(categoryIDLookUp).forEach(boss => {
+      categoryIDLookUp[boss].type==='level' ?
+        levelButtons.push(<Button className={classNames('buttonHOC', {'pressed': category!==boss})} label={boss} key={boss} onClick={(e) => changeLeaderboardHandler(e, boss)}/>)
+      :
+        categoryButtons.push(<Button className={classNames('buttonHOC', {'pressed': category!==boss})} label={boss} key={boss} onClick={(e) => changeLeaderboardHandler(e, boss)}/>)
+    })
 
     return (
       <div className='bossBar'>
-        {categoryButtons}
-        <br/>
-        <br/>
-        {levelButtons}
+        <div className="boss-bar-full-game-wrapper">
+          Full Game Categories: {categoryButtons}
+        </div>
+        <div className="boss-bar-IL-wrapper">
+          Individual Levels: {levelButtons}
+        </div>
       </div>
     )
   }

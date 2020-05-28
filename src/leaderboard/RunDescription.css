@@ -4,8 +4,8 @@
 	font-size:1.4em;
 	color:black;
 	background:linear-gradient(darkgray, gray);
-	border: 1px solid gray;
-	margin: 10px auto 10px auto;
+	border: 0.1vw solid gray;
+	margin: 1vw auto;
 	-webkit-transform: skewX(-40deg);
 	   -moz-transform: skewX(-40deg);
 	     -o-transform: skewX(-40deg);
@@ -23,18 +23,19 @@
 }
 
 .playerDisplayTopLine{
-    min-width:375px;
-    margin-right:20px;
+    min-width:25vw;
+    margin-right:1.5vw;
 }
 
 .player2Display{
-	padding-left:8px;
+	padding-left:0.75vw;
 }
 
 .timeDisplay{
-	display:inline-flex;
-	margin-right:12px;
-	min-width:120px;
+	display:inline-block;
+	margin-right: 1.5vw;
+	min-width:10vw;
+	text-align: right;
 }
 
 .linkToSpeedrun{

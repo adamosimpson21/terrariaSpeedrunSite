@@ -1,10 +1,11 @@
 .backFrame{
 	background-color:rgba(66,66,66,0.5);
-	border: 2px solid darkgray;
-	border-radius:10px;
+	border: 0.25vw solid darkgray;
+	border-radius: 1vw;
 	display:inline-flex;
-	padding:8px;
-	margin:4px;
+	padding:0.75vw;
+	margin:0.25vw auto;
+	width: fit-content;
 }
 
 @media screen and (max-width: 800px) {

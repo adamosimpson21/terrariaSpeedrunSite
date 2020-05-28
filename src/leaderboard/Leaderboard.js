@@ -4,8 +4,8 @@ import LeaderboardTitle from './LeaderboardTitle'
 import RunList from './RunList'
 import SideBar from './SideBar'
 import BossBar from './BossBar'
-import { Grid, Row, Col } from 'react-flexbox-grid'
 import {categoryIDLookUp} from "../helper/idTables";
+import {findAllUniqueRunners} from "../helper/idConstructors";
 
 class Leaderboard extends Component {
   constructor (props) {
@@ -13,17 +13,18 @@ class Leaderboard extends Component {
     this.state = {
       category: "Moon Lord",
       diff: 'Normal',
-      seed: 'Seeded',
-      numPlayers: '1 Player'
+      seed: 'Random',
+      numPlayers: '1 Player',
+      patch: 'Journey'
     }
 
-    this.handler = this.handler.bind(this)
+    this.changeLeaderboardHandler = this.changeLeaderboardHandler.bind(this)
   }
 
   // thankfully, every variable has a different english word attached to it, so one handler can work for all clicks
-  handler (event, variable) {
+  changeLeaderboardHandler (event, variable) {
     event.preventDefault()
-    if (variable === 'Normal' || variable === 'Expert') {
+    if ((variable === 'Normal' || variable === 'Expert' || variable === 'Master') && this.state.patch !=='Journey') {
       this.setState({
         diff: variable
       })
@@ -35,6 +36,17 @@ class Leaderboard extends Component {
       this.setState({
         numPlayers: variable
       })
+    } else if (variable === '1.4' || variable === '1.4 NMA' || variable==='Journey') {
+      if(variable === 'Journey'){
+        this.setState({
+          patch: variable,
+          diff: 'Normal'
+        })
+      } else {
+        this.setState({
+          patch: variable
+        })
+      }
     } else if (categoryIDLookUp.hasOwnProperty(variable)) {
       this.setState({
         category: variable
@@ -43,24 +55,14 @@ class Leaderboard extends Component {
   }
 
   render () {
-    const {diff, seed, numPlayers, category} = this.state
     return (
       <div className='leaderboardBody'>
-        <Grid fluid>
-          <Row>
-            <Col md={2}>
-              <SideBar handler={this.handler} diff={diff} seed={seed} numPlayers={numPlayers} />
-            </Col>
-            <Col md={10}>
-              <LeaderboardTitle category={category} diff={diff} seed={seed} numPlayers={numPlayers} />
-              <br />
-              <RunList category={category} diff={diff} seed={seed} numPlayers={numPlayers} />
-            </Col>
-          </Row>
-          <Row>
-            <BossBar category={category} handler={this.handler}/>
-          </Row>
-        </Grid>
+        <LeaderboardTitle changeLeaderboardHandler={this.changeLeaderboardHandler} {...this.state}  />
+        <div className="leaderboard-core">
+          <SideBar {...this.state} />
+          <RunList {...this.state}  />
+        </div>
+        <BossBar {...this.state}  changeLeaderboardHandler={this.changeLeaderboardHandler}/>
       </div>
     )
   }

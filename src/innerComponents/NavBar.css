@@ -3,9 +3,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 15px;
-  margin-bottom:10px;
-  opacity: 0.75
+  padding: 0 1vw;
+  margin-bottom: 1vw;
+  opacity: 0.75;
 }
 
 .activeNavLink li{

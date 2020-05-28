@@ -4,3 +4,9 @@
     margin-top:4px;
     margin-bottom:4px;
 }
+
+.bossBar .boss-bar-full-game-wrapper{
+    border-bottom: 0.2vw solid gray;
+    padding-bottom: 0.5vw;
+    margin-bottom: 0.5vw;
+}

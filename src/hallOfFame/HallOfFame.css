@@ -6,15 +6,32 @@
 
 .hallOfFameDataRow{
     margin: 0 auto;
-    width: fit-content;
+    width: 100%;
 }
 
 .hallOfFameButtonGroup{
-    display:block;
+    width: 100%;
+    display: flex;
+    align-items: center;
 }
 
-.hallOfFameButtonGroup .buttonHOC{
-    width:inherit
+.hall-of-fame-button-group-right-side{
+    width: 45%;
+}
+
+.hall-of-fame-button-group-right-side button{
+    width: 40%;
+}
+
+.hall-of-fame-runner-personal-stats-wrapper{
+    width: 43.5%;
+    background-color:rgba(66,66,66,0.5);
+    border: 0.25vw solid darkgray;
+    border-radius: 1vw;
+    padding:0.75vw;
+    margin: 0.25vw 0 0.25vw 1vw;
+    font-size: 1.8vw;
+    text-shadow: #333 0 0 1vw;
 }
 
 @media screen and (max-width:800px) {

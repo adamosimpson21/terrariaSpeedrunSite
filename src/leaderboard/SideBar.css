@@ -1,14 +1,21 @@
-.sideBarVariableRow{
-    margin-bottom:24px;
+.sideBar{
+    width: 15vw;
+    font-size: 2.7vw;
+    color: #ccc;
+    height: 50vh;
 }
 
-.sideBarVariableRow:last-of-type{
-    margin-bottom:0;
+.sideBar .titleCategoryDisplay{
+    height: 20%;
 }
 
-@media screen and (max-width: 800px) {
-    .sideBarVariableRow{
-        display:inline-grid!important;
-        margin: 0!important;
-    }
+.sideBar .category-title-image-wrapper{
+    height: 40%;
+    width: 100%;
+}
+
+.sideBar .category-title-image-wrapper img{
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
 }
