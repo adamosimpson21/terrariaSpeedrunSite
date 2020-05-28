@@ -9,7 +9,8 @@ import {calculateRunnerFame} from "../helper/countRunnerFame";
 import { Row } from 'react-flexbox-grid'
 import Button from '../innerComponents/Button'
 import classNames from 'classnames';
-import {runnerIdToNames} from "../helper/idTables";
+import {runnerIds, runnerIdToNames} from "../helper/idTables";
+import {FAME_LIST_LENGTH} from "../helper/Constants";
 
 export default class HallOfFame extends Component {
   constructor(props){
@@ -20,10 +21,10 @@ export default class HallOfFame extends Component {
       // top runners 1.3.5
       // idList:["48gn04pj","zxzkonnx","68w1y0lx","v81vpgp8","18qg35ox","7j4ge05j","1xyr75vj","y8dp6nm8","kj92v478","zxzl7vn8"],
       // top runner all time
-      idList: ["48gn04pj", "68w1y0lx", "zxzkonnx", "v81vpgp8", "kj92v478", "18qg35ox", "zxzl7vn8", "y8dp6nm8", "7j4ge05j", "1xyr75vj"],
+      idList: ["48gn04pj", "68w1y0lx", "zxzkonnx", "v81vpgp8", "kj92v478", "18qg35ox", "y8dp6nm8", "zxzl7vn8", "7j4ge05j", "1xyr75vj"],
       fameList: [],
       typeOfViz:'Histogram',
-      hoveredRunner: {"fame":880,"place":{"1":45,"2":16,"3":9,"other":19},"id":"68w1y0lx", color: "blue"}
+      hoveredRunner: null
     }
 
     this.handler = this.handler.bind(this)
@@ -61,7 +62,8 @@ export default class HallOfFame extends Component {
 
     loadAll(idList).then(fameList => {
       // use when generating new fame list
-      // console.log("fameList:", fameList.sort(this.compareFame).slice(0, FAME_LIST_LENGTH).map(user => user.id));
+      // console.log("fameList1:", fameList);
+      fameList.sort(this.compareFame).slice(0, FAME_LIST_LENGTH).map(user => user.id)
       this.setState({fameList})
     })
   }
@@ -77,6 +79,7 @@ export default class HallOfFame extends Component {
 
   render () {
     const { fameList, typeOfViz, hoveredRunner} = this.state;
+    // console.log("fameList:", fameList.sort(this.compareFame).slice(0, FAME_LIST_LENGTH).map(user => user.id));
     return (
       <div className="hallOfFameBody">
         <HallOfFameTitle />

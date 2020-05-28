@@ -2,73 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99f1ee01-c855-4763-a826-d4655a557187" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Viz/PieSlice.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Viz/PieSlice.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/helper/Constants.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/helper/idConstructors.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/BunnyMount.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/Expert_mode_icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/Journey_mode_icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/Master_mode_icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/Normal_mode_icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/WeaponRack.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/empressOfLight.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/queenSlime.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/randomIcon.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/randomIcon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/seededIcon.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/seededIcon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/calculateFame.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/mockPB.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Viz/Histogram.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Viz/Histogram.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Viz/Histogram.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Viz/Histogram.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Viz/PieChart.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Viz/PieChart.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Viz/PieChart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Viz/PieChart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/about/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/about/About.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hallOfFame/HallOfFame.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/hallOfFame/HallOfFame.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hallOfFame/HallOfFame.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hallOfFame/HallOfFame.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hallOfFame/HallOfFameDescription.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/hallOfFame/HallOfFameDescription.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hallOfFame/HallOfFameDescription.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hallOfFame/HallOfFameDescription.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hallOfFame/HallOfFameList.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/hallOfFame/HallOfFameList.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hallOfFame/HallOfFameList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hallOfFame/HallOfFameList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hallOfFame/HallOfFamePlacard.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/hallOfFame/HallOfFamePlacard.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hallOfFame/HallOfFameTitle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/hallOfFame/HallOfFameTitle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hallOfFame/HallOfFameViz.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/hallOfFame/HallOfFameViz.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hallOfFame/HallOfFameViz.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hallOfFame/HallOfFameViz.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helper/countRunnerFame.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/helper/countRunnerFame.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helper/helperfunctions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/helper/helperfunctions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/helper/idTables.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/helper/idTables.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/eaterofworlds.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/eaterofworlds.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/innerComponents/BackFrame.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/innerComponents/BackFrame.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/innerComponents/Button.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/innerComponents/Button.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/innerComponents/Icon.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/innerComponents/Icon.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/innerComponents/NavBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/innerComponents/NavBar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/innerComponents/Player.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/innerComponents/Player.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/innerComponents/Player.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/innerComponents/Player.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/innerComponents/PlayerLinkIcon.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/innerComponents/PlayerLinkIcon.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leaderboard/BossBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/leaderboard/BossBar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leaderboard/BossBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/leaderboard/BossBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leaderboard/Leaderboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/leaderboard/Leaderboard.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leaderboard/Leaderboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/leaderboard/Leaderboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leaderboard/LeaderboardTitle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/leaderboard/LeaderboardTitle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leaderboard/LeaderboardTitle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/leaderboard/LeaderboardTitle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leaderboard/RunDescription.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/leaderboard/RunDescription.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leaderboard/RunDescription.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/leaderboard/RunDescription.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leaderboard/RunList.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/leaderboard/RunList.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leaderboard/RunList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/leaderboard/RunList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leaderboard/SideBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/leaderboard/SideBar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leaderboard/SideBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/leaderboard/SideBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/profile/ProfileSearch.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/profile/ProfileSearch.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/profile/ProfileSearch.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/profile/ProfileSearch.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +85,7 @@
       <workItem from="1540936580954" duration="4528000" />
       <workItem from="1543619733749" duration="2533000" />
       <workItem from="1589876833214" duration="45360000" />
-      <workItem from="1590649149596" duration="1304000" />
+      <workItem from="1590649149596" duration="3063000" />
     </task>
     <task id="LOCAL-00001" summary="Profile features expanded. Included Embedded Video, site links, colored name, layout styles.">
       <created>1535180171220</created>
