@@ -18,10 +18,10 @@ export default class HallOfFame extends Component {
     this.state={
       // use when generating new lists
       // idList:runnerIds,
-      // top runners 1.3.5
-      // idList:["48gn04pj","zxzkonnx","68w1y0lx","v81vpgp8","18qg35ox","7j4ge05j","1xyr75vj","y8dp6nm8","kj92v478","zxzl7vn8"],
+      // top runners non-legacy
+      idList:["48gn04pj", "68w1y0lx", "jprpyy58", "j4rpnod8", "jo3kqw3j", "j2y12e68", "zxzkonnx", "18qg35ox", "y8de1zgj", "v81vpgp8"],
       // top runner all time
-      idList: ["48gn04pj", "68w1y0lx", "zxzkonnx", "v81vpgp8", "kj92v478", "18qg35ox", "y8dp6nm8", "zxzl7vn8", "7j4ge05j", "1xyr75vj"],
+      // idList: ["48gn04pj", "68w1y0lx", "zxzkonnx", "v81vpgp8", "kj92v478", "18qg35ox", "y8dp6nm8", "zxzl7vn8", "7j4ge05j", "1xyr75vj"],
       fameList: [],
       typeOfViz:'Histogram',
       hoveredRunner: null
@@ -79,7 +79,7 @@ export default class HallOfFame extends Component {
 
   render () {
     const { fameList, typeOfViz, hoveredRunner} = this.state;
-    // console.log("fameList:", fameList.sort(this.compareFame).slice(0, FAME_LIST_LENGTH).map(user => user.id));
+    console.log("fameList:", fameList.sort(this.compareFame).slice(0, FAME_LIST_LENGTH).map(user => user.id));
     return (
       <div className="hallOfFameBody">
         <HallOfFameTitle />

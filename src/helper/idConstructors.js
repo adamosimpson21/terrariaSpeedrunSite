@@ -57,6 +57,9 @@ function addRunnerNames(){
           return runnerObj
         }
       })
+      .catch(err => {
+        console.log(err);
+      })
   })
 }
 // addRunnerNames();

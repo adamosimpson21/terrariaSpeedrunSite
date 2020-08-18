@@ -3,8 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="99f1ee01-c855-4763-a826-d4655a557187" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/about/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/about/About.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hallOfFame/HallOfFame.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hallOfFame/HallOfFame.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helper/countRunnerFame.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/helper/countRunnerFame.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helper/idConstructors.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/helper/idConstructors.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/helper/idTables.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/helper/idTables.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leaderboard/Leaderboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/leaderboard/Leaderboard.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +28,7 @@
     <property name="SearchEverywhereHistoryKey" value=".git&#9;null&#9;null&#10;margin-bottom&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JavaScript" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../experiences-twitch-extension" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -85,7 +89,8 @@
       <workItem from="1540936580954" duration="4528000" />
       <workItem from="1543619733749" duration="2533000" />
       <workItem from="1589876833214" duration="45360000" />
-      <workItem from="1590649149596" duration="3063000" />
+      <workItem from="1590649149596" duration="3730000" />
+      <workItem from="1597739115134" duration="2688000" />
     </task>
     <task id="LOCAL-00001" summary="Profile features expanded. Included Embedded Video, site links, colored name, layout styles.">
       <created>1535180171220</created>
@@ -125,10 +130,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Profile features expanded. Included Embedded Video, site links, colored name, layout styles." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="709" y="295" key="FileChooserDialogImpl" timestamp="1589965194640">
+    <state x="709" y="295" key="FileChooserDialogImpl" timestamp="1590652878983">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state x="709" y="295" key="FileChooserDialogImpl/-1920.0.1858.1080/0.0.1858.1080@0.0.1858.1080" timestamp="1589965194640" />
+    <state x="709" y="295" key="FileChooserDialogImpl/-1920.0.1858.1080/0.0.1858.1080@0.0.1858.1080" timestamp="1590652878983" />
     <state width="1837" height="274" key="GridCell.Tab.0.bottom" timestamp="1589877629123">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>

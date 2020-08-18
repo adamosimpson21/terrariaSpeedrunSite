@@ -5,9 +5,9 @@ export function calculateRunnerFame(PBs){
   function checkGame(run){
     return (run.run.game==="kdk4e21m")
   }
-  // function checkVersion(run){
-  //   return (run.run.values['e8morel6']==='21d65p3q')
-  // }
+  function checkVersion(run){
+    return (run.run.values['e8morel6']!=='klrx980l')
+  }
   function calculateFamePerRun(run){
     let addedFame = 0;
     switch (run.place) {
@@ -66,7 +66,9 @@ export function calculateRunnerFame(PBs){
 
   // for 1.3.5 only
   // PBs.data.filter(checkGame).filter(checkVersion).forEach(calculateFamePerRun);
+  // no legacy patches
+  PBs.data.filter(checkGame).filter(checkVersion).forEach(calculateFamePerRun);
   // all time
-  PBs.data.filter(checkGame).forEach(calculateFamePerRun);
+  // PBs.data.filter(checkGame).forEach(calculateFamePerRun);
   return fameData;
 }

@@ -5,7 +5,7 @@ import RunList from './RunList'
 import SideBar from './SideBar'
 import BossBar from './BossBar'
 import {categoryIDLookUp} from "../helper/idTables";
-import {findAllUniqueRunners} from "../helper/idConstructors";
+import {addRunnerNames} from "../helper/idConstructors";
 
 class Leaderboard extends Component {
   constructor (props) {
