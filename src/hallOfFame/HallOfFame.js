@@ -80,7 +80,7 @@ export default class HallOfFame extends Component {
 
     loadAll(idList).then(fameList => {
       // use when generating new fame list
-      console.log("fameList1:", fameList);
+      // console.log("fameList1:", fameList);
       fameList.sort(this.compareFame).slice(0, FAME_LIST_LENGTH).map(user => user.id)
       this.setState({fameList})
     })
@@ -97,7 +97,7 @@ export default class HallOfFame extends Component {
 
   render () {
     const { fameList, typeOfViz, hoveredRunner} = this.state;
-    console.log("fameList:", fameList.sort(this.compareFame).slice(0, FAME_LIST_LENGTH).map(user => user.id));
+    // console.log("fameList:", fameList.sort(this.compareFame).slice(0, FAME_LIST_LENGTH).map(user => user.id));
     return (
       <div className="hallOfFameBody">
         <HallOfFameTitle />
