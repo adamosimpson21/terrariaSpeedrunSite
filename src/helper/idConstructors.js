@@ -1,5 +1,5 @@
 import {fetchErrorHandler} from "./helperfunctions";
-import {runnerIds} from "./idTables";
+import {runnerIds, runnerIdToNames} from "./idTables";
 
 // eslint-disable-next-line
 // searches through speedrun.com API to find all unique runners in Terraria
@@ -12,7 +12,7 @@ function findAllUniqueRunners(link){
     .then(data => {
       data.data.forEach(run => {
         run.players.forEach(player => {
-          if(!runners.includes(player.id)){
+          if(player.id && !runners.includes(player.id)){
             runners.push(player.id)
           }
         })
@@ -45,14 +45,17 @@ function getNextLink(links){
 // eslint-disable-next-line
 function addRunnerNames(){
   let runnerObj = {}
-  runnerIds.forEach((runnerID, index) => {
+  console.log("addRunnerNames has begun");
+  runnerIds.filter(runner => !runnerIdToNames[runner]).forEach((runnerID, index, filteredArray) => {
     fetch(`https://www.speedrun.com/api/v1/users/${runnerID}`)
       .then(fetchErrorHandler)
       .then(data => {
+        console.log("new runner being added");
         runnerObj[data.data.id] = data.data.names.international;
       })
       .then(() => {
-        if(index===runnerIds.length){
+        console.log("index:", index, "filteredArray.length:", filteredArray.length)
+        if(index===filteredArray.length-1){
           console.log("runnerObj:", runnerObj)
           return runnerObj
         }
@@ -61,6 +64,7 @@ function addRunnerNames(){
         console.log(err);
       })
   })
+  console.log("addRunnerNames has ended");
 }
 // addRunnerNames();
 

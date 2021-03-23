@@ -35,4 +35,4 @@ export const SEEDED = {
   }
 }
 
-export const FAME_LIST_LENGTH = 10;
+export const FAME_LIST_LENGTH = 20;

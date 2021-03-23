@@ -19,7 +19,20 @@ export default class HallOfFame extends Component {
       // use when generating new lists
       // idList:runnerIds,
       // top runners non-legacy
-      idList:["48gn04pj", "68w1y0lx", "jprpyy58", "j4rpnod8", "jo3kqw3j", "j2y12e68", "zxzkonnx", "18qg35ox", "y8de1zgj", "v81vpgp8"],
+      //0: {fame: 1813, place: {…}, id: "jprpyy58"}
+      // 1: {fame: 1137, place: {…}, id: "j2y12e68"}
+      // 2: {fame: 1011, place: {…}, id: "jo3kqw3j"}
+      // 3: {fame: 514, place: {…}, id: "j4rpnod8"}
+      // 4: {fame: 427, place: {…}, id: "qjnepr1j"}
+      // 5: {fame: 421, place: {…}, id: "j4rw1ow8"}
+      // 6: {fame: 238, place: {…}, id: "8qzg5078"}
+      // 7: {fame: 140, place: {…}, id: "8gevd31j"}
+      // 8: {fame: 136, place: {…}, id: "8wk50wv8"}
+      // 9: {fame: 88, place: {…}, id: "jn3vnp1x"}
+      idList:["48gn04pj", "68w1y0lx", "y8de1zgj", "zxzkonnx", "18qg35ox",
+              "v81vpgp8", "y8dp6nm8", "jmo2zq48", "1xyr75vj", "kj92v478",
+              "jprpyy58", "x7q2ekr8", "jo3kqw3j", "j4rpnod8", "qjnepr1j",
+              "j4rw1ow8", "8qzg5078", "8gevd31j", "8wk50wv8", "jn3vnp1x"],
       // top runner all time
       // idList: ["48gn04pj", "68w1y0lx", "zxzkonnx", "v81vpgp8", "kj92v478", "18qg35ox", "y8dp6nm8", "zxzl7vn8", "7j4ge05j", "1xyr75vj"],
       fameList: [],
@@ -44,7 +57,7 @@ export default class HallOfFame extends Component {
 
   // loads all Hall of Fame scores in parallel
   loadScores(idList){
-    function loadScore(id){
+    function loadScore(id, index){
       return fetch("https://www.speedrun.com/api/v1/users/" + id + "/personal-bests")
         .then(fetchErrorHandler)
         .then(data => {
@@ -56,13 +69,18 @@ export default class HallOfFame extends Component {
 
     function loadAll(idList){
       let promiseArray = [];
-      idList.forEach(id => promiseArray.push(loadScore(id)))
+      idList.forEach((id, index) => {
+        // TODO: figure out how to not reach rate limiting
+        // if(index >= 300){
+          return promiseArray.push(loadScore(id, index))
+        // }
+      })
       return Promise.all(promiseArray)
     }
 
     loadAll(idList).then(fameList => {
       // use when generating new fame list
-      // console.log("fameList1:", fameList);
+      console.log("fameList1:", fameList);
       fameList.sort(this.compareFame).slice(0, FAME_LIST_LENGTH).map(user => user.id)
       this.setState({fameList})
     })
